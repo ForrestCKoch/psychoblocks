@@ -1,0 +1,5 @@
+blockFile,isKnown,isNovel
+blocks/known.csv,1,0
+blocks/novel.csv,0,1
+blocks/known.csv,1,0
+blocks/novel.csv,0,1

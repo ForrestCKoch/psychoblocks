@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+"""
+This module contains the magic numbers used throught the facename project
+"""
+
+TLL_PULSE   = 84
+"""
+int: The byte code for the TLL pulse sent from the scanner
+"""
+
+RIGHT_INDEX   = 99
+"""
+int: The byte code for the right index button
+"""
+
+RIGHT_MIDDLE  = 100
+"""
+int: The byte code for the right middle button
+"""
+
+LEFT_INDEX    = 98
+"""
+int: The byte code for the left index button
+"""
+
+LEFT_MIDDLE   = 97
+"""
+int: The byte code for the left middle button
+"""
+
+TARGET = 'target'
+"""
+str: The string used to represent a target stimulus
+"""
+
+MISS = 'miss'
+"""
+str: The string used to represet a non-target stimulus
+"""
+
+STIMULI_PATH = 'stimuli'
+"""
+str: path to the stimuli folder
+"""
+
+DEFAULT_PARTICIPANT = 'test'
+"""
+str: default participant value
+"""
+
+DEFAULT_SESSION = '001'
+"""
+str: default session number
+"""
+
+DEFAULT_RUN_FILE = 'run.csv'
+"""
+str: default run
+"""
+
+DEFAULT_MODE = 'test'
+"""
+str: default mode
+"""
+
+DEFAULT_PORT = '/dev/ttyACM0'
+"""
+str: default port for serial device
+"""
+
+DEFAULT_BAUDRATE = '57600'
+"""
+str: default baudrate for serial device
+""" 
+
+DEFAULT_FULLSCREEN = 'false'
+"""
+str: default fullscreen status
+"""
+
+DEFAULT_STIMULI_FOLDER = 'stimuli'
+"""
+str: default stimuli folder
+"""
+
+DEFAULT_RESULTS_FOLDER = 'data'
+"""
+str: default results folder
+"""
+
+DEFAULT_FONT = 'Arial'
