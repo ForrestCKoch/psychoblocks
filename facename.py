@@ -174,22 +174,22 @@ if (__name__ == '__main__'):
         else:
             isKnown = False
         for trial in blockCSV:
-            imageStim = visual.ImageStim(app.participantWindow,image=trial['image'])
+            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']))
             if isKnown:
                 trialRoutine = routines.KnownTrial(app.clock,
                                                 app.participantWindow,
                                                 app.expInfo['participantFrameRate'],
                                                 app.expHandler,
                                                 imageStim,
-                                                trial['option1'],
-                                                trial['option2'])
+                                                trial['name1'],
+                                                trial['name2'])
             else:
                 trialRoutine = routines.NovelTrial(app.clock,
                                                 app.participantWindow,
                                                 app.expInfo['participantFrameRate'],
                                                 app.expHandler,
                                                 imageStim,
-                                                trial['novelName'])
+                                                trial['name'])
             app.addRoutine(trialRoutine)
             app.addRoutine(fixation)
         app.addRoutine(restblock)
