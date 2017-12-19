@@ -424,7 +424,7 @@ class MRISync(Routine):
     Can be included within other routines without altering the screen state
     """
 
-    def __init__(self,clock,win,expHandle):
+    def __init__(self, clock, win, expHandle, responseBox):
         """
         Initialize an instance of NovelTrial
 
@@ -442,7 +442,19 @@ class MRISync(Routine):
         responseBox : serial.Serial
             The serial object used for the response box
         """
-        pass
+        self.clock = clock
+        self.win = win
+        self.expHandle = expHandle
+        self.responseBox = responseBox
     
     def run(self):
-        pass
+        if self.responseBox:
+            # make sure we're not reading any old signals
+            self.responseBox.reset_input_buffer()
+            pulseSeen = False
+            while(not pulseSeen):
+                data = self.responseBox.read()
+                if data and ord(data) == const.TLL_PULSE:
+                    print("Synced with pulse at "+str(self.clock.getTime()))
+                    pulseSeen = True
+            

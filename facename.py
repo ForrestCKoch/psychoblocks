@@ -174,9 +174,14 @@ if (__name__ == '__main__'):
                                 app.participantWindow,
                                 app.expInfo['participantFrameRate'],
                                 app.expHandler)
+    syncRoutine = routines.MRISync(app.clock,
+                                app.participantWindow,
+                                app.expHandler,
+                                app.responseBox)
 
     # add routines to the app
     app.addRoutine(instructions)
+    app.addRoutine(syncRoutine)
     app.addRoutine(countdown)
 
     # build the trial sequence and add to the app
@@ -213,6 +218,8 @@ if (__name__ == '__main__'):
 
         # after each block there should be a rest block
         app.addRoutine(restblock)
+        # and sync
+        app.addRoutine(syncRoutine)
     
     # ready freddy go!
     app.run()
