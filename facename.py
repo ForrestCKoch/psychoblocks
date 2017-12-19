@@ -1,5 +1,11 @@
 #!/usr/bin/python2
 # -*- coding: utf-8 -*-
+###############################################################################
+# Written by:       Forrest Koch (forrest.koch@unsw.edu.au)
+# Organization:     Centre for Healthy Brain Ageing (UNSW)
+# PyschoPy Version: 1.85.3
+# Python Version:   2.7.5
+###############################################################################
 import os
 import serial
 from psychopy import core, gui, data, logging, visual, clock
@@ -151,6 +157,7 @@ class Facename():
 if (__name__ == '__main__'):
     app = Facename()
 
+    # initialize the constant routines
     instructions = routines.InstructScreen(app.clock,
                                         app.participantWindow,
                                         app.expInfo['participantFrameRate'],
@@ -168,12 +175,15 @@ if (__name__ == '__main__'):
                                 app.expInfo['participantFrameRate'],
                                 app.expHandler)
 
+    # add routines to the app
     app.addRoutine(instructions)
     app.addRoutine(countdown)
 
+    # build the trial sequence and add to the app
     runCSV = data.importConditions('run.csv')
     for line in runCSV:
         blockCSV = data.importConditions(line['blockFile'])
+        # discriminate between known and novel trials
         if (int(line['isKnown']) == 1):
             isKnown = True
         else:
@@ -198,7 +208,11 @@ if (__name__ == '__main__'):
                                                 imageStim,
                                                 trial['name'])
             app.addRoutine(trialRoutine)
+            # after each trial there should be a brief fixation
             app.addRoutine(fixation)
+
+        # after each block there should be a rest block
         app.addRoutine(restblock)
     
+    # ready freddy go!
     app.run()

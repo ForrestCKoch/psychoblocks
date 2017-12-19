@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+###############################################################################
+# Written by:       Forrest Koch (forrest.koch@unsw.edu.au)
+# Organization:     Centre for Healthy Brain Ageing (UNSW)
+# PyschoPy Version: 1.85.3
+# Python Version:   2.7.5
+###############################################################################
 """
 This module contains the magic numbers used throught the facename project
 """

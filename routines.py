@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+###############################################################################
+# Written by:       Forrest Koch (forrest.koch@unsw.edu.au)
+# Organization:     Centre for Healthy Brain Ageing (UNSW)
+# PyschoPy Version: 1.85.3
+# Python Version:   2.7.5
+###############################################################################
 from psychopy import core, visual
 from abc import ABCMeta, abstractmethod
 import const
@@ -22,8 +29,44 @@ class Routine:
 class NovelTrial(Routine):
     """
     Routine used for the novel face-name exposures
+
+    Note
+    ----
+    This trial lasts for approx 5 seconds.  The provided ImageStim is shown in the middle of
+    the screen.  Assuming an image of approx 600x400px, the name is shown in the center 
+    directly beneath the image.  Below this is a line asking "Does this face 'fit' this name?".
+
+    Participants are expected to respond with their index finger (const.RIGHT_INDEX or 
+    const.LEFT_INDEX) for 'yes' and with their middle finger (const.RIGHT_MIDDLE or 
+    const.LEFT_MIDDLE) for no.
     """
     def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+
+        imageStim : psychopy.visual.ImageStim
+            The ImageStim of the face to be used for this trial
+
+        name : str
+            The name associated with the provided face   
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -44,6 +87,8 @@ class NovelTrial(Routine):
                                    color = 'white')
 
     def run(self):
+        
+        # make things visible
         self.image.setAutoDraw(True)
         self.name.setAutoDraw(True)
         self.prompt.setAutoDraw(True)
@@ -67,6 +112,8 @@ class NovelTrial(Routine):
                 if data:
                     responseRead = True
                     print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+
+        # make things invisible
         self.image.setAutoDraw(False)
         self.name.setAutoDraw(False)
         self.prompt.setAutoDraw(False)
@@ -74,9 +121,51 @@ class NovelTrial(Routine):
 class KnownTrial(Routine):
     """
     Routine used for the known face-name exposures
+
+    Note
+    ----
+    Participants are expected to be trained/familiar with the faces displayed in the trial.
+
+    This trial lasts for approx 5 seconds.  The provided ImageStim is shown in the middle of
+    the screen.  Assuming an image of approx 600x400px, name1 will be shown underneath the image
+    to the left, and name2 will be shown underneath the image to the right.
+
+    Participants are expected to response with their index finger (const.RIGHT_INDEX or 
+    const.LEFT_INDEX) if the left name is correct and with their middle finger (const.RIGHT_MIDDLE 
+    or const.LEFT_MIDDLE) if the right name is correct.
     """
 
     def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name1, name2):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+
+        imageStim : psychopy.visual.ImageStim
+            The ImageStim of the face to be used for this trial
+
+        name1 : str
+            The name to be shown on the left
+
+        name2 : str
+            The name to be shown on the right
+
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -97,6 +186,7 @@ class KnownTrial(Routine):
                                    color = 'white')
 
     def run(self):
+        # make things visible
         self.image.setAutoDraw(True)
         self.name1.setAutoDraw(True)
         self.name2.setAutoDraw(True)
@@ -121,7 +211,7 @@ class KnownTrial(Routine):
                     responseRead = True
                     print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
                 
-            
+        # make things invisible
         self.image.setAutoDraw(False)
         self.name1.setAutoDraw(False)
         self.name2.setAutoDraw(False)
@@ -132,6 +222,26 @@ class Fixation(Routine):
     """
 
     def __init__(self,clock,win,frameRate,expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -143,18 +253,45 @@ class Fixation(Routine):
                                    color = 'white')
 
     def run(self):
+        # make things visible
         self.text.setAutoDraw(True)
         # display for 0.8 seconds
         framesToShow = int(self.frameRate * 0.8)
         for i in range(0,framesToShow):
            self.win.flip() 
+        # make things invisible
         self.text.setAutoDraw(False)
 
 class RestBlock(Routine):
     """
     Routine used for the inter-block fixation
+
+    Note
+    ----
+    During this routine, a white '+' is shown at the center of the screen for a duration
+    of 20 seconds.
     """
     def __init__(self,clock,win,frameRate,expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -167,8 +304,8 @@ class RestBlock(Routine):
 
     def run(self):
         self.text.setAutoDraw(True)
-        # display for 25 seconds
-        framesToShow = int(self.frameRate * 25)
+        # display for 20 seconds
+        framesToShow = int(self.frameRate * 20)
         for i in range(0,framesToShow):
            self.win.flip() 
         self.text.setAutoDraw(False)
@@ -176,9 +313,33 @@ class RestBlock(Routine):
 class InstructScreen(Routine):
     """
     Routine used to display instructions
+
+    Note
+    ----
+    ....
     """
 
     def __init__(self, clock, win, frameRate, expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -201,9 +362,33 @@ class InstructScreen(Routine):
 class CountdownScreen(Routine):
     """
     Count down to the start of experiment
+
+    Note
+    ----
+    Each 'count' lasts for approx 1 second
     """
     
     def __init__(self,clock,win,frameRate,expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
@@ -240,6 +425,23 @@ class MRISync(Routine):
     """
 
     def __init__(self,clock,win,expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
         pass
     
     def run(self):
