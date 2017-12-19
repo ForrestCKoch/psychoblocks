@@ -34,12 +34,12 @@ class NovelTrial(Routine):
         self.name = visual.TextStim(win = self.win,
                                    text = name,
                                    font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
+                                   pos = (0, -.6),
                                    color = 'white')
         self.prompt = visual.TextStim(win = self.win,
                                    text = 'Does this face \'fit\' this name?',
                                    font = const.DEFAULT_FONT,
-                                   pos = (0, -.2),
+                                   pos = (0, -.8),
                                    color = 'white')
 
     def run(self):
@@ -68,12 +68,12 @@ class KnownTrial(Routine):
         self.name1 = visual.TextStim(win = self.win,
                                    text = name1,
                                    font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
+                                   pos = (-.3,-.6),
                                    color = 'white')
         self.name2 = visual.TextStim(win = self.win,
                                    text = name2,
                                    font = const.DEFAULT_FONT,
-                                   pos = (0, -.2),
+                                   pos = (.3, -.6),
                                    color = 'white')
 
     def run(self):
@@ -153,7 +153,7 @@ class InstructScreen(Routine):
     def run(self):
         self.text.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 10)
+        framesToShow = int(self.frameRate * 3)
         for i in range(0,framesToShow):
            self.win.flip() 
         self.text.setAutoDraw(False)

@@ -78,6 +78,16 @@ DEFAULT_FULLSCREEN = 'false'
 str: default fullscreen status
 """
 
+DEFAULT_SCREEN_WIDTH = '1024'
+"""
+str: default screen width
+"""
+
+DEFAULT_SCREEN_HEIGHT = '768'
+"""
+str: default screen height
+"""
+
 DEFAULT_STIMULI_FOLDER = 'stimuli'
 """
 str: default stimuli folder

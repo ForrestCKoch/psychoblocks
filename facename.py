@@ -53,15 +53,17 @@ class Facename():
         """
         # get some basic information for the experiment
         self.expName = 'facename'
-        self.expInfo = {'participant' : const.DEFAULT_PARTICIPANT,
-                        'session' : const.DEFAULT_SESSION,
-                        'run_file' : const.DEFAULT_RUN_FILE,
-                        'mode' : const.DEFAULT_MODE,
-                        'port' : const.DEFAULT_PORT,
-                        'baudrate' : const.DEFAULT_BAUDRATE,
-                        'fullscreen' : const.DEFAULT_FULLSCREEN,
-                        'stimuli_folder' : const.DEFAULT_STIMULI_FOLDER,
-                        'results_folder' : const.DEFAULT_RESULTS_FOLDER} 
+        self.expInfo = {'participant'       : const.DEFAULT_PARTICIPANT,
+                        'session'           : const.DEFAULT_SESSION,
+                        'run_file'          : const.DEFAULT_RUN_FILE,
+                        'mode'              : const.DEFAULT_MODE,
+                        'port'              : const.DEFAULT_PORT,
+                        'baudrate'          : const.DEFAULT_BAUDRATE,
+                        'fullscreen'        : const.DEFAULT_FULLSCREEN,
+                        'screen_height'     : const.DEFAULT_SCREEN_HEIGHT,
+                        'screen_width'      : const.DEFAULT_SCREEN_WIDTH,
+                        'stimuli_folder'    : const.DEFAULT_STIMULI_FOLDER,
+                        'results_folder'    : const.DEFAULT_RESULTS_FOLDER} 
         dlg = gui.DlgFromDict(dictionary = self.expInfo, title = self.expName)
         if dlg.OK == False:
             core.quit()
@@ -104,7 +106,10 @@ class Facename():
         else:
             screenFlag = False
 
-        self.participantWindow = visual.Window(size = [600,400],
+        height = int(self.expInfo['screen_height'])
+        width  = int(self.expInfo['screen_width'])
+
+        self.participantWindow = visual.Window(size = [width,height],
                                               fullscr = screenFlag,
                                               screen = 1,
                                               allowGUI = True,
