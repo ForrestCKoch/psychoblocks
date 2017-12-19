@@ -26,10 +26,15 @@ The stimuli for these scripts were obtained from the
 Again, if you publish work as a result of these scripts, don't forget to cite them (see the
 references at the end of this document).
 
+## Usage and Distribution
+You are welcome to use and/or redistribute this code so long as you reference me and the references at the end of this document.
+
 ## References
 Fleisher, A. S., Sherzai, A., Taylor, C., Langbaum, J. B., Chen, K., & Buxton, R. B. (2009). Resting-state BOLD networks versus task-associated functional MRI for distinguishing Alzheimer's disease risk groups. Neuroimage, 47(4), 1678-1690.
 
 Ma, Correll, & Wittenbrink (2015). The Chicago Face Database: A Free Stimulus Set of Faces and Norming Data. Behavior Research Methods, 47, 1122-1135.
 
 Peirce, JW (2007) PsychoPy - Psychophysics software in Python. J Neurosci Methods, 162(1-2):8-13
+
 Sperling, R. A., Bates, J. F., Cocchiarella, A. J., Schacter, D. L., Rosen, B. R., & Albert, M. S. (2001). Encoding novel face‐name associations: a functional MRI study. Human brain mapping, 14(3), 129-139.
+
