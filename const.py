@@ -58,7 +58,7 @@ DEFAULT_RUN_FILE = 'run.csv'
 str: default run
 """
 
-DEFAULT_MODE = 'test'
+DEFAULT_MODE = 'serial'
 """
 str: default mode
 """

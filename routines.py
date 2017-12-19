@@ -23,11 +23,12 @@ class NovelTrial(Routine):
     """
     Routine used for the novel face-name exposures
     """
-    def __init__(self, clock, win, frameRate, expHandle, imageStim, name):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name):
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
+        self.responseBox = responseBox
         
         # stimulus stuff...
         self.image = imageStim
@@ -46,8 +47,26 @@ class NovelTrial(Routine):
         self.image.setAutoDraw(True)
         self.name.setAutoDraw(True)
         self.prompt.setAutoDraw(True)
+
+        # flush the serial device
+        self.responseBox.reset_input_buffer() 
+        responseRead = False
+
+        print("Novel Trial started at "+str(self.clock.getTime()))
+
         for i in range(0, int(self.frameRate * 5.0)):
+            # refresh the screen
             self.win.flip()
+            # check for response
+            if not responseRead:
+                # try to read data
+                data = self.responseBox.read(size=1)
+                # make sure we're not reading a TLL Pulse
+                while(data and ord(data) == const.TLL_PULSE):
+                    data = self.responseBox.read(size=1)
+                if data:
+                    responseRead = True
+                    print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
         self.image.setAutoDraw(False)
         self.name.setAutoDraw(False)
         self.prompt.setAutoDraw(False)
@@ -57,11 +76,12 @@ class KnownTrial(Routine):
     Routine used for the known face-name exposures
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, imageStim, name1, name2):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name1, name2):
         self.clock = clock
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
+        self.responseBox = responseBox
         
         # stimulus stuff...
         self.image = imageStim
@@ -80,8 +100,28 @@ class KnownTrial(Routine):
         self.image.setAutoDraw(True)
         self.name1.setAutoDraw(True)
         self.name2.setAutoDraw(True)
+
+        # flush the serial device
+        self.responseBox.reset_input_buffer() 
+        responseRead = False
+
+        print("Known Trial started at "+str(self.clock.getTime()))
+
         for i in range(0, int(self.frameRate * 5.0)):
+            # refresh the screen
             self.win.flip()
+            # check for response
+            if not responseRead:
+                # try to read data
+                data = self.responseBox.read(size=1)
+                # make sure we're not reading a TLL Pulse
+                while(data and ord(data) == const.TLL_PULSE):
+                    data = self.responseBox.read(size=1)
+                if data:
+                    responseRead = True
+                    print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+                
+            
         self.image.setAutoDraw(False)
         self.name1.setAutoDraw(False)
         self.name2.setAutoDraw(False)

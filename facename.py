@@ -185,6 +185,7 @@ if (__name__ == '__main__'):
                                                 app.participantWindow,
                                                 app.expInfo['participantFrameRate'],
                                                 app.expHandler,
+                                                app.responseBox,
                                                 imageStim,
                                                 trial['name1'],
                                                 trial['name2'])
@@ -193,6 +194,7 @@ if (__name__ == '__main__'):
                                                 app.participantWindow,
                                                 app.expInfo['participantFrameRate'],
                                                 app.expHandler,
+                                                app.responseBox,
                                                 imageStim,
                                                 trial['name'])
             app.addRoutine(trialRoutine)
