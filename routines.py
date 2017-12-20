@@ -5,7 +5,7 @@
 # PyschoPy Version: 1.85.3
 # Python Version:   2.7.5
 ###############################################################################
-from psychopy import core, visual
+from psychopy import core, visual, event
 from abc import ABCMeta, abstractmethod
 import const
 
@@ -94,8 +94,11 @@ class NovelTrial(Routine):
         self.prompt.setAutoDraw(True)
 
         # flush the serial device
-        self.responseBox.reset_input_buffer() 
+        if self.responseBox:
+            self.responseBox.reset_input_buffer() 
         responseRead = False
+        # reset the event buffer
+        event.clearEvents() 
 
         print("Novel Trial started at "+str(self.clock.getTime()))
 
@@ -105,13 +108,20 @@ class NovelTrial(Routine):
             # check for response
             if not responseRead:
                 # try to read data
-                data = self.responseBox.read(size=1)
+                if self.responseBox:
+                    data = self.responseBox.read(size=1)
+                else:
+                    data = None
                 # make sure we're not reading a TLL Pulse
                 while(data and ord(data) == const.TLL_PULSE):
                     data = self.responseBox.read(size=1)
                 if data:
                     responseRead = True
                     print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+            # check for abort signal
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
 
         # make things invisible
         self.image.setAutoDraw(False)
@@ -192,8 +202,11 @@ class KnownTrial(Routine):
         self.name2.setAutoDraw(True)
 
         # flush the serial device
-        self.responseBox.reset_input_buffer() 
+        if self.responseBox:
+            self.responseBox.reset_input_buffer() 
         responseRead = False
+        # clear the event buffer
+        event.clearEvents()
 
         print("Known Trial started at "+str(self.clock.getTime()))
 
@@ -203,13 +216,20 @@ class KnownTrial(Routine):
             # check for response
             if not responseRead:
                 # try to read data
-                data = self.responseBox.read(size=1)
+                if self.responseBox:
+                    data = self.responseBox.read(size=1)
+                else:
+                    data = None
                 # make sure we're not reading a TLL Pulse
                 while(data and ord(data) == const.TLL_PULSE):
                     data = self.responseBox.read(size=1)
                 if data:
                     responseRead = True
                     print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+            # check for abort signal
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
                 
         # make things invisible
         self.image.setAutoDraw(False)
