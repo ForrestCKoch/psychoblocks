@@ -278,7 +278,10 @@ class Fixation(Routine):
         # display for 0.8 seconds
         framesToShow = int(self.frameRate * 0.8)
         for i in range(0,framesToShow):
-           self.win.flip() 
+            self.win.flip() 
+            if 'escape' in event.getKeys():
+                print("Goodbye!")
+                core.quit()
         # make things invisible
         self.text.setAutoDraw(False)
 
@@ -327,7 +330,10 @@ class RestBlock(Routine):
         # display for 20 seconds
         framesToShow = int(self.frameRate * 20)
         for i in range(0,framesToShow):
-           self.win.flip() 
+            if 'escape' in event.getKeys():
+                print("Goodbye!")
+                core.quit()
+            self.win.flip() 
         self.text.setAutoDraw(False)
 
 class InstructScreen(Routine):
@@ -376,7 +382,10 @@ class InstructScreen(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * 3)
         for i in range(0,framesToShow):
-           self.win.flip() 
+            if 'escape' in event.getKeys():
+                print("Goodbye!")
+                core.quit() 
+            self.win.flip() 
         self.text.setAutoDraw(False)
 
 class CountdownScreen(Routine):
@@ -432,6 +441,9 @@ class CountdownScreen(Routine):
         for count in self.counts:
             count.setAutoDraw(True)
             for i in range(0, int(self.frameRate)):
+                if 'escape' in event.getKeys():
+                    print("Goodbye")
+                    core.quit()
                 self.win.flip()
             count.setAutoDraw(False)
 
