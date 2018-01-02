@@ -100,7 +100,9 @@ class NovelTrial(Routine):
         # reset the event buffer
         event.clearEvents() 
 
-        print("Novel Trial started at "+str(self.clock.getTime()))
+        # start new line for data output
+        self.expHandle.nextEntry()
+        self.expHandle.addData('trialStart',str(self.clock.getTime()))
 
         for i in range(0, int(self.frameRate * 5.0)):
             # refresh the screen
@@ -117,7 +119,8 @@ class NovelTrial(Routine):
                     data = self.responseBox.read(size=1)
                 if data:
                     responseRead = True
-                    print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+                    self.expHandle.addData('response',data)
+                    self.expHandle.addData('responseStamp',str(self.clock.getTime()))
             # check for abort signal
             if 'escape' in event.getKeys():
                 print('Goodbye!')
@@ -205,10 +208,13 @@ class KnownTrial(Routine):
         if self.responseBox:
             self.responseBox.reset_input_buffer() 
         responseRead = False
+
         # clear the event buffer
         event.clearEvents()
 
-        print("Known Trial started at "+str(self.clock.getTime()))
+        # start new line for data output
+        self.expHandle.nextEntry()
+        self.expHandle.addData('trialStart',str(self.clock.getTime()))
 
         for i in range(0, int(self.frameRate * 5.0)):
             # refresh the screen
@@ -225,7 +231,8 @@ class KnownTrial(Routine):
                     data = self.responseBox.read(size=1)
                 if data:
                     responseRead = True
-                    print("\tResponse: "+data+" received at "+str(self.clock.getTime()))
+                    self.expHandle.addData('response',data)
+                    self.expHandle.addData('responseStamp',str(self.clock.getTime()))
             # check for abort signal
             if 'escape' in event.getKeys():
                 print('Goodbye!')
@@ -487,6 +494,5 @@ class MRISync(Routine):
             while(not pulseSeen):
                 data = self.responseBox.read()
                 if data and ord(data) == const.TLL_PULSE:
-                    print("Synced with pulse at "+str(self.clock.getTime()))
+                    self.expHandle.addData('syncPulse',str(self.clock.getTime()))   
                     pulseSeen = True
-            

@@ -99,8 +99,8 @@ class Facename():
         datafile = 'data/%s_%s_%s' %(self.expInfo['participant'],
                                      self.expInfo['session'],
                                      self.expInfo['date'])
-        self.expInfo['logifle'] = logging.LogFile(datafile+'.log', level = logging.EXP)
-        logging.console.setLevel(logging.WARNING)
+        self.expInfo['logfile'] = logging.LogFile(datafile+'.log', level = logging.EXP)
+        logging.console.setLevel(logging.EXP)
 
     def _setupWindows(self):
         """
@@ -136,7 +136,7 @@ class Facename():
                                      self.expInfo['date'])
         self.expHandler = data.ExperimentHandler(name = self.expName, 
                                                  version = self.expInfo['run_file'],
-                                                 extraInfo = self.expInfo,
+                                                 #extraInfo = self.expInfo,
                                                  runtimeInfo = None,
                                                  originPath = None,
                                                  savePickle = False,
@@ -194,7 +194,7 @@ if (__name__ == '__main__'):
         else:
             isKnown = False
         for trial in blockCSV:
-            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']))
+            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),autoLog=True)
             if isKnown:
                 trialRoutine = routines.KnownTrial(app.clock,
                                                 app.participantWindow,
