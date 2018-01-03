@@ -15,7 +15,7 @@ import routines
 import experiment
 
 if (__name__ == '__main__'):
-    app = experiment.Experiment('facename')
+    app = experiment.Experiment('nback')
 
     # initialize the constant routines
     instructions = routines.InstructScreen(app.clock,
@@ -45,33 +45,22 @@ if (__name__ == '__main__'):
     app.addRoutine(countdown)
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('facename/runs/run1.csv')
+    runCSV = data.importConditions('nback/runs/run1.csv')
     for line in runCSV:
         blockCSV = data.importConditions(line['blockFile'])
-        # discriminate between known and novel trials
-        if (int(line['isKnown']) == 1):
-            isKnown = True
+        # discriminate between 0 and 1 back
+        if (int(line['is0back']) == 1):
+            is0 = True
         else:
-            isKnown = False
+            is0 = False
         for trial in blockCSV:
-            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),autoLog=True)
-            if isKnown:
-                trialRoutine = routines.KnownTrial(app.clock,
-                                                app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
-                                                app.expHandler,
-                                                app.responseBox,
-                                                imageStim,
-                                                trial['name1'],
-                                                trial['name2'])
-            else:
-                trialRoutine = routines.NovelTrial(app.clock,
-                                                app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
-                                                app.expHandler,
-                                                app.responseBox,
-                                                imageStim,
-                                                trial['name'])
+            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True)
+            trialRoutine = routines.NBackTrial(app.clock,
+                                               app.participantWindow,
+                                               app.expInfo['participantFrameRate'],
+                                               app.expHandler,
+                                               app.responseBox,
+                                               imageStim)
             app.addRoutine(trialRoutine)
             # after each trial there should be a brief fixation
             app.addRoutine(fixation)

@@ -2,3 +2,7 @@
 *.pyc
 data/*
 inputs.py
+facename/data/*.csv
+facename/data/*.log
+nback/data/*.csv
+nback/data/*.log

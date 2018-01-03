@@ -496,3 +496,95 @@ class MRISync(Routine):
                 if data and ord(data) == const.TLL_PULSE:
                     self.expHandle.addData('syncPulse',str(self.clock.getTime()))   
                     pulseSeen = True
+
+########################################################################################
+# N-Back routines
+########################################################################################
+class NBackTrial(Routine):
+    """
+    Routine used for n-back trial
+
+    Note
+    ----
+    This trial lasts for approx 2 seconds.  The provided ImageStim is shown in the middle of
+    the screen.  Assuming an image of approx 600x400px, the name is shown in the center 
+    directly beneath the image.  
+
+    Participants are expected to respond with their index finger (const.RIGHT_INDEX or 
+    const.LEFT_INDEX) for 'yes' and with their middle finger (const.RIGHT_MIDDLE or 
+    const.LEFT_MIDDLE) for no.
+    """
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+
+        imageStim : psychopy.visual.ImageStim
+            The ImageStim of the face to be used for this trial
+
+        """
+        self.clock = clock
+        self.win = win
+        self.frameRate = frameRate
+        self.expHandle = expHandle
+        self.responseBox = responseBox
+        
+        # stimulus stuff...
+        self.image = imageStim
+
+    def run(self):
+        
+        # make things visible
+        self.image.setAutoDraw(True)
+
+        # flush the serial device
+        if self.responseBox:
+            self.responseBox.reset_input_buffer() 
+        responseRead = False
+        # reset the event buffer
+        event.clearEvents() 
+
+        # start new line for data output
+        self.expHandle.nextEntry()
+        self.expHandle.addData('trialStart',str(self.clock.getTime()))
+
+        for i in range(0, int(self.frameRate * 2.0)):
+            # refresh the screen
+            self.win.flip()
+            # check for response
+            if not responseRead:
+                # try to read data
+                if self.responseBox:
+                    data = self.responseBox.read(size=1)
+                else:
+                    data = None
+                # make sure we're not reading a TLL Pulse
+                while(data and ord(data) == const.TLL_PULSE):
+                    data = self.responseBox.read(size=1)
+                if data:
+                    responseRead = True
+                    self.expHandle.addData('response',data)
+                    self.expHandle.addData('responseStamp',str(self.clock.getTime()))
+            # check for abort signal
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
+
+        # make things invisible
+        self.image.setAutoDraw(False)
