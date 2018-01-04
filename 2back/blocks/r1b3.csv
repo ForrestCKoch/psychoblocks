@@ -1,0 +1,11 @@
+Stimulus,TargetType,BlockType,CorrectResponse
+CFD-WF-237-067-N.jpg,nonlure,2-Back,2
+CFD-WM-217-070-N.jpg,nonlure,2-Back,2
+CFD-WM-031-003-N.jpg,nonlure,2-Back,2
+CFD-WM-217-070-N.jpg,target,2-Back,1
+CFD-WF-237-067-N.jpg,lure,2-Back,2
+CFD-WM-031-003-N.jpg,lure,2-Back,2
+CFD-WF-033-002-N.jpg,nonlure,2-Back,2
+CFD-WF-242-001-N.jpg,nonlure,2-Back,2
+CFD-WF-033-002-N.jpg,target,2-Back,1
+CFD-WF-202-056-N.jpg,nonlure,2-Back,2
