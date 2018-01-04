@@ -40,7 +40,8 @@ class NovelTrial(Routine):
     const.LEFT_INDEX) for 'yes' and with their middle finger (const.RIGHT_MIDDLE or 
     const.LEFT_MIDDLE) for no.
     """
-    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, 
+                 imageStim, name, duration = 5.0):
         """
         Initialize an instance of NovelTrial
 
@@ -72,6 +73,7 @@ class NovelTrial(Routine):
         self.frameRate = frameRate
         self.expHandle = expHandle
         self.responseBox = responseBox
+        self.duration = duration
         
         # stimulus stuff...
         self.image = imageStim
@@ -104,7 +106,7 @@ class NovelTrial(Routine):
         self.expHandle.nextEntry()
         self.expHandle.addData('trialStart',str(self.clock.getTime()))
 
-        for i in range(0, int(self.frameRate * 5.0)):
+        for i in range(0, int(self.frameRate * self.duration)):
             # refresh the screen
             self.win.flip()
             # check for response
@@ -148,7 +150,8 @@ class KnownTrial(Routine):
     or const.LEFT_MIDDLE) if the right name is correct.
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, name1, name2):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, 
+                imageStim, name1, name2, duration = 5.0):
         """
         Initialize an instance of NovelTrial
 
@@ -197,6 +200,7 @@ class KnownTrial(Routine):
                                    font = const.DEFAULT_FONT,
                                    pos = (.3, -.6),
                                    color = 'white')
+        self.duration = duration
 
     def run(self):
         # make things visible
@@ -216,7 +220,7 @@ class KnownTrial(Routine):
         self.expHandle.nextEntry()
         self.expHandle.addData('trialStart',str(self.clock.getTime()))
 
-        for i in range(0, int(self.frameRate * 5.0)):
+        for i in range(0, int(self.frameRate * self.duration)):
             # refresh the screen
             self.win.flip()
             # check for response
@@ -248,7 +252,7 @@ class Fixation(Routine):
     Routine used for the inter-trial fixation
     """
 
-    def __init__(self,clock,win,frameRate,expHandle):
+    def __init__(self,clock,win,frameRate,expHandle,duration = 0.8):
         """
         Initialize an instance of NovelTrial
 
@@ -278,12 +282,13 @@ class Fixation(Routine):
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
                                    color = 'white')
+        self.duration = duration
 
     def run(self):
         # make things visible
         self.text.setAutoDraw(True)
         # display for 0.8 seconds
-        framesToShow = int(self.frameRate * 0.8)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             self.win.flip() 
             if 'escape' in event.getKeys():
@@ -301,7 +306,7 @@ class RestBlock(Routine):
     During this routine, a white '+' is shown at the center of the screen for a duration
     of 20 seconds.
     """
-    def __init__(self,clock,win,frameRate,expHandle):
+    def __init__(self,clock,win,frameRate,expHandle, duration = 20.0):
         """
         Initialize an instance of NovelTrial
 
@@ -331,11 +336,12 @@ class RestBlock(Routine):
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
                                    color = 'white')
+        self.duration = duration
 
     def run(self):
         self.text.setAutoDraw(True)
         # display for 20 seconds
-        framesToShow = int(self.frameRate * 20)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             if 'escape' in event.getKeys():
                 print("Goodbye!")
@@ -542,7 +548,7 @@ class NovelCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle):
+    def __init__(self, clock, win, frameRate, expHandle, self.duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -573,11 +579,12 @@ class NovelCue(Routine):
                                    pos = (0, 0),
                                    color = 'white')
                                    
+        self.duration = duration
 
     def run(self):
         self.text.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 3)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             if 'escape' in event.getKeys():
                 print('Goodbye!')
@@ -594,7 +601,7 @@ class KnownCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle):
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -629,7 +636,7 @@ class KnownCue(Routine):
     def run(self):
         self.text.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 3)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             if 'escape' in event.getKeys():
                 print('Goodbye!')
@@ -654,7 +661,7 @@ class NBackTrial(Routine):
     const.LEFT_INDEX) for 'yes' and with their middle finger (const.RIGHT_MIDDLE or 
     const.LEFT_MIDDLE) for no.
     """
-    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -687,6 +694,8 @@ class NBackTrial(Routine):
         
         # stimulus stuff...
         self.image = imageStim
+    
+        self.duration = duration
 
     def run(self):
         
@@ -704,7 +713,7 @@ class NBackTrial(Routine):
         self.expHandle.nextEntry()
         self.expHandle.addData('trialStart',str(self.clock.getTime()))
 
-        for i in range(0, int(self.frameRate * 2.0)):
+        for i in range(0, int(self.frameRate * self.duration)):
             # refresh the screen
             self.win.flip()
             # check for response
@@ -822,7 +831,7 @@ class OneBackCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle):
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -852,12 +861,14 @@ class OneBackCue(Routine):
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
                                    color = 'white')
+
+        self.duration = duration
                                    
 
     def run(self):
         self.text.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 3)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             if 'escape' in event.getKeys():
                 print('Goodbye!')
@@ -874,7 +885,7 @@ class ZeroBackCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, targetStim):
+    def __init__(self, clock, win, frameRate, expHandle, targetStim, duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -905,13 +916,14 @@ class ZeroBackCue(Routine):
                                    pos = (-.5, 0),
                                    color = 'white')
         self.target = targetStim
+        self.duration = duration
                                    
 
     def run(self):
         self.text.setAutoDraw(True)
         self.target.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 3)
+        framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             if 'escape' in event.getKeys():
                 print('Goodbye!')
