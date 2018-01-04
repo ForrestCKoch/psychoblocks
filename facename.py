@@ -18,7 +18,7 @@ if (__name__ == '__main__'):
     app = experiment.Experiment('facename')
 
     # initialize the constant routines
-    instructions = routines.InstructScreen(app.clock,
+    instructions = routines.FacenameInstructions(app.clock,
                                         app.participantWindow,
                                         app.expInfo['participantFrameRate'],
                                         app.expHandler)
@@ -51,8 +51,16 @@ if (__name__ == '__main__'):
         # discriminate between known and novel trials
         if (int(line['isKnown']) == 1):
             isKnown = True
+            app.addRoutine(routines.KnownCue(app.clock,
+                                                app.participantWindow,
+                                                app.expInfo['participantFrameRate'],
+                                                app.expHandler))
         else:
             isKnown = False
+            app.addRoutine(routines.NovelCue(app.clock,
+                                                app.participantWindow,
+                                                app.expInfo['participantFrameRate'],
+                                                app.expHandler))
         for trial in blockCSV:
             imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),autoLog=True)
             if isKnown:

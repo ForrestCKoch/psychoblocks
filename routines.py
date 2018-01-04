@@ -343,9 +343,9 @@ class RestBlock(Routine):
             self.win.flip() 
         self.text.setAutoDraw(False)
 
-class InstructScreen(Routine):
+class FacenameInstructions(Routine):
     """
-    Routine used to display instructions
+    Routine used to display instructions for the nback task
 
     Note
     ----
@@ -354,7 +354,7 @@ class InstructScreen(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of NBackInstructions
 
         Parameters
         ----------
@@ -377,23 +377,59 @@ class InstructScreen(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = 'INSTRUCTIONS',
+        self.instructions = list()
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'In this experiment you will complete '
+                                            'two types of tasks.',
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
-                                   color = 'white')
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'During the novel tasks, you will be '
+                                            'shown a series of faces that you have '
+                                            'NOT seen before alongside a name.\n\n'
+                                            'Try to memorize this name and face.\n\n'
+                                            'Press with your INDEX finger if you think '
+                                            'the name goes well with the face.  Otherwise '
+                                            'press with your MIDDLE finger.',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'During the known tasks, you wil be '
+                                            'shown a series of faces that you have '
+                                            'seen before alongside one name to the left '
+                                            'and one name to the right.\n\nPress with your '
+                                            'INDEX finger if the name on the left matches '
+                                            'the face, and press with your MIDDLE finger if '
+                                            'the name on the right matches the face.',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'Are you ready?',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
                                    
 
     def run(self):
-        self.text.setAutoDraw(True)
         # display for 10 seconds
-        framesToShow = int(self.frameRate * 3)
-        for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
-                print('Goodbye!')
-                core.quit()
+        for screen in self.instructions:
+            # make text visible
+            screen.setAutoDraw(True)
+            # clear any remaining keypresses 
+            event.clearEvents()    
+            # display to screen
             self.win.flip() 
-        self.text.setAutoDraw(False)
+            # loop until spacebar is pressed
+            while 'space' not in event.getKeys():
+                pass
+            screen.setAutoDraw(False)
 
 class CountdownScreen(Routine):
     """
@@ -496,6 +532,110 @@ class MRISync(Routine):
                 if data and ord(data) == const.TLL_PULSE:
                     self.expHandle.addData('syncPulse',str(self.clock.getTime()))   
                     pulseSeen = True
+
+class NovelCue(Routine):
+    """
+    Routine used to display instructions
+
+    Note
+    ----
+    ....
+    """
+
+    def __init__(self, clock, win, frameRate, expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
+        self.clock = clock
+        self.win = win
+        self.frameRate = frameRate
+        self.expHandle = expHandle
+        self.text = visual.TextStim(win = self.win,
+                                   text = 'NOVEL task',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white')
+                                   
+
+    def run(self):
+        self.text.setAutoDraw(True)
+        # display for 10 seconds
+        framesToShow = int(self.frameRate * 3)
+        for i in range(0,framesToShow):
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
+            self.win.flip() 
+        self.text.setAutoDraw(False)
+
+class KnownCue(Routine):
+    """
+    Routine used to display instructions
+
+    Note
+    ----
+    ....
+    """
+
+    def __init__(self, clock, win, frameRate, expHandle):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
+        self.clock = clock
+        self.win = win
+        self.frameRate = frameRate
+        self.expHandle = expHandle
+        self.text = visual.TextStim(win = self.win,
+                                   text = 'KNOWN task',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white')
+                                   
+
+    def run(self):
+        self.text.setAutoDraw(True)
+        # display for 10 seconds
+        framesToShow = int(self.frameRate * 3)
+        for i in range(0,framesToShow):
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
+            self.win.flip() 
+        self.text.setAutoDraw(False)
 
 ########################################################################################
 # N-Back routines
