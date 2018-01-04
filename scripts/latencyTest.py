@@ -6,6 +6,7 @@ import numpy
 
 diffs = list()
 count = 0
+flag = True
 s = serial.Serial('/dev/ttyACM0',baudrate=57600, timeout=0)
 s.reset_input_buffer()
 
@@ -13,6 +14,10 @@ prev = time.time()
 while(count < 100):
     data = s.read()
     if data:
+        if flag:   
+            prev = time.time()
+            flag = False
+            continue
         curr = time.time()
         diffs.append(curr-prev)
         prev = curr

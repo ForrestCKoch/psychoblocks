@@ -18,7 +18,7 @@ if (__name__ == '__main__'):
     app = experiment.Experiment('nback')
 
     # initialize the constant routines
-    instructions = routines.InstructScreen(app.clock,
+    instructions = routines.NBackInstructions(app.clock,
                                         app.participantWindow,
                                         app.expInfo['participantFrameRate'],
                                         app.expHandler)
@@ -51,8 +51,23 @@ if (__name__ == '__main__'):
         # discriminate between 0 and 1 back
         if (int(line['is0back']) == 1):
             is0 = True
+            # a silly way to find the target image
+            targetStim = None
+            for trial in blockCSV:
+                if trial['TargetType'] == 'target':
+                    targetStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True,pos=(0.33,0))
+                    break
+            app.addRoutine(routines.ZeroBackCue(app.clock,
+                                                app.participantWindow,
+                                                app.expInfo['participantFrameRate'],
+                                                app.expHandler,
+                                                targetStim))
         else:
             is0 = False
+            app.addRoutine(routines.OneBackCue(app.clock,
+                                               app.participantWindow,
+                                               app.expInfo['participantFrameRate'],
+                                               app.expHandler))
         for trial in blockCSV:
             imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True)
             trialRoutine = routines.NBackTrial(app.clock,
