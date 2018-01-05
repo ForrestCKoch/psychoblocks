@@ -33,7 +33,8 @@ if (__name__ == '__main__'):
     restblock = routines.RestBlock(app.clock,
                                 app.participantWindow,
                                 app.expInfo['participantFrameRate'],
-                                app.expHandler)
+                                app.expHandler,
+                                duration=1.0)
     syncRoutine = routines.MRISync(app.clock,
                                 app.participantWindow,
                                 app.expHandler,
@@ -45,7 +46,7 @@ if (__name__ == '__main__'):
     app.addRoutine(countdown)
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('facename/runs/run1.csv')
+    runCSV = data.importConditions('facename/runs/run2.csv')
     for line in runCSV:
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between known and novel trials
@@ -91,5 +92,6 @@ if (__name__ == '__main__'):
     
     # ready freddy go!
     app.run()
+    print('hello')
     # write out the logfile
     logging.flush()

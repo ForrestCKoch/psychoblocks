@@ -29,11 +29,13 @@ if (__name__ == '__main__'):
     fixation = routines.Fixation(app.clock,
                                 app.participantWindow,
                                 app.expInfo['participantFrameRate'],
-                                app.expHandler)
+                                app.expHandler,
+                                duration=0.5)
     restblock = routines.RestBlock(app.clock,
                                 app.participantWindow,
                                 app.expInfo['participantFrameRate'],
-                                app.expHandler)
+                                app.expHandler,
+                                duration=15.0)
     syncRoutine = routines.MRISync(app.clock,
                                 app.participantWindow,
                                 app.expHandler,

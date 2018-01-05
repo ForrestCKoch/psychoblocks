@@ -548,7 +548,7 @@ class NovelCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, self.duration = 2.0):
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
         Initialize an instance of NovelTrial
 
@@ -631,7 +631,7 @@ class KnownCue(Routine):
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
                                    color = 'white')
-                                   
+        self.duration = duration                           
 
     def run(self):
         self.text.setAutoDraw(True)
