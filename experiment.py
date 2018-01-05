@@ -131,7 +131,7 @@ class Experiment():
         """
         Setup the experiment handler
         """
-        datafile = 'data/%s_%s_%s' %(self.expInfo['participant'],
+        datafile = self.expName + '/data/%s_%s_%s' %(self.expInfo['participant'],
                                      self.expInfo['session'],
                                      self.expInfo['date'])
         self.expHandler = data.ExperimentHandler(name = self.expName, 

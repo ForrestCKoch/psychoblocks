@@ -697,10 +697,23 @@ class NBackTrial(Routine):
     
         self.duration = duration
 
+        self.matchtext = visual.TextStim(win = self.win,
+                                   text = 'MATCH',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (-.33, -.66),
+                                   color = 'white')
+        self.nomatchtext = visual.TextStim(win = self.win,
+                                   text = 'NO MATCH',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (.33, -.66),
+                                   color = 'white')
+
     def run(self):
         
         # make things visible
         self.image.setAutoDraw(True)
+        self.matchtext.setAutoDraw(True)
+        self.nomatchtext.setAutoDraw(True)
 
         # flush the serial device
         if self.responseBox:
@@ -737,6 +750,8 @@ class NBackTrial(Routine):
 
         # make things invisible
         self.image.setAutoDraw(False)
+        self.matchtext.setAutoDraw(False)
+        self.nomatchtext.setAutoDraw(False)
 
 class NBackInstructions(Routine):
     """

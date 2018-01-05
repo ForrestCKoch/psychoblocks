@@ -15,7 +15,7 @@ import routines
 import experiment
 
 if (__name__ == '__main__'):
-    app = experiment.Experiment('nback')
+    app = experiment.Experiment('1back')
 
     # initialize the constant routines
     instructions = routines.NBackInstructions(app.clock,
@@ -47,7 +47,7 @@ if (__name__ == '__main__'):
     app.addRoutine(countdown)
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('nback/runs/run1.csv')
+    runCSV = data.importConditions('1back/runs/run1.csv')
     for line in runCSV:
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between 0 and 1 back

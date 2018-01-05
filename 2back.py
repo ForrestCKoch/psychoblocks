@@ -15,7 +15,7 @@ import routines
 import experiment
 
 if (__name__ == '__main__'):
-    app = experiment.Experiment('nback')
+    app = experiment.Experiment('2back')
 
     # initialize the constant routines
     instructions = routines.NBackInstructions(app.clock,
