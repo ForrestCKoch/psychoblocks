@@ -13,7 +13,7 @@ from psychopy import core, gui, data, logging, visual, clock
 import const
 import routines
 
-class Experiment():
+class Experiment(object):
     """
     Class for running an experiment
 

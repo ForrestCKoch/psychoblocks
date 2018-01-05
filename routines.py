@@ -14,7 +14,7 @@ This module contains the classes that outline the facename routines.  Each class
 the Routine abstract class, and so to one should just call the run method to run the routine.
 """
 
-class Routine:
+class Routine(object):
     """
     Base class for routines to derive from
     """
