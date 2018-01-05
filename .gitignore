@@ -4,5 +4,7 @@ data/*
 inputs.py
 facename/data/*.csv
 facename/data/*.log
-nback/data/*.csv
-nback/data/*.log
+1back/data/*.csv
+1back/data/*.log
+2back/data/*.csv
+2back/data/*.log

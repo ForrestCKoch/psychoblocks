@@ -20,19 +20,19 @@ if (__name__ == '__main__'):
     # initialize the constant routines
     instructions = routines.FacenameInstructions(app.clock,
                                         app.participantWindow,
-                                        app.expInfo['participantFrameRate'],
+                                        app.participantFrameRate,
                                         app.expHandler)
     countdown = routines.CountdownScreen(app.clock,
                                         app.participantWindow,
-                                        app.expInfo['participantFrameRate'],
+                                        app.participantFrameRate,
                                         app.expHandler)
     fixation = routines.Fixation(app.clock,
                                 app.participantWindow,
-                                app.expInfo['participantFrameRate'],
+                                app.participantFrameRate,
                                 app.expHandler)
     restblock = routines.RestBlock(app.clock,
                                 app.participantWindow,
-                                app.expInfo['participantFrameRate'],
+                                app.participantFrameRate,
                                 app.expHandler,
                                 duration=1.0)
     syncRoutine = routines.MRISync(app.clock,
@@ -54,20 +54,20 @@ if (__name__ == '__main__'):
             isKnown = True
             app.addRoutine(routines.KnownCue(app.clock,
                                                 app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
+                                                app.participantFrameRate,
                                                 app.expHandler))
         else:
             isKnown = False
             app.addRoutine(routines.NovelCue(app.clock,
                                                 app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
+                                                app.participantFrameRate,
                                                 app.expHandler))
         for trial in blockCSV:
             imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),autoLog=True)
             if isKnown:
                 trialRoutine = routines.KnownTrial(app.clock,
                                                 app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
+                                                app.participantFrameRate,
                                                 app.expHandler,
                                                 app.responseBox,
                                                 imageStim,
@@ -76,7 +76,7 @@ if (__name__ == '__main__'):
             else:
                 trialRoutine = routines.NovelTrial(app.clock,
                                                 app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
+                                                app.participantFrameRate,
                                                 app.expHandler,
                                                 app.responseBox,
                                                 imageStim,

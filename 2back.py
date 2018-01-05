@@ -20,19 +20,19 @@ if (__name__ == '__main__'):
     # initialize the constant routines
     instructions = routines.NBackInstructions(app.clock,
                                         app.participantWindow,
-                                        app.expInfo['participantFrameRate'],
+                                        app.participantFrameRate,
                                         app.expHandler)
     countdown = routines.CountdownScreen(app.clock,
                                         app.participantWindow,
-                                        app.expInfo['participantFrameRate'],
+                                        app.participantFrameRate,
                                         app.expHandler)
     fixation = routines.Fixation(app.clock,
                                 app.participantWindow,
-                                app.expInfo['participantFrameRate'],
+                                app.participantFrameRate,
                                 app.expHandler)
     restblock = routines.RestBlock(app.clock,
                                 app.participantWindow,
-                                app.expInfo['participantFrameRate'],
+                                app.participantFrameRate,
                                 app.expHandler)
     syncRoutine = routines.MRISync(app.clock,
                                 app.participantWindow,
@@ -59,20 +59,20 @@ if (__name__ == '__main__'):
                     break
             app.addRoutine(routines.ZeroBackCue(app.clock,
                                                 app.participantWindow,
-                                                app.expInfo['participantFrameRate'],
+                                                app.participantFrameRate,
                                                 app.expHandler,
                                                 targetStim))
         else:
             is0 = False
             app.addRoutine(routines.OneBackCue(app.clock,
                                                app.participantWindow,
-                                               app.expInfo['participantFrameRate'],
+                                               app.participantFrameRate,
                                                app.expHandler))
         for trial in blockCSV:
             imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True)
             trialRoutine = routines.NBackTrial(app.clock,
                                                app.participantWindow,
-                                               app.expInfo['participantFrameRate'],
+                                               app.participantFrameRate,
                                                app.expHandler,
                                                app.responseBox,
                                                imageStim)
