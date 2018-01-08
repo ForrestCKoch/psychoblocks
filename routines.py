@@ -676,7 +676,7 @@ class NBackTrial(Routine):
     const.LEFT_INDEX) for 'yes' and with their middle finger (const.RIGHT_MIDDLE or 
     const.LEFT_MIDDLE) for no.
     """
-    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, duration = 2.0):
+    def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, duration = 2.5):
         """
         Initialize an instance of NBackTrial
 
@@ -946,7 +946,7 @@ class TwoBackCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.5):
         """
         Initialize an instance of TwoBackCue
 
@@ -1002,7 +1002,7 @@ class OneBackCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.5):
         """
         Initialize an instance of OneBackCue
 
@@ -1059,7 +1059,7 @@ class ZeroBackCue(Routine):
     ....
     """
 
-    def __init__(self, clock, win, frameRate, expHandle, targetStim, duration = 2.0):
+    def __init__(self, clock, win, frameRate, expHandle, targetStim, duration = 2.5):
         """
         Initialize an instance of ZeroBackCue
 
