@@ -443,7 +443,11 @@ class FacenameInstructions(Routine):
             self.win.flip() 
             # loop until spacebar is pressed
             while 'space' not in event.getKeys():
-                pass
+                # check for abort signal
+                if 'escape' in event.getKeys():
+                    print('Goodbye!')
+                    core.quit()
+                    pass
             screen.setAutoDraw(False)
 
 class CountdownScreen(Routine):
@@ -851,6 +855,11 @@ class TwoBackInstructions(Routine):
             self.win.flip() 
             # loop until spacebar is pressed
             while 'space' not in event.getKeys():
+                # check for abort signal
+                if 'escape' in event.getKeys():
+                    print('Goodbye!')
+                    core.quit()
+                    pass
                 pass
             screen.setAutoDraw(False)
 class NBackInstructions(Routine):
@@ -934,6 +943,11 @@ class NBackInstructions(Routine):
             self.win.flip() 
             # loop until spacebar is pressed
             while 'space' not in event.getKeys():
+                # check for abort signal
+                if 'escape' in event.getKeys():
+                    print('Goodbye!')
+                    core.quit()
+                    pass
                 pass
             screen.setAutoDraw(False)
 

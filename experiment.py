@@ -45,12 +45,13 @@ class Experiment(object):
         """
         Initialization...
         """
+
         self._getInfo(name)
-        self._setupResponseBox()
+        self._clock = clock.Clock()
         self._setupLogfile()
         self._setupWindows()
+        self._setupResponseBox()
         self._setupExperimentHandler()
-        self._clock = clock.Clock()
         self._routines = list()
 
     def _getInfo(self,name):
@@ -61,32 +62,90 @@ class Experiment(object):
         self._expName = name
         expInfo = {'participant'       : const.DEFAULT_PARTICIPANT,
                         'session'           : const.DEFAULT_SESSION,
-                        'run_file'          : const.DEFAULT_RUN_FILE,
+                        'run file'          : os.path.join(name,'runs',const.DEFAULT_RUN_FILE),
                         'mode'              : const.DEFAULT_MODE,
                         'port'              : const.DEFAULT_PORT,
                         'baudrate'          : const.DEFAULT_BAUDRATE,
                         'fullscreen'        : const.DEFAULT_FULLSCREEN,
-                        'screen_height'     : const.DEFAULT_SCREEN_HEIGHT,
-                        'screen_width'      : const.DEFAULT_SCREEN_WIDTH,
-                        'stimuli_folder'    : const.DEFAULT_STIMULI_FOLDER,
-                        'results_folder'    : const.DEFAULT_RESULTS_FOLDER} 
+                        'screen height'     : const.DEFAULT_SCREEN_HEIGHT,
+                        'screen width'      : const.DEFAULT_SCREEN_WIDTH,
+                        'stimuli folder'    : const.DEFAULT_STIMULI_FOLDER,
+                        'results folder'    : os.path.join(name,const.DEFAULT_RESULTS_FOLDER)} 
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)
         if dlg.OK == False:
+            logging.error("Couldn't establish experiment parameters")
             core.quit()
 
         self._date = data.getDateStr()
 
-        self._participant    = expInfo['participant']
-        self._session        = expInfo['session']
-        self._run_file       = expInfo['run_file']
-        self._mode           = expInfo['mode']
-        self._port           = expInfo['port']
-        self._baudrate       = int(expInfo['baudrate'])
-        self._fullscreen     = expInfo['fullscreen']
-        self._screen_height  = int(expInfo['screen_height'])
-        self._screen_width   = int(expInfo['screen_width'])
-        self._stimuli_folder = expInfo['stimuli_folder']
-        self._results_folder = expInfo['results_folder']
+        self._participant = expInfo['participant']
+        self._session = expInfo['session']
+        self._port = expInfo['port']
+        
+        # check that the run file exists
+        self._runFile = expInfo['run file']
+        if not os.path.exists(self.runFile):
+            logging.error("Couldn't find runfile ("+self.runFile+")")
+            core.quit() 
+
+        # check for results folder and create if necessary
+        self._resultsFolder = expInfo['results folder']
+        if not os.path.exists(self.resultsFolder):
+            logging.warn(self.resultsFolder+' does not exist ... creating folder')
+            try:
+                os.makedirs(self.resultsFolder)
+            except OSError:
+                logging.error("Couldn't create results folder ("+self.resultsFolder+")")
+                core.quit()
+        
+
+        # check for stimuli folder
+        self._stimuliFolder = expInfo['stimuli folder']
+        if not os.path.exists(self.stimuliFolder):
+            logging.error('Could not find '+self.stimuliFolder)
+            core.quit()
+
+        # fullscreen should be 'true' or 'false'
+        self._fullscreen = expInfo['fullscreen']
+        if self.fullscreen != 'true' and self.fullscreen != 'false':
+            logging.warn('fullscreen should either be true or false ... defaulting to false')
+            self._fullscreen = 'false'
+
+        # mode should be 'serial' or 'test'
+        self._mode = expInfo['mode']
+        if self.mode != 'serial' and self.mode != 'test':
+            logging.warn('unrecognized mode ... defaulting to false'+self.mode)
+            self._mode = 'test'
+
+        # baudrate should be an integer
+        try:
+            self._baudrate = int(expInfo['baudrate'])
+        except ValueError:
+            if self.mode == 'serial':
+                logging.error('baudrate is not an integer ('+expInfo['baudrate']+')')
+                core.quit()
+            else:
+                logging.warn('baudrate is not an integer ('+expInfo['baudrate']+')')
+
+        # screen height should be an integer
+        try:
+            self._screenHeight = int(expInfo['screen height'])
+        except ValueError:
+            if self.fullscreen == 'false':
+                logging.error('screen height is not an integer ('+expInfo['screen height']+')')
+                core.quit()
+            else:
+                logging.warn('screen height is not an integer ('+expInfo['screen height']+')')
+
+        # screen width should be an integer
+        try:
+            self._screenWidth = int(expInfo['screen width'])
+        except ValueError:
+            if self.fullscreen == 'false':
+                logging.error('screen width is not an integer ('+expInfo['screen width']+')')
+                core.quit()
+            else:
+                logging.warn('screen width is not an integer ('+expInfo['screen width']+')')
         
     def _setupResponseBox(self):
         """
@@ -98,9 +157,13 @@ class Experiment(object):
         """
         # setup the response box if there is one
         if (self.mode == 'serial'):
-            self._responseBox = serial.Serial(port = self.port,
+            try:
+                self._responseBox = serial.Serial(port = self.port,
                                         baudrate = self.baudrate,
                                         timeout = 0)
+            except serial.SerialException:
+                logging.error("Couldn't connect to responsebox at "+self.port)
+                core.quit()
         else:
             self._responseBox = None
 
@@ -108,6 +171,10 @@ class Experiment(object):
         """
         Setup the logfile
         """
+        # make sure we have a data folder
+        if not os.path.exists(os.path.join(self.expName,'data')):
+            os.makedirs(os.path.join(self.expName,'data'))
+
         # setup logging -- do we need to hold onto the returns?
         datafile = self.expName+'/data/%s_%s_%s' %(self.participant,
                                      self.session,
@@ -125,8 +192,8 @@ class Experiment(object):
         else:
             screenFlag = False
 
-        height = self.screen_height
-        width  = self.screen_width
+        height = self.screenHeight
+        width  = self.screenWidth
 
         self._participantWindow = visual.Window(size = [width,height],
                                               fullscr = screenFlag,
@@ -141,17 +208,25 @@ class Experiment(object):
                                               waitBlanking = True)
 
         self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
-        print(self.participantFrameRate)
+        if self.participantFrameRate:
+            logging.info('Particpant screen has a framerate of '+str(self.participantFrameRate)+" hz")
+        else:
+            logging.error("Couldn't establish a stable frame rate for particpant screen")
+            core.quit()
 
     def _setupExperimentHandler(self):
         """
         Setup the experiment handler
         """
+        # make sure we have a data folder
+        if not os.path.exists(os.path.join(self.expName,'data')):
+            os.makedirs(os.path.join(self.expName,'data'))
+
         datafile = self.expName + '/data/%s_%s_%s' %(self.participant,
                                      self.session,
                                      self.date)
         self._expHandler = data.ExperimentHandler(name = self.expName, 
-                                                 version = self.run_file,
+                                                 version = self.runFile,
                                                  #extraInfo = self.expInfo,
                                                  runtimeInfo = None,
                                                  originPath = None,
@@ -181,8 +256,8 @@ class Experiment(object):
         return self._session 
        
     @property
-    def run_file(self):
-        return self._run_file 
+    def runFile(self):
+        return self._runFile 
       
     @property
     def mode(self):
@@ -201,20 +276,20 @@ class Experiment(object):
         return self._fullscreen 
     
     @property
-    def screen_height(self):
-        return self._screen_height 
+    def screenHeight(self):
+        return self._screenHeight 
  
     @property
-    def screen_width(self):
-        return self._screen_width 
+    def screenWidth(self):
+        return self._screenWidth 
   
     @property
-    def stimuli_folder(self):
-        return self._stimuli_folder 
+    def stimuliFolder(self):
+        return self._stimuliFolder 
  
     @property
-    def results_folder(self):
-        return self._results_folder 
+    def resultsFolder(self):
+        return self._resultsFolder 
  
     @property
     def date(self):

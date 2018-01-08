@@ -46,7 +46,7 @@ if (__name__ == '__main__'):
     app.addRoutine(countdown)
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('facename/runs/run2.csv')
+    runCSV = data.importConditions('facename/runs/run1.csv')
     for line in runCSV:
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between known and novel trials
