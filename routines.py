@@ -127,7 +127,7 @@ class NovelTrial(Routine):
                     self.expHandle.addData('response',data)
                     self.expHandle.addData('responseStamp',str(self.clock.getTime()))
             # check for abort signal
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
 
@@ -244,7 +244,7 @@ class KnownTrial(Routine):
                     self.expHandle.addData('response',data)
                     self.expHandle.addData('responseStamp',str(self.clock.getTime()))
             # check for abort signal
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
                 
@@ -297,7 +297,7 @@ class Fixation(Routine):
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
             self.win.flip() 
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print("Goodbye!")
                 core.quit()
         # make things invisible
@@ -352,7 +352,7 @@ class RestBlock(Routine):
         # display for 20 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print("Goodbye!")
                 core.quit()
             self.win.flip() 
@@ -442,9 +442,9 @@ class FacenameInstructions(Routine):
             # display to screen
             self.win.flip() 
             # loop until spacebar is pressed
-            while 'space' not in event.getKeys():
+            while 'space' not in event.getKeys(keyList=['space']):
                 # check for abort signal
-                if 'escape' in event.getKeys():
+                if 'escape' in event.getKeys(keyList=['escape']):
                     print('Goodbye!')
                     core.quit()
                     pass
@@ -503,7 +503,7 @@ class CountdownScreen(Routine):
         for count in self.counts:
             count.setAutoDraw(True)
             for i in range(0, int(self.frameRate)):
-                if 'escape' in event.getKeys():
+                if 'escape' in event.getKeys(keyList=['escape']):
                     print("Goodbye")
                     core.quit()
                 self.win.flip()
@@ -602,7 +602,7 @@ class NovelCue(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
             self.win.flip() 
@@ -657,7 +657,7 @@ class KnownCue(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
             self.win.flip() 
@@ -765,7 +765,7 @@ class NBackTrial(Routine):
                     self.expHandle.addData('response',data)
                     self.expHandle.addData('responseStamp',str(self.clock.getTime()))
             # check for abort signal
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
 
@@ -846,21 +846,22 @@ class TwoBackInstructions(Routine):
 
     def run(self):
         # display for 10 seconds
+        event.clearEvents()    
         for screen in self.instructions:
             # make text visible
             screen.setAutoDraw(True)
             # clear any remaining keypresses 
-            event.clearEvents()    
             # display to screen
             self.win.flip() 
             # loop until spacebar is pressed
-            while 'space' not in event.getKeys():
+            while 'space' not in event.getKeys(keyList=['space']):
                 # check for abort signal
-                if 'escape' in event.getKeys():
+                if 'escape' in event.getKeys(keyList=['escape']):
                     print('Goodbye!')
                     core.quit()
                     pass
-                pass
+                self.win.flip() 
+            event.clearEvents()    
             screen.setAutoDraw(False)
 class NBackInstructions(Routine):
     """
@@ -942,9 +943,9 @@ class NBackInstructions(Routine):
             # display to screen
             self.win.flip() 
             # loop until spacebar is pressed
-            while 'space' not in event.getKeys():
+            while 'space' not in event.getKeys(keyList=['space']):
                 # check for abort signal
-                if 'escape' in event.getKeys():
+                if 'escape' in event.getKeys(keyList=['escape']):
                     print('Goodbye!')
                     core.quit()
                     pass
@@ -1002,7 +1003,7 @@ class TwoBackCue(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
             self.win.flip() 
@@ -1058,7 +1059,7 @@ class OneBackCue(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
             self.win.flip() 
@@ -1116,7 +1117,7 @@ class ZeroBackCue(Routine):
         # display for 10 seconds
         framesToShow = int(self.frameRate * self.duration)
         for i in range(0,framesToShow):
-            if 'escape' in event.getKeys():
+            if 'escape' in event.getKeys(keyList=['escape']):
                 print('Goodbye!')
                 core.quit()
             self.win.flip() 
