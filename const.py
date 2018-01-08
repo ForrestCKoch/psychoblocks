@@ -79,7 +79,7 @@ DEFAULT_BAUDRATE = '57600'
 str: default baudrate for serial device
 """ 
 
-DEFAULT_FULLSCREEN = 'false'
+DEFAULT_FULLSCREEN = 'true'
 """
 str: default fullscreen status
 """
