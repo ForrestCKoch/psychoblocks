@@ -59,7 +59,7 @@ DEFAULT_SESSION = '001'
 str: default session number
 """
 
-DEFAULT_RUN_FILE = 'run.csv'
+DEFAULT_RUN_FILE = 'run1.csv'
 """
 str: default run
 """
