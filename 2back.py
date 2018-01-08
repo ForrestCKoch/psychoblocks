@@ -18,7 +18,7 @@ if (__name__ == '__main__'):
     app = experiment.Experiment('2back')
 
     # initialize the constant routines
-    instructions = routines.NBackInstructions(app.clock,
+    instructions = routines.TwoBackInstructions(app.clock,
                                         app.participantWindow,
                                         app.participantFrameRate,
                                         app.expHandler)
@@ -64,7 +64,7 @@ if (__name__ == '__main__'):
                                                 targetStim))
         else:
             is0 = False
-            app.addRoutine(routines.OneBackCue(app.clock,
+            app.addRoutine(routines.TwoBackCue(app.clock,
                                                app.participantWindow,
                                                app.participantFrameRate,
                                                app.expHandler))

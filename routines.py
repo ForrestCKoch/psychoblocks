@@ -753,6 +753,89 @@ class NBackTrial(Routine):
         self.matchtext.setAutoDraw(False)
         self.nomatchtext.setAutoDraw(False)
 
+class TwoBackInstructions(Routine):
+    """
+    Routine used to display instructions for the nback task
+
+    Note
+    ----
+    ....
+    """
+
+    def __init__(self, clock, win, frameRate, expHandle):
+        """
+        Initialize an instance of NBackInstructions
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
+        self.clock = clock
+        self.win = win
+        self.frameRate = frameRate
+        self.expHandle = expHandle
+        self.instructions = list()
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'In this experiment you will complete '
+                                            'two types of tasks.',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'In the 0-back task, you will first be '
+                                            'shown a target image.\n\nFor each of the '
+                                            'images to follow, press your INDEX finger '
+                                            'if the image MATCHES the target.\n\nOtherwise, '
+                                            'press with your MIDDLE finger.',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'In the 2-back task, you will just be '
+                                            'shown a series of images.\n\nFor each image '
+                                            'press with your INDEX finger if the image '
+                                            'MATCHES the image two previous.\n\nOtherwise, '
+                                            'press with your MIDDLE finger.',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+        self.instructions.append(  visual.TextStim(win = self.win,
+                                   text =   'Are you ready?',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white',
+                                   wrapWidth=1.75))
+                                   
+
+    def run(self):
+        # display for 10 seconds
+        for screen in self.instructions:
+            # make text visible
+            screen.setAutoDraw(True)
+            # clear any remaining keypresses 
+            event.clearEvents()    
+            # display to screen
+            self.win.flip() 
+            # loop until spacebar is pressed
+            while 'space' not in event.getKeys():
+                pass
+            screen.setAutoDraw(False)
 class NBackInstructions(Routine):
     """
     Routine used to display instructions for the nback task
@@ -837,7 +920,7 @@ class NBackInstructions(Routine):
                 pass
             screen.setAutoDraw(False)
 
-class OneBackCue(Routine):
+class TwoBackCue(Routine):
     """
     Routine used to display instructions
 
@@ -873,6 +956,59 @@ class OneBackCue(Routine):
         self.expHandle = expHandle
         self.text = visual.TextStim(win = self.win,
                                    text = '1 - BACK',
+                                   font = const.DEFAULT_FONT,
+                                   pos = (0, 0),
+                                   color = 'white')
+
+        self.duration = duration
+                                   
+
+    def run(self):
+        self.text.setAutoDraw(True)
+        # display for 10 seconds
+        framesToShow = int(self.frameRate * self.duration)
+        for i in range(0,framesToShow):
+            if 'escape' in event.getKeys():
+                print('Goodbye!')
+                core.quit()
+            self.win.flip() 
+        self.text.setAutoDraw(False)
+class OneBackCue(Routine):
+    """
+    Routine used to display instructions
+
+    Note
+    ----
+    ....
+    """
+
+    def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
+        """
+        Initialize an instance of NovelTrial
+
+        Parameters
+        ----------
+        clock : psychopy.clock.Clock
+            The clock used for timing by this experiment
+     
+        win : psychopy.visual.Window
+            The window to which this routine should be displayed to
+
+        frameRate : int
+            The refresh rate of win (obtained from getActualFrameRate)
+
+        expHandle : psychopy.data.ExperimentHandler
+            The ExperimentHandler being used for this experiment
+
+        responseBox : serial.Serial
+            The serial object used for the response box
+        """
+        self.clock = clock
+        self.win = win
+        self.frameRate = frameRate
+        self.expHandle = expHandle
+        self.text = visual.TextStim(win = self.win,
+                                   text = '2 - BACK',
                                    font = const.DEFAULT_FONT,
                                    pos = (0, 0),
                                    color = 'white')
