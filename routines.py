@@ -32,7 +32,7 @@ class NovelTrial(Routine):
 
     Note
     ----
-    This trial lasts for approx 5 seconds.  The provided ImageStim is shown in the middle of
+    This trial lasts for a default of 5 seconds.  The provided ImageStim is shown in the middle of
     the screen.  Assuming an image of approx 600x400px, the name is shown in the center 
     directly beneath the image.  Below this is a line asking "Does this face 'fit' this name?".
 
@@ -67,6 +67,9 @@ class NovelTrial(Routine):
 
         name : str
             The name associated with the provided face   
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -153,7 +156,7 @@ class KnownTrial(Routine):
     def __init__(self, clock, win, frameRate, expHandle, responseBox, 
                 imageStim, name1, name2, duration = 5.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of KnownTrial
 
         Parameters
         ----------
@@ -180,6 +183,9 @@ class KnownTrial(Routine):
 
         name2 : str
             The name to be shown on the right
+
+        duration : float
+            The amount of time (s) for the routine to run for
 
         """
         self.clock = clock
@@ -254,7 +260,7 @@ class Fixation(Routine):
 
     def __init__(self,clock,win,frameRate,expHandle,duration = 0.8):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of Fixation
 
         Parameters
         ----------
@@ -308,7 +314,7 @@ class RestBlock(Routine):
     """
     def __init__(self,clock,win,frameRate,expHandle, duration = 20.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of RestBlock
 
         Parameters
         ----------
@@ -326,6 +332,9 @@ class RestBlock(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -448,7 +457,7 @@ class CountdownScreen(Routine):
     
     def __init__(self,clock,win,frameRate,expHandle):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of CountdownScreen
 
         Parameters
         ----------
@@ -507,7 +516,7 @@ class MRISync(Routine):
 
     def __init__(self, clock, win, expHandle, responseBox):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of MRISync
 
         Parameters
         ----------
@@ -550,7 +559,7 @@ class NovelCue(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of NovelCue
 
         Parameters
         ----------
@@ -568,6 +577,9 @@ class NovelCue(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -603,7 +615,7 @@ class KnownCue(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of KnownCue
 
         Parameters
         ----------
@@ -621,6 +633,9 @@ class KnownCue(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -663,7 +678,7 @@ class NBackTrial(Routine):
     """
     def __init__(self, clock, win, frameRate, expHandle, responseBox, imageStim, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of NBackTrial
 
         Parameters
         ----------
@@ -685,6 +700,8 @@ class NBackTrial(Routine):
         imageStim : psychopy.visual.ImageStim
             The ImageStim of the face to be used for this trial
 
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -931,7 +948,7 @@ class TwoBackCue(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of TwoBackCue
 
         Parameters
         ----------
@@ -949,6 +966,9 @@ class TwoBackCue(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -984,7 +1004,7 @@ class OneBackCue(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of OneBackCue
 
         Parameters
         ----------
@@ -1002,6 +1022,9 @@ class OneBackCue(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
@@ -1038,7 +1061,7 @@ class ZeroBackCue(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle, targetStim, duration = 2.0):
         """
-        Initialize an instance of NovelTrial
+        Initialize an instance of ZeroBackCue
 
         Parameters
         ----------
@@ -1056,6 +1079,9 @@ class ZeroBackCue(Routine):
 
         responseBox : serial.Serial
             The serial object used for the response box
+
+        duration : float
+            The amount of time (s) for the routine to run for
         """
         self.clock = clock
         self.win = win
