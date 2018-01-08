@@ -68,6 +68,8 @@ if (__name__ == '__main__'):
                                                app.participantWindow,
                                                app.participantFrameRate,
                                                app.expHandler))
+        firstTrial = True 
+
         for trial in blockCSV:
             imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True)
             trialRoutine = routines.NBackTrial(app.clock,
@@ -76,9 +78,13 @@ if (__name__ == '__main__'):
                                                app.expHandler,
                                                app.responseBox,
                                                imageStim)
-            app.addRoutine(trialRoutine)
             # after each trial there should be a brief fixation
-            app.addRoutine(fixation)
+            if firstTrial:
+                firstTrial = False
+            else:
+                app.addRoutine(fixation)
+
+            app.addRoutine(trialRoutine)
 
         # after each block there should be a rest block
         app.addRoutine(restblock)
