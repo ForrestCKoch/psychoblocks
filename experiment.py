@@ -122,7 +122,7 @@ class Experiment(object):
         # setup the participant's window
         if self.fullscreen == 'true':
             screenFlag = True
-        else:
+        e_lse:
             screenFlag = False
 
         height = self.screen_height
@@ -137,7 +137,7 @@ class Experiment(object):
                                               color = [-1,-1,-1],
                                               colorSpace = 'rgb',
                                               blendMode = 'avg',
-                                              useFBO = True)
+                                              useFBO = False)
         self._participantFrameRate = self.participantWindow.getActualFrameRate()
 
     def _setupExperimentHandler(self):
