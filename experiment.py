@@ -179,7 +179,7 @@ class Experiment(object):
         datafile = self.expName+'/data/%s_%s_%s' %(self.participant,
                                      self.session,
                                      self.date)
-        self._logfile = logging.LogFile(datafile+'.log', level = logging.EXP)
+        self._logfile = logging.LogFile(datafile+'.log', level = logging.INFO)
         logging.console.setLevel(logging.WARNING)
 
     def _setupWindows(self):
