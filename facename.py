@@ -76,7 +76,10 @@ if (__name__ == '__main__'):
         firstTrial = True
 
         for trial in blockCSV:
-            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),autoLog=True)
+            imageStim = visual.ImageStim(app.participantWindow,
+                                image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']),
+                                autoLog=True, 
+                                name=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image']))
             if isKnown:
                 trialRoutine = routines.KnownTrial(app.clock,
                                                 app.participantWindow,

@@ -66,7 +66,12 @@ if (__name__ == '__main__'):
             targetStim = None
             for trial in blockCSV:
                 if trial['TargetType'] == 'target':
-                    targetStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True,pos=(0.33,0))
+                    targetStim = visual.ImageStim(
+                                    app.participantWindow,
+                                image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
+                                name=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
+                                autoLog=True,
+                                pos=(0.33,0))
                     break
             app.addRoutine(routines.ZeroBackCue(app.clock,
                                                 app.participantWindow,
@@ -82,7 +87,11 @@ if (__name__ == '__main__'):
         firstTrial = True 
 
         for trial in blockCSV:
-            imageStim = visual.ImageStim(app.participantWindow,image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),autoLog=True)
+            imageStim = visual.ImageStim(
+                app.participantWindow,
+                image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
+                name=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
+                autoLog=True)
             trialRoutine = routines.NBackTrial(app.clock,
                                                app.participantWindow,
                                                app.participantFrameRate,

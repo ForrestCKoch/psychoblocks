@@ -217,7 +217,7 @@ class Experiment(object):
         """
 
         datafile = os.path.join(self.resultsFolder, '%s_%s_%s' %
-                               (self.participant, self.session, self.date)
+                               (self.participant, self.session, self.date))
 
         self._expHandler = data.ExperimentHandler(name = self.expName, 
                                                  version = self.runFile,
@@ -236,7 +236,9 @@ class Experiment(object):
         self._routines.reverse()
         while(len(self._routines)):
             currRoutine = self._routines.pop()
+            logging.info('starting routine '+type(currRoutine).__name__+' ...')
             currRoutine.run()
+            logging.info('finished routine '+type(currRoutine).__name__+' ...')
     @property
     def expName(self):
         return self._expName 

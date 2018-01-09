@@ -80,16 +80,20 @@ class NovelTrial(Routine):
         
         # stimulus stuff...
         self.image = imageStim
-        self.name = visual.TextStim(win = self.win,
-                                   text = name,
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, -.6),
-                                   color = 'white')
-        self.prompt = visual.TextStim(win = self.win,
-                                   text = 'Does this face \'fit\' this name?',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, -.8),
-                                   color = 'white')
+        self.name = visual.TextStim(
+                                    name = 'NovelTrialName',
+                                    win = self.win,
+                                    text = name,
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, -.6),
+                                    color = 'white')
+        self.prompt = visual.TextStim(
+                                    name = 'NovelTrialPrompt',
+                                    win = self.win,
+                                    text = 'Does this face \'fit\' this name?',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, -.8),
+                                    color = 'white')
 
     def run(self):
         
@@ -196,16 +200,20 @@ class KnownTrial(Routine):
         
         # stimulus stuff...
         self.image = imageStim
-        self.name1 = visual.TextStim(win = self.win,
-                                   text = name1,
-                                   font = const.DEFAULT_FONT,
-                                   pos = (-.3,-.6),
-                                   color = 'white')
-        self.name2 = visual.TextStim(win = self.win,
-                                   text = name2,
-                                   font = const.DEFAULT_FONT,
-                                   pos = (.3, -.6),
-                                   color = 'white')
+        self.name1 = visual.TextStim(
+                                    name = 'KnownTrialName1',
+                                    win = self.win,
+                                    text = name1,
+                                    font = const.DEFAULT_FONT,
+                                    pos = (-.3,-.6),
+                                    color = 'white')
+        self.name2 = visual.TextStim(
+                                    name = 'KnownTrialName2',
+                                    win = self.win,
+                                    text = name2,
+                                    font = const.DEFAULT_FONT,
+                                    pos = (.3, -.6),
+                                    color = 'white')
         self.duration = duration
 
     def run(self):
@@ -283,11 +291,13 @@ class Fixation(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = '+',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'Fixation',
+                                    win = self.win,
+                                    text = '+',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
         self.duration = duration
 
     def run(self):
@@ -340,11 +350,13 @@ class RestBlock(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = '+',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'RestBlock',
+                                    win = self.win,
+                                    text = '+',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
         self.duration = duration
 
     def run(self):
@@ -393,43 +405,51 @@ class FacenameInstructions(Routine):
         self.frameRate = frameRate
         self.expHandle = expHandle
         self.instructions = list()
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In this experiment you will complete '
+        self.instructions.append(visual.TextStim(
+                                    name = 'FacenameInstructionsText1',
+                                    win = self.win,
+                                    text =  'In this experiment you will complete '
                                             'two types of tasks.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'During the novel tasks, you will be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'FacenameInstructionsText2',
+                                    win = self.win,
+                                    text =  'During the novel tasks, you will be '
                                             'shown a series of faces that you have '
                                             'NOT seen before alongside a name.\n\n'
                                             'Try to memorize this name and face.\n\n'
                                             'Press with your INDEX finger if you think '
                                             'the name goes well with the face.  Otherwise '
                                             'press with your MIDDLE finger.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'During the known tasks, you wil be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'FacenameInstructionsText3',
+                                    win = self.win,
+                                    text =  'During the known tasks, you wil be '
                                             'shown a series of faces that you have '
                                             'seen before alongside one name to the left '
                                             'and one name to the right.\n\nPress with your '
                                             'INDEX finger if the name on the left matches '
                                             'the face, and press with your MIDDLE finger if '
                                             'the name on the right matches the face.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'Are you ready?',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'FacenameInstructionsText4',
+                                    win = self.win,
+                                    text =   'Are you ready?',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
                                    
 
     def run(self):
@@ -492,11 +512,13 @@ class CountdownScreen(Routine):
         # is is possible that it is actually slower,
         # so it may be worth looking into
         for i in range(5,0,-1):
-            self.counts.append(visual.TextStim(win = self.win,
-                                   text = str(i),
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white'))
+            self.counts.append(visual.TextStim(
+                                    name = 'CountdownText'+str(i),
+                                    win = self.win,
+                                    text = str(i),
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white'))
 
     def run(self):
         # cycle through each of the count downs...
@@ -589,11 +611,13 @@ class NovelCue(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = 'NOVEL task',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'NovelCueText',
+                                    win = self.win,
+                                    text = 'NOVEL task',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
                                    
         self.duration = duration
 
@@ -645,11 +669,13 @@ class KnownCue(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = 'KNOWN task',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'KnownCueText',
+                                    win = self.win,
+                                    text = 'KNOWN task',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
         self.duration = duration                           
 
     def run(self):
@@ -718,16 +744,20 @@ class NBackTrial(Routine):
     
         self.duration = duration
 
-        self.matchtext = visual.TextStim(win = self.win,
-                                   text = 'MATCH',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (-.33, -.66),
-                                   color = 'white')
-        self.nomatchtext = visual.TextStim(win = self.win,
-                                   text = 'NO MATCH',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (.33, -.66),
-                                   color = 'white')
+        self.matchtext = visual.TextStim(
+                                    name = 'NBackMatchText',
+                                    win = self.win,
+                                    text = 'MATCH',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (-.33, -.66),
+                                    color = 'white')
+        self.nomatchtext = visual.TextStim(
+                                    name = 'NBackNoMatchText',
+                                    win = self.win,
+                                    text = 'NO MATCH',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (.33, -.66),
+                                    color = 'white')
 
     def run(self):
         
@@ -785,7 +815,7 @@ class TwoBackInstructions(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle):
         """
-        Initialize an instance of NBackInstructions
+        Initialize an instance of TwoBackInstructions
 
         Parameters
         ----------
@@ -809,39 +839,44 @@ class TwoBackInstructions(Routine):
         self.frameRate = frameRate
         self.expHandle = expHandle
         self.instructions = list()
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In this experiment you will complete '
+        self.instructions.append(visual.TextStim(
+                                    name = 'TwoBackInstructions1',
+                                    win = self.win,
+                                    text =  'In this experiment you will complete '
                                             'two types of tasks.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In the 0-back task, you will first be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(win = self.win,
+                                    name = 'TwoBackInstructions2',
+                                    text =  'In the 0-back task, you will first be '
                                             'shown a target image.\n\nFor each of the '
                                             'images to follow, press your INDEX finger '
                                             'if the image MATCHES the target.\n\nOtherwise, '
                                             'press with your MIDDLE finger.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In the 2-back task, you will just be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(win = self.win,
+                                    name = 'TwoBackInstructions3',
+                                    text =  'In the 2-back task, you will just be '
                                             'shown a series of images.\n\nFor each image '
                                             'press with your INDEX finger if the image '
                                             'MATCHES the image two previous.\n\nOtherwise, '
                                             'press with your MIDDLE finger.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'Are you ready?',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(win = self.win,
+                                    name = 'TwoBackInstructions4',
+                                    text =   'Are you ready?',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
                                    
 
     def run(self):
@@ -863,7 +898,7 @@ class TwoBackInstructions(Routine):
                 self.win.flip() 
             event.clearEvents()    
             screen.setAutoDraw(False)
-class NBackInstructions(Routine):
+class OneBackInstructions(Routine):
     """
     Routine used to display instructions for the nback task
 
@@ -874,7 +909,7 @@ class NBackInstructions(Routine):
 
     def __init__(self, clock, win, frameRate, expHandle):
         """
-        Initialize an instance of NBackInstructions
+        Initialize an instance of OneBackInstructions
 
         Parameters
         ----------
@@ -898,39 +933,47 @@ class NBackInstructions(Routine):
         self.frameRate = frameRate
         self.expHandle = expHandle
         self.instructions = list()
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In this experiment you will complete '
+        self.instructions.append(visual.TextStim(
+                                    name = 'OneBackInstructions1',
+                                    win = self.win,
+                                    text =  'In this experiment you will complete '
                                             'two types of tasks.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In the 0-back task, you will first be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'OneBackInstructions2',
+                                    win = self.win,
+                                    text =  'In the 0-back task, you will first be '
                                             'shown a target image.\n\nFor each of the '
                                             'images to follow, press your INDEX finger '
                                             'if the image MATCHES the target.\n\nOtherwise, '
                                             'press with your MIDDLE finger.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'In the 1-back task, you will just be '
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'OneBackInstructions3',
+                                    win = self.win,
+                                    text =  'In the 1-back task, you will just be '
                                             'shown a series of images.\n\nFor each image '
                                             'press with your INDEX finger if the image '
                                             'MATCHES the previous image.\n\nOtherwise, '
                                             'press with your MIDDLE finger.',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
-        self.instructions.append(  visual.TextStim(win = self.win,
-                                   text =   'Are you ready?',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white',
-                                   wrapWidth=1.75))
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
+        self.instructions.append(visual.TextStim(
+                                    name = 'OneBackInstructions4',
+                                    win = self.win,
+                                    text =   'Are you ready?',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white',
+                                    wrapWidth=1.75))
                                    
 
     def run(self):
@@ -989,11 +1032,13 @@ class TwoBackCue(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = '1 - BACK',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'TwoBackCue',
+                                    win = self.win,
+                                    text = '1 - BACK',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
 
         self.duration = duration
                                    
@@ -1045,11 +1090,13 @@ class OneBackCue(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = '2 - BACK',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (0, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'OneBackCue',
+                                    win = self.win,
+                                    text = '2 - BACK',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (0, 0),
+                                    color = 'white')
 
         self.duration = duration
                                    
@@ -1102,11 +1149,13 @@ class ZeroBackCue(Routine):
         self.win = win
         self.frameRate = frameRate
         self.expHandle = expHandle
-        self.text = visual.TextStim(win = self.win,
-                                   text = '0 - BACK',
-                                   font = const.DEFAULT_FONT,
-                                   pos = (-.5, 0),
-                                   color = 'white')
+        self.text = visual.TextStim(
+                                    name = 'ZeroBackCue',
+                                    win = self.win,
+                                    text = '0 - BACK',
+                                    font = const.DEFAULT_FONT,
+                                    pos = (-.5, 0),
+                                    color = 'white')
         self.target = targetStim
         self.duration = duration
                                    
