@@ -171,14 +171,11 @@ class Experiment(object):
         """
         Setup the logfile
         """
-        # make sure we have a data folder
-        if not os.path.exists(os.path.join(self.expName,'data')):
-            os.makedirs(os.path.join(self.expName,'data'))
 
         # setup logging -- do we need to hold onto the returns?
-        datafile = self.expName+'/data/%s_%s_%s' %(self.participant,
-                                     self.session,
-                                     self.date)
+        datafile = os.path.join(self.resultsFolder,'%s_%s_%s' %
+                               (self.participant, self.session, self.date))
+
         self._logfile = logging.LogFile(datafile+'.log', level = logging.INFO)
         logging.console.setLevel(logging.WARNING)
 
@@ -218,13 +215,10 @@ class Experiment(object):
         """
         Setup the experiment handler
         """
-        # make sure we have a data folder
-        if not os.path.exists(os.path.join(self.expName,'data')):
-            os.makedirs(os.path.join(self.expName,'data'))
 
-        datafile = self.expName + '/data/%s_%s_%s' %(self.participant,
-                                     self.session,
-                                     self.date)
+        datafile = os.path.join(self.resultsFolder, '%s_%s_%s' %
+                               (self.participant, self.session, self.date)
+
         self._expHandler = data.ExperimentHandler(name = self.expName, 
                                                  version = self.runFile,
                                                  #extraInfo = self.expInfo,
