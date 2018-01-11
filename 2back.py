@@ -11,38 +11,16 @@ import serial
 from psychopy import core, gui, data, logging, visual, clock
 
 import const
-import routines
 import experiment
+
+from colls import *
 
 if (__name__ == '__main__'):
     app = experiment.Experiment('2back')
 
-    # initialize the constant routines
-    instructions = routines.TwoBackInstructions(app.clock,
-                                        app.participantWindow,
-                                        app.participantFrameRate,
-                                        app.expHandler)
-    countdown = routines.CountdownScreen(app.clock,
-                                        app.participantWindow,
-                                        app.participantFrameRate,
-                                        app.expHandler)
-    fixation = routines.Fixation(app.clock,
-                                app.participantWindow,
-                                app.participantFrameRate,
-                                app.expHandler)
-    restblock = routines.RestBlock(app.clock,
-                                app.participantWindow,
-                                app.participantFrameRate,
-                                app.expHandler)
-    syncRoutine = routines.MRISync(app.clock,
-                                app.participantWindow,
-                                app.expHandler,
-                                app.responseBox)
-
     # add routines to the app
-    app.addRoutine(instructions)
-    app.addRoutine(syncRoutine)
-    app.addRoutine(countdown)
+    app.addRoutine(TwoBackInstructions(app))
+    app.addRoutine(CountdownSequence(app))
 
     # build the trial sequence and add to the app
     runCSV = data.importConditions('2back/runs/run1.csv')
@@ -55,9 +33,8 @@ if (__name__ == '__main__'):
             firstBlock = False
         else:
             # after each block there should be a rest block
-            app.addRoutine(restblock)
-            # and sync
-            app.addRoutine(syncRoutine)
+            app.addRoutine(RestBlock(app, duration = 15.0))
+
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between 0 and 1 back
         if (int(line['is0back']) == 1):
@@ -66,43 +43,22 @@ if (__name__ == '__main__'):
             targetStim = None
             for trial in blockCSV:
                 if trial['TargetType'] == 'target':
-                    targetStim = visual.ImageStim(
-                                    app.participantWindow,
-                                image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
-                                name=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
-                                autoLog=True,
-                                pos=(0.33,0))
+                    target=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus'])
                     break
-            app.addRoutine(routines.ZeroBackCue(app.clock,
-                                                app.participantWindow,
-                                                app.participantFrameRate,
-                                                app.expHandler,
-                                                targetStim))
+            app.addRoutine(ZeroBackCue(app,target))
         else:
             is0 = False
-            app.addRoutine(routines.TwoBackCue(app.clock,
-                                               app.participantWindow,
-                                               app.participantFrameRate,
-                                               app.expHandler))
+            app.addRoutine(TwoBackCue(app))
         firstTrial = True 
 
         for trial in blockCSV:
-            imageStim = visual.ImageStim(
-                app.participantWindow,
-                image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
-                name=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus']),
-                autoLog=True)
-            trialRoutine = routines.NBackTrial(app.clock,
-                                               app.participantWindow,
-                                               app.participantFrameRate,
-                                               app.expHandler,
-                                               app.responseBox,
-                                               imageStim)
+            image=os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['Stimulus'])
+            trialRoutine = NBackTrial(app,image,None)
             # after each trial there should be a brief fixation
             if firstTrial:
                 firstTrial = False
             else:
-                app.addRoutine(fixation)
+                app.addRoutine(Fixation(app,duration = 0.5))
 
             app.addRoutine(trialRoutine)
 

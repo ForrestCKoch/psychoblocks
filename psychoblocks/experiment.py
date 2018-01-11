@@ -11,7 +11,6 @@ import serial
 from psychopy import core, gui, data, logging, visual, clock
 
 import const
-import routines
 
 class Experiment(object):
     """
@@ -308,7 +307,7 @@ class Experiment(object):
         return self._participantFrameRate 
  
     @property
-    def expHandler(self):
+    def experimentHandler(self):
         return self._expHandler
 
     @property
