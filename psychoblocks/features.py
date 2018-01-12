@@ -209,7 +209,7 @@ class ResponseBox(AbstractFeature):
                 self.experiment.experimentHandler.addData('response time', str(rt))
                 self.experiment.experimentHandler.addData('correct',correct)
                 logging.data('Response Box: '+data)
-                logging.data('ResponseTime: '+rt)
+                logging.data('ResponseTime: '+str(rt))
                 if rt < 0.2:
                     self.experiment.responsesUnder200ms += 1
                 self.experiment.responseTotal += 1
