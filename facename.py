@@ -15,8 +15,10 @@ from psychoblocks import const, experiment, routines, features
 if (__name__ == '__main__'):
     app = experiment.Experiment('facename')
 
-    # add routines to the app
+    examinerUpdate = routines.UpdateExaminerWindow(app)
+    app.addRoutine(examinerUpdate) 
     app.addRoutine(routines.FacenameInstructions(app))
+    # sync before instructions
     app.addRoutine(features.MRISync(None, experiment = app))
     app.addRoutine(routines.CountdownSequence(app))
 
@@ -30,6 +32,7 @@ if (__name__ == '__main__'):
             firstBlock = False
         else:
             # after each block there should be a rest block
+            app.addRoutine(examinerUpdate) 
             app.addRoutine(routines.RestBlock(app))
 
         blockCSV = data.importConditions(line['blockFile'])
@@ -41,6 +44,9 @@ if (__name__ == '__main__'):
             isKnown = False
             app.addRoutine(routines.NovelCue(app))
         firstTrial = True
+        
+        # sync before each block
+        app.addRoutine(features.MRISync(None, experiment = app))
 
         for trial in blockCSV:
             image = os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image'])

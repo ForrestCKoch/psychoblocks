@@ -51,6 +51,12 @@ class Experiment(object):
         Current date.
     responseBox : serial.Serial
         The serial device being used.  None if the experiment is not run in serial mode.
+    responsesUnder200ms : int
+        Keep track of the number of responses under 200ms
+    responsesTotal : int
+        Keep track of the total number of responses
+    responsesExpected:
+        Keep track of the total number of expected responses
     logfile : psychopy.LogFile
         The logfile. 
     participantWindow : psychopy.visual.Window
@@ -85,6 +91,10 @@ class Experiment(object):
         self._setupResponseBox()
         self._setupExperimentHandler()
         self._routines = list()
+
+        self._responsesUnder200ms = 0
+        self._responseTotal = 0
+        self._responsesExpected = 0
 
     def _getInfo(self,name):
         """
@@ -332,6 +342,31 @@ class Experiment(object):
             currRoutine.run()
             currRoutine.end()
             logging.info('finished routine '+type(currRoutine).__name__+' ...')
+
+    @property
+    def responsesUnder200ms(self):
+        return self._responsesUnder200ms
+
+    @property
+    def responseTotal(self):
+        return self._responseTotal
+
+    @property
+    def responsesExpected(self):
+        return self._responsesExpected 
+
+    @responsesUnder200ms.setter
+    def responsesUnder200ms(self,value):
+        self._responsesUnder200ms = value
+
+    @responseTotal.setter
+    def responseTotal(self,value):
+        self._responseTotal = value
+
+    @responsesExpected.setter
+    def responsesExpected(self,value):
+        self._responsesExpected = value
+
     @property
     def expName(self):
         return self._expName 

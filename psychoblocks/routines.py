@@ -55,6 +55,37 @@ class RestBlock(AbstractCollection):
     def feature(self):
         return self._feature
 
+class UpdateExaminerWindow(AbstractCollection):
+    def __init__(self,experiment):
+        super(UpdateExaminerWindow,self).__init__(None,experiment = experiment)
+
+        self._feature1 = ExaminerTextFeature(None, experiment = experiment, pos = (0,.5), name = 'Ex1')
+        self._feature2 = ExaminerTextFeature(self._feature1,experiment=experiment,pos=(0,0),name='Ex2')
+        self._feature3 = ExaminerTextFeature(self._feature2,experiment=experiment,pos=(0,-.5),name='Ex3')
+        self._feature = self._feature3 
+
+    def start(self):
+        super(UpdateExaminerWindow,self).start()
+        # update the features
+        self._feature1._textStim.setText(text='Responses Under 200ms = '
+                    +str(self.experiment.responsesUnder200ms))
+        self._feature2._textStim.setText(text='Non - Reponses = '
+                    +str(self.experiment.responsesExpected - self.experiment.responseTotal))
+        self._feature3._textStim.setText(text='Total Responses = '
+                    +str(self.experiment.responseTotal))
+        self.feature.start()
+        self.experiment.examinerWindow.flip()
+
+    def run(self):
+        pass
+    
+    def end(self):
+        pass
+
+    @property
+    def feature(self):
+        return self._feature
+
 ###############################################################################
 # Facename Collections
 ###############################################################################

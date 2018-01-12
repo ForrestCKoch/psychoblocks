@@ -142,8 +142,9 @@ class MRISync(AbstractFeature):
                 data = self.experiment.responseBox.read()
                 if data and ord(data) == const.TLL_PULSE:
                     timestamp = str(self.experiment.clock.getTime())
+                    self.experiment.experimentHandler.nextEntry()
                     self.experiment.experimentHandler.addData('syncPulse',timestamp)
-                    logging.info('Synced with pulse at '+self.experiment.clock.getTime())
+                    logging.info('Synced with pulse at '+str(self.experiment.clock.getTime()))
                     pulseSeen = True
 
 class ResponseBox(AbstractFeature):
@@ -167,6 +168,11 @@ class ResponseBox(AbstractFeature):
         super(ResponseBox,self).__init__(origin,experiment = experiment)
 
         self._correctResponse = correctResponse
+        self._flag = True
+
+    @property
+    def startTime(self):
+        return self._startTime
         
     def start(self):
         """
@@ -177,23 +183,37 @@ class ResponseBox(AbstractFeature):
         self.experiment.responseBox.reset_input_buffer()
         # call origin feature
         super(ResponseBox,self).start()
+        # record the starting time of this response
+        self._startTime = self.experiment.clock.getTime()
+        self.experiment.responsesExpected += 1
 
     def run(self):
         """
         Check for a response from the response box
         """
+        # capture starting time
+        if self._flag:
+            self._startTime = self.experiment.clock.getTime()
+            self._flag = False
+            logging.info('starting routine timer from '+str(self._startTime))
+
         if self.experiment.responseBox:
             data = self.experiment.responseBox.read(size=1)
             while(data and ord(data) == const.TLL_PULSE):
                 data = self.experiment.responseBox.read(size=1)
-            if data:
+            if data and not self._responseRead:
                 self._responseRead = True
-                timestamp = str(self.experiment.clock.getTime())
+                rt = self.experiment.clock.getTime()-self.startTime
                 correct = data == self._correctResponse
                 self.experiment.experimentHandler.addData('response',data)
-                self.experiment.experimentHandler.addData('timestamp',timestamp)
+                self.experiment.experimentHandler.addData('response time', str(rt))
                 self.experiment.experimentHandler.addData('correct',correct)
                 logging.data('Response Box: '+data)
+                logging.data('ResponseTime: '+rt)
+                if rt < 0.2:
+                    self.experiment.responsesUnder200ms += 1
+                self.experiment.responseTotal += 1
+                
             # call origin feature
             super(ResponseBox,self).run()
 
@@ -314,3 +334,52 @@ class ImageFeature(AbstractFeature):
         """
         self._imageStim.setAutoDraw(False)
         super(ImageFeature,self).end()
+
+class ExaminerTextFeature(AbstractFeature):
+    """
+    Wrapper around psychopy.TextStim
+    """
+    
+    def __init__(self, origin, experiment = None, text='Hello World', font=const.DEFAULT_FONT, 
+                    pos=(0.0, 0.0), depth=0, rgb=None, color=(1.0, 1.0, 1.0), colorSpace='rgb', 
+                    opacity=1.0, contrast=1.0, units='', ori=0.0, height=None, antialias=True, 
+                    bold=False, italic=False, alignHoriz='center', alignVert='center', 
+                    fontFiles=(), wrapWidth=1.75, flipHoriz=False, flipVert=False, 
+                    name=None, autoLog=True):
+        """
+        Initialize an instance of TextFeature.
+
+        Note
+        ----
+        For undocumented parameters, refer to the psychopy documentaion for TextStim
+
+        Parameters
+        ----------
+        origin : AbstractFeature
+            Feature being decorated.  None if this is the base.
+        experiment : Experiment
+            Experiment to which this belongs.  Not necessary if this is not the base.
+        """
+
+        super(ExaminerTextFeature,self).__init__(origin, experiment = experiment)
+        self._textStim = visual.TextStim(self.experiment.examinerWindow, text=text, 
+                                font=font, pos=pos, depth=depth, rgb=rgb, color=color, 
+                                colorSpace=colorSpace, opacity=opacity, contrast=contrast, 
+                                units=units, ori=ori, height=height, antialias=antialias, 
+                                bold=bold, italic=italic, alignHoriz=alignHoriz, 
+                                alignVert=alignVert, fontFiles=fontFiles, wrapWidth=wrapWidth, 
+                                flipHoriz=flipHoriz, flipVert=flipVert, name=name, autoLog=autoLog)
+
+    def start(self):
+        """
+        Enable Auto Draw for the TextStim
+        """
+        self._textStim.setAutoDraw(True)
+        super(ExaminerTextFeature,self).start()
+
+    def end(self):
+        """
+        Disable Auto Draw for the TextStim
+        """
+        self._textStim.setAutoDraw(False)
+        super(ExaminerTextFeature,self).end()
