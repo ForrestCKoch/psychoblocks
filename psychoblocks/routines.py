@@ -100,7 +100,6 @@ class NovelTrial(AbstractCollection):
     def __init__(self, experiment, image, name, duration = 5.0):
         super(NovelTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
-        feature = MRISync(feature)
         feature = ResponseBox(feature, None)
         feature = ImageFeature(feature, image = image, name = 'Novel Trial Image: ' + image)
         feature = TextFeature(feature, text= name, pos= (0,-.6), name= 'Novel Trial Name: '+name)
@@ -123,7 +122,6 @@ class KnownTrial(AbstractCollection):
     def __init__(self, experiment, image, name1, name2, correctResponse, duration = 5.0):
         super(KnownTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
-        feature = MRISync(feature)
         feature = ResponseBox(feature, correctResponse)
         feature = ImageFeature(feature, image = image, name = 'Known Trial Image: ' + image)
         feature = TextFeature(feature, text=name1, pos=(-.3,-.6), name='Known Trial Name1: '+name1)
@@ -240,7 +238,6 @@ class NBackTrial(AbstractCollection):
     def __init__(self, experiment, image, correctResponse, duration = 2.5):
         super(NBackTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
-        feature = MRISync(feature)
         feature = ResponseBox(feature, correctResponse)
         feature = ImageFeature(feature, image = image, name = 'Trial: '+image)
         feature = TextFeature(feature, text = 'MATCH', name = 'Match Prompt', pos = (-.33, -.66))
