@@ -303,7 +303,8 @@ class Experiment(object):
                                               blendMode = 'avg',
                                               useFBO = False,
                                               waitBlanking = True)
-        
+        else:
+            self._examinerWindow = None 
 
         self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
         if self.participantFrameRate:

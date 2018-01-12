@@ -15,8 +15,10 @@ from psychoblocks import const, experiment, routines, features
 if (__name__ == '__main__'):
     app = experiment.Experiment('facename')
 
-    examinerUpdate = routines.UpdateExaminerWindow(app)
-    app.addRoutine(examinerUpdate) 
+    if app.examinerWindow:
+        examinerUpdate = routines.UpdateExaminerWindow(app)
+        app.addRoutine(examinerUpdate) 
+
     app.addRoutine(routines.FacenameInstructions(app))
     # sync before instructions
     app.addRoutine(features.MRISync(None, experiment = app))
@@ -32,7 +34,8 @@ if (__name__ == '__main__'):
             firstBlock = False
         else:
             # after each block there should be a rest block
-            app.addRoutine(examinerUpdate) 
+            if app.examinerWindow:
+                app.addRoutine(examinerUpdate) 
             app.addRoutine(routines.RestBlock(app))
 
         blockCSV = data.importConditions(line['blockFile'])
