@@ -24,20 +24,43 @@ class Experiment(object):
     Attributes
     ----------
     expName : str
-        Name of this experiment task
-    expInfo : dict
-        Dictionary containing information required to
-        setup the experiment
-    participantWindow : visual.Window
-        The window displayed to the participant during the experiment 
-    expHandler : data.ExperimentHandler
-        Experiment Handler uesd to write the data file for this experiment
-    responseBox: serial.Serial
-        Serial object used for reading data from the response box
-    clock: clock.Clock
-        clock from the core module used for keeping track of time
-    routines: list
-        list of Routine objects to be called over the course of the experiment
+        The name of this experiment
+    participant : str
+        The participant id
+    session : str
+        The session id
+    runFile : str
+        The path of the run file to be used
+    mode : str
+        The type of experiment being run (serial/test).
+    port : str
+        The port which the serial device is connected to (for serial mode).
+    baudrate : int
+        The baudrate of the serial device (for serial mode).
+    fullscreen : str
+        String indicating fullscreen status. ('true'/'false')
+    screenHeight : int
+        If fullscreen = 'false', this indicates the screen height in pixels.
+    screenWidth : int
+        If fullscreen = 'false', this indicates the screen width in pixels.
+    stimuliFolder : str
+        Path of the stimuli folder.
+    resultsFolder : str
+        Path of the results folder.
+    date : str
+        Current date.
+    responseBox : serial.Serial
+        The serial device being used.  None if the experiment is not run in serial mode.
+    logfile : psychopy.LogFile
+        The logfile. 
+    participantWindow : psychopy.visual.Window
+        The window for the participant screen.
+    participantFrameRate : float
+        The frame rate (hz) for the participant screen.
+    experimentHandler : psychopy.data.ExperimentHandler
+        The ExperimentHandler being used for this experiment.
+    clock : psychopy.clock.Clock
+        The clock used by this experiment
     """
 
     def __init__(self,name):
@@ -236,7 +259,9 @@ class Experiment(object):
         while(len(self._routines)):
             currRoutine = self._routines.pop()
             logging.info('starting routine '+type(currRoutine).__name__+' ...')
+            currRoutine.start()
             currRoutine.run()
+            currRoutine.end()
             logging.info('finished routine '+type(currRoutine).__name__+' ...')
     @property
     def expName(self):

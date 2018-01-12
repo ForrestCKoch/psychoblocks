@@ -176,6 +176,9 @@ class ResponseBox(AbstractFeature):
         super(ResponseBox,self).start()
 
     def run(self):
+        """
+        Check for a response from the response box
+        """
         data = self.experiment.responseBox.read(size=1)
         while(data and ord(data) == const.TLL_PULSE):
             data = self.experiment.responseBox.read(size=1)
@@ -250,10 +253,16 @@ class TextFeature(AbstractFeature):
                                 flipHoriz=flipHoriz, flipVert=flipVert, name=name, autoLog=autoLog)
 
     def start(self):
+        """
+        Enable Auto Draw for the TextStim
+        """
         self._textStim.setAutoDraw(True)
         super(TextFeature,self).start()
 
     def end(self):
+        """
+        Disable Auto Draw for the TextStim
+        """
         self._textStim.setAutoDraw(False)
         super(TextFeature,self).end()
 
@@ -289,9 +298,15 @@ class ImageFeature(AbstractFeature):
 
 
     def start(self):
+        """
+        enable AutoDraw for the ImageStim
+        """
         self._imageStim.setAutoDraw(True)
         super(ImageFeature,self).start()
 
     def end(self):
+        """
+        disable AutoDraw for the ImageStim
+        """
         self._imageStim.setAutoDraw(False)
         super(ImageFeature,self).end()

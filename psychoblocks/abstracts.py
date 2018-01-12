@@ -35,7 +35,7 @@ class AbstractFeature(object):
     @abstractmethod
     def __init__(self, origin, experiment = None):
         """
-        This method should be called by all deriving classes.
+        This method should be called by all classes to override this function.
 
         Parameters
         ----------
@@ -101,7 +101,7 @@ class AbstractCollection(AbstractFeature):
     @abstractmethod
     def __init__(self, origin, experiment = None):
         """
-        This method should be called by all deriving classes.
+        This method should be called by all classes to override this function.
 
         Parameters
         ----------
@@ -152,7 +152,7 @@ class AbstractLoop(AbstractFeature):
     @abstractmethod
     def __init__(self, origin, experiment = None):
         """
-        This method should be called by all deriving classes.
+        This method should be called by all classes to override this function.
 
         Parameters
         ----------
@@ -212,6 +212,9 @@ class AbstractLoop(AbstractFeature):
 class IteratingFeature(AbstractFeature):
 
     def __init__(self, featureList, experiment):
+        """
+        Create an instance of IteratingFeature. 
+        """
         super(IteratingFeature,self).__init__(None, experiment = experiment)
         self._featureList = list(featureList)
 
