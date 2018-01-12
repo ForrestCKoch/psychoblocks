@@ -10,19 +10,18 @@ import os
 import serial
 from psychopy import core, gui, data, logging, visual, clock
 
-import const
-import experiment
-from colls import *
+from psychoblocks import const, experiment, routines, features
 
 if (__name__ == '__main__'):
     app = experiment.Experiment('facename')
 
     # add routines to the app
-    app.addRoutine(FacenameInstructions(app))
-    app.addRoutine(CountdownSequence(app))
+    app.addRoutine(routines.FacenameInstructions(app))
+    app.addRoutine(features.MRISync(None, experiment = app))
+    app.addRoutine(routines.CountdownSequence(app))
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('facename/runs/run1.csv')
+    runCSV = data.importConditions(app.runfile)
     
     firstBlock = True
     for line in runCSV:
@@ -31,36 +30,35 @@ if (__name__ == '__main__'):
             firstBlock = False
         else:
             # after each block there should be a rest block
-            app.addRoutine(RestBlock(app))
+            app.addRoutine(routines.RestBlock(app))
 
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between known and novel trials
         if (int(line['isKnown']) == 1):
             isKnown = True
-            app.addRoutine(KnownCue(app))
+            app.addRoutine(routines.KnownCue(app))
         else:
             isKnown = False
-            app.addRoutine(NovelCue(app))
+            app.addRoutine(routines.NovelCue(app))
         firstTrial = True
 
         for trial in blockCSV:
             image = os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image'])
             if isKnown:
-                trialRoutine = KnownTrial(app, image, trial['name1'], trial['name2'], None)
+                trialRoutine = routines.KnownTrial(app, image, trial['name1'], trial['name2'], None)
             else:
-                trialRoutine = NovelTrial(app, image, trial['name'])
+                trialRoutine = routines.NovelTrial(app, image, trial['name'])
 
             # after each trial there should be a brief fixation
             if firstTrial:
                 firstTrial = False
             else: 
-                app.addRoutine(Fixation(app))
+                app.addRoutine(routines.Fixation(app))
 
             app.addRoutine(trialRoutine)
 
     
     # ready freddy go!
     app.run()
-    print('hello')
     # write out the logfile
     logging.flush()

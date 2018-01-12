@@ -133,15 +133,18 @@ class MRISync(AbstractFeature):
         """
         # run the origin features first
         super(MRISync,self).start() 
-        # wait for TLL pulse until being allowed to continue
-        self.experiment.responseBox.reset_input_buffer()
-        pulseSeen = False
-        while(not pulseSeen):
-            data = self.experiment.responseBox.read()
-            if data and ord(data) == const.TLL_PULSE:
-                timestamp = str(self.experiment.clock.getTime())
-                self.experiment.experimentHandler.addData('syncPulse',timestamp)
-                pulseSeen = True
+        # only execute if we have a response box
+        if self.experiment.responseBox:
+            # wait for TLL pulse until being allowed to continue
+            self.experiment.responseBox.reset_input_buffer()
+            pulseSeen = False
+            while(not pulseSeen):
+                data = self.experiment.responseBox.read()
+                if data and ord(data) == const.TLL_PULSE:
+                    timestamp = str(self.experiment.clock.getTime())
+                    self.experiment.experimentHandler.addData('syncPulse',timestamp)
+                    logging.info('Synced with pulse at '+self.experiment.clock.getTime())
+                    pulseSeen = True
 
 class ResponseBox(AbstractFeature):
     """
@@ -179,19 +182,20 @@ class ResponseBox(AbstractFeature):
         """
         Check for a response from the response box
         """
-        data = self.experiment.responseBox.read(size=1)
-        while(data and ord(data) == const.TLL_PULSE):
+        if self.experiment.responseBox:
             data = self.experiment.responseBox.read(size=1)
-        if data:
-            self._responseRead = True
-            timestamp = str(self.experiment.clock.getTime())
-            correct = data == self._correctResponse
-            self.experiment.experimentHandler.addData('response',data)
-            self.experiment.experimentHandler.addData('timestamp',timestamp)
-            self.experiment.experimentHandler.addData('correct',correct)
-            logging.data('Response Box: '+data)
-        # call origin feature
-        super(ResponseBox,self).run()
+            while(data and ord(data) == const.TLL_PULSE):
+                data = self.experiment.responseBox.read(size=1)
+            if data:
+                self._responseRead = True
+                timestamp = str(self.experiment.clock.getTime())
+                correct = data == self._correctResponse
+                self.experiment.experimentHandler.addData('response',data)
+                self.experiment.experimentHandler.addData('timestamp',timestamp)
+                self.experiment.experimentHandler.addData('correct',correct)
+                logging.data('Response Box: '+data)
+            # call origin feature
+            super(ResponseBox,self).run()
 
 class EscapeCheck(AbstractFeature):
     """

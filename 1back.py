@@ -19,7 +19,7 @@ if (__name__ == '__main__'):
     app.addRoutine(routines.CountdownSequence(app))
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('1back/runs/run1.csv')
+    runCSV = data.importConditions(app.runfile)
 
     firstBlock = True
 
