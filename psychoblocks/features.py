@@ -180,7 +180,8 @@ class ResponseBox(AbstractFeature):
         """
         self._responseRead = False
         # clear the buffer
-        self.experiment.responseBox.reset_input_buffer()
+        if(self.experiment.responseBox):
+            self.experiment.responseBox.reset_input_buffer()
         # call origin feature
         super(ResponseBox,self).start()
         # record the starting time of this response
