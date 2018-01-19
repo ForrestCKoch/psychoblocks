@@ -126,6 +126,30 @@ class FacenameInstructions(AbstractCollection):
     def feature(self):
         return self._feature
 
+class FacenameTrial(AbstractCollection):
+    
+    def __init__(self, experiment, image, name, duration = 5.0):
+        super(FacenameTrial,self).__init__(None, experiment = experiment)
+        feature = EscapeCheck(None, experiment = experiment)
+        feature = ResponseBox(feature, None)
+        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image)
+        feature = TextFeature(feature, text = "Is this person's name", 
+                                       pos=(0,.8), name = 'Novel Trial Prompt')
+        feature = TextFeature(feature, text= name+'?', pos= (0,.6), name= 'Trial Name: '+name)
+        feature = TextFeature(feature, text = 'YES', name = 'Yes Prompt', pos = (-.33, -.66))
+        feature = TextFeature(feature, text = 'NO', name = 'No Prompt', pos = (.33,-.66))
+        feature = TimedLoop(feature, duration)
+        self._feature = feature
+     
+    @property
+    def feature(self):
+        return self._feature
+
+    def run(self):
+        # advance the data entry to next
+        self.feature.experiment.experimentHandler.nextEntry()
+        super(FacenameTrial,self).run()
+
 class NovelTrial(AbstractCollection):
     
     def __init__(self, experiment, image, name, duration = 5.0):
@@ -175,7 +199,7 @@ class NovelCue(AbstractCollection):
     def __init__(self, experiment, duration = 2.0):
         super(NovelCue,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
-        feature = TextFeature(feature, text='KNOWN task', name = 'Known Cue')
+        feature = TextFeature(feature, text='NOVEL task', name = 'Known Cue')
         feature = TimedLoop(feature, duration)
         self._feature = feature
 
