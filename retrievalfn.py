@@ -19,7 +19,7 @@ if (__name__ == '__main__'):
         examinerUpdate = routines.UpdateExaminerWindow(app)
         app.addRoutine(examinerUpdate) 
 
-    app.addRoutine(routines.FacenameInstructions(app))
+    app.addRoutine(routines.FNInstructions(app))
     # sync before instructions
     app.addRoutine(features.MRISync(None, experiment = app))
     app.addRoutine(routines.CountdownSequence(app))
@@ -39,9 +39,6 @@ if (__name__ == '__main__'):
             isKnown = False
         firstTrial = True
         
-        # sync before each block
-        app.addRoutine(features.MRISync(None, experiment = app))
-
         firstTrial = True
 
         for trial in blockCSV:

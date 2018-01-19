@@ -126,6 +126,33 @@ class FacenameInstructions(AbstractCollection):
     def feature(self):
         return self._feature
 
+class FNInstructions(AbstractCollection):
+    
+    def __init__(self, experiment):
+        super(FNInstructions,self).__init__(None, experiment = experiment)
+        textlist = ['You will be shown a series of face name pairs.\n\n'
+                    'If you recognize the face, and the name is correct, '
+                    'press YES.  Otherwise, press NO.']
+                   
+                  
+                 
+                
+        featureList = list()
+        count = 1
+
+        for text in textlist:
+            feature = EscapeCheck(None, experiment = experiment)
+            feature = TextFeature(feature, text = text, name = 'Instructions '+str(count))
+            feature = SpacebarLoop(feature)
+            featureList.append(feature)
+            count += 1
+
+        self._feature = IteratingFeature(featureList,experiment)
+    
+    @property
+    def feature(self):
+        return self._feature
+
 class FacenameTrial(AbstractCollection):
     
     def __init__(self, experiment, image, name, duration = 5.0):
