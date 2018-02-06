@@ -127,8 +127,8 @@ known_runs = list()
 
 # we need to do this for each run to keep things balanced
 for i in range(0, RUNS):
-    copy_males = copy.deepcopy(known_males)
-    copy_females = copy.deepcopy(known_females)
+    unused_males = copy.deepcopy(known_males)
+    unused_females = copy.deepcopy(known_females)
     # keep track of how many times each stimulus is used
     used = dict()
     # keep track of correct choices
@@ -145,26 +145,30 @@ for i in range(0, RUNS):
     max_inc_known = int(TRIALS * KNOWN * INCORRECT_KNOWN / 2)
     max_inc_novel = int(TRIALS * KNOWN * INCORRECT_NOVEL / 2)
 
-    for j in copy_males:
+    for j in unused_males:
         used[j[1]] = 0
-    for j in copy_females:
+    for j in unused_females:
         used[j[1]] = 0
     known_blocks = list()
     for j in range(0, KNOWN):
         block = list()
+        copy_males = copy.deepcopy(unused_males)
+        copy_females = copy.deepcopy(unused_females)
+        random.shuffle(copy_males)
+        random.shuffle(copy_females)
         for k in range(0, TRIALS / 2):
             # chose a random male and a random female
-            m = copy_males[random.randrange(0,len(copy_males))]
-            f = copy_females[random.randrange(0,len(copy_females))]
+            m = copy_males.pop()
+            f = copy_females.pop()
 
             # increment dictionary values
             used[m[1]] += 1
             used[f[1]] += 1
             # check that we haven't hit use limit
             if used[m[1]] == TRIALS:
-                copy_males.remove(m)
+                unused_males.remove(m)
             if used[f[1]] == TRIALS:
-                copy_females.remove(f)
+                unused_females.remove(f)
             # stupid bloody python with it's stupid bloody copying....
             m = copy.deepcopy(m)
             f = copy.deepcopy(f)
@@ -234,7 +238,6 @@ for i in range(0, RUNS):
 
     runlist.append(x)
 
-    
 for i in range(0, RUNS):
     # write our runfile
     with open('r'+run+'-'+str(i)+'.csv','w') as r:
@@ -253,5 +256,5 @@ for i in range(0, RUNS):
             with open('r'+run+'-'+str(i)+'b'+str(j)+'.csv','w') as b:
                 blockwriter = csv.writer(b,delimiter=',')
                 blockwriter.writerow(['image','name','corr'])
-                for trial in block:
-                    blockwriter.writerow(trial[0])
+                for trial in block[0]:
+                    blockwriter.writerow(trial)

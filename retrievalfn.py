@@ -44,7 +44,7 @@ if (__name__ == '__main__'):
         for trial in blockCSV:
             image = os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image'])
             if isKnown:
-                trialRoutine = routines.FacenameTrial(app, image, trial['name1'],duration=3.5)
+                trialRoutine = routines.FacenameTrial(app, image, trial['name'],duration=3.5)
             else:
                 trialRoutine = routines.FacenameTrial(app, image, trial['name'],duration=3.5)
 
