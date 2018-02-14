@@ -13,7 +13,7 @@ from psychopy import core, gui, data, logging, visual, clock
 from psychoblocks import const, experiment, routines, features
 
 if (__name__ == '__main__'):
-    app = experiment.Experiment('encodefn')
+    app = experiment.Experiment('facename')
 
     if app.examinerWindow:
         examinerUpdate = routines.UpdateExaminerWindow(app)

@@ -99,7 +99,7 @@ DEFAULT_STIMULI_FOLDER = 'stimuli'
 str: default stimuli folder
 """
 
-DEFAULT_RESULTS_FOLDER = 'data'
+DEFAULT_RESULTS_FOLDER = 'results'
 """
 str: default results folder
 """
