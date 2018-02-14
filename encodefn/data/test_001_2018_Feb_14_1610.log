@@ -1,0 +1,1692 @@
+14.6782 	WARNING 	Monitor specification not found. Creating a temporary one...
+15.7722 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fbaea094110>, multiSample=False, name='window1', numSamples=2, pos=[128, 128], screen=1, size=array([1024,  768]), stereo=False, units=u'norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.7722 	EXP 	window1: recordFrameIntervals = False
+19.1113 	EXP 	window1: recordFrameIntervals = True
+20.1912 	WARNING 	t of last frame was 44.65ms (=1/22)
+20.3329 	WARNING 	t of last frame was 49.01ms (=1/20)
+20.4481 	WARNING 	t of last frame was 52.58ms (=1/19)
+20.5361 	WARNING 	t of last frame was 55.90ms (=1/17)
+20.6327 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+22.9522 	DATA 	Mouse: Left button down, pos=(602,528)
+23.0194 	DATA 	Mouse:  Left button up, pos=(602,528)
+25.3927 	EXP 	window1: recordFrameIntervals = False
+25.3927 	INFO 	Particpant screen has a framerate of 29.98164418599481 hz
+25.5414 	EXP 	Created Instructions 1 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5447 	EXP 	Created Countdown 5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Countdown 5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'5', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5475 	EXP 	Created Countdown 4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Countdown 4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'4', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5505 	EXP 	Created Countdown 3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Countdown 3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'3', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5534 	EXP 	Created Countdown 2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Countdown 2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'2', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5621 	EXP 	Created Countdown 1 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Countdown 1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'1', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5642 	EXP 	Imported encodefn/runs/s1r1-0.csv as conditions, 4 conditions, 3 params
+25.5655 	EXP 	Imported encodefn/blocks/s1r1-0b0.csv as conditions, 8 conditions, 3 params
+25.5759 	EXP 	Created Trial Image: stimuli/CFD-WF-007-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-007-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-007-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.5944 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.5999 	EXP 	Created Trial Name: LISA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: LISA', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'LISA?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6034 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6066 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6136 	EXP 	Created Trial Image: stimuli/CFD-WM-041-021-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-041-021-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-041-021-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.6312 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6373 	EXP 	Created Trial Name: DARREN = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: DARREN', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'DARREN?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6407 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6439 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6467 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6535 	EXP 	Created Trial Image: stimuli/CFD-WF-212-050-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-212-050-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-212-050-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.6711 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6772 	EXP 	Created Trial Name: LYNETTE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: LYNETTE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'LYNETTE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6806 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6837 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6864 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.6969 	EXP 	Created Trial Image: stimuli/CFD-WM-245-123-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-245-123-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-245-123-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.7143 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7197 	EXP 	Created Trial Name: ETHAN = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: ETHAN', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'ETHAN?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7232 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7263 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7288 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7353 	EXP 	Created Trial Image: stimuli/CFD-WM-020-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-020-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-020-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.7531 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7588 	EXP 	Created Trial Name: ROBERT = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: ROBERT', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'ROBERT?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7624 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7655 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7682 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7754 	EXP 	Created Trial Image: stimuli/CFD-WF-026-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-026-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-026-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.7931 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.7986 	EXP 	Created Trial Name: RACHEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: RACHEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'RACHEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8021 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8052 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8079 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8146 	EXP 	Created Trial Image: stimuli/CFD-WF-027-003-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-027-003-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-027-003-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.8322 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8383 	EXP 	Created Trial Name: JUDITH = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: JUDITH', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'JUDITH?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8417 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8449 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8476 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8582 	EXP 	Created Trial Image: stimuli/CFD-WM-227-099-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-227-099-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-227-099-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.8756 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8805 	EXP 	Created Trial Name: RILEY = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: RILEY', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'RILEY?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8840 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8871 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8897 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8935 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.8951 	EXP 	Imported encodefn/blocks/s1r1-0b1.csv as conditions, 8 conditions, 3 params
+25.9017 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.9197 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9264 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9301 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9333 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9406 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.9581 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9636 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9672 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9702 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9729 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+25.9790 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+25.9968 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0033 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0069 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0100 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0127 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0200 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.0373 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0425 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0459 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0490 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0517 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0581 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.0761 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0828 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0863 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0894 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0920 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.0989 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.1167 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1220 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1253 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1284 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1311 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1373 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.1547 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1611 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1645 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1677 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1703 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.1778 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.1951 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2005 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2040 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2071 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2097 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2125 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2142 	EXP 	Imported encodefn/blocks/s1r1-0b2.csv as conditions, 8 conditions, 3 params
+26.2209 	EXP 	Created Trial Image: stimuli/CFD-WF-222-092-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-222-092-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-222-092-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.2386 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2443 	EXP 	Created Trial Name: BELINDA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: BELINDA', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'BELINDA?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2479 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2523 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2591 	EXP 	Created Trial Image: stimuli/CFD-WM-200-034-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-200-034-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-200-034-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.2770 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2819 	EXP 	Created Trial Name: LUCAS = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: LUCAS', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'LUCAS?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2856 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2888 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2914 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.2976 	EXP 	Created Trial Image: stimuli/CFD-WM-029-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-029-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-029-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.3150 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3197 	EXP 	Created Trial Name: LIAM = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: LIAM', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'LIAM?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3231 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3262 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3288 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3363 	EXP 	Created Trial Image: stimuli/CFD-WF-006-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-006-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-006-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.3541 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3600 	EXP 	Created Trial Name: KATHRYN = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: KATHRYN', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'KATHRYN?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3635 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3667 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3694 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3764 	EXP 	Created Trial Image: stimuli/CFD-WF-001-003-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-001-003-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-001-003-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.3941 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.3990 	EXP 	Created Trial Name: TANIA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: TANIA', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'TANIA?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4026 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4058 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4085 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4150 	EXP 	Created Trial Image: stimuli/CFD-WM-003-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-003-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-003-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.4328 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4375 	EXP 	Created Trial Name: NOAH = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: NOAH', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'NOAH?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4409 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4439 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4465 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4531 	EXP 	Created Trial Image: stimuli/CFD-WM-237-052-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-237-052-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-237-052-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.4708 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4754 	EXP 	Created Trial Name: JAKE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: JAKE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'JAKE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4788 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4819 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4847 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.4919 	EXP 	Created Trial Image: stimuli/CFD-WF-038-021-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-038-021-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-038-021-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.5095 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5138 	EXP 	Created Trial Name: ZOE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: ZOE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'ZOE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5175 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5206 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5233 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5258 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5274 	EXP 	Imported encodefn/blocks/s1r1-0b3.csv as conditions, 8 conditions, 3 params
+26.5340 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.5517 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5582 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5621 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5652 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5726 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.5901 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5956 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.5993 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6038 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6065 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6134 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.6308 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6374 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6408 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6440 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6466 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6538 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.6714 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6766 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6800 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6831 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6859 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.6924 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.7099 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7162 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7198 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7231 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7257 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7330 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.7505 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7559 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7593 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7623 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7649 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7716 	EXP 	Created Trial Image: stimuli/CFD-WF-223-133-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-223-133-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-223-133-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.7892 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7955 	EXP 	Created Trial Name: CHRISTINE = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: CHRISTINE', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'CHRISTINE?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.7988 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8020 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8047 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8118 	EXP 	Created Trial Image: stimuli/CFD-WM-206-045-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-206-045-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-206-045-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+26.8297 	EXP 	Created Trial Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Trial Prompt', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text=u'Is this name a good fit for the face?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8354 	EXP 	Created Trial Name: SAMUEL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name=u'Trial Name: SAMUEL', opacity=1.0, ori=0.0, pos=array([0. , 0.6]), rgb=array([1., 1., 1.]), text=u'SAMUEL?', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8391 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'YES', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8421 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text=u'NO', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8447 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8473 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8474 	INFO 	starting routine FNInstructions ...
+26.8477 	DATA 	Keypress: space
+26.8490 	EXP 	window1: blendMode = 'avg'
+26.8757 	EXP 	Instructions 1: autoDraw = True
+26.8759 	INFO 	finished routine FNInstructions ...
+26.8759 	INFO 	starting routine MRISync ...
+28.0611 	INFO 	Synced with pulse at 13.3833220005
+28.0611 	INFO 	finished routine MRISync ...
+28.0611 	INFO 	starting routine CountdownSequence ...
+28.0613 	DATA 	Keypress: space
+28.0619 	EXP 	window1: blendMode = 'avg'
+28.0958 	EXP 	Instructions 1: autoDraw = False
+28.0958 	EXP 	Countdown 5: autoDraw = True
+28.0963 	EXP 	window1: blendMode = 'avg'
+28.1297 	EXP 	window1: blendMode = 'avg'
+28.1631 	EXP 	window1: blendMode = 'avg'
+28.1964 	EXP 	window1: blendMode = 'avg'
+28.2299 	EXP 	window1: blendMode = 'avg'
+28.2633 	EXP 	window1: blendMode = 'avg'
+28.2966 	EXP 	window1: blendMode = 'avg'
+28.3300 	EXP 	window1: blendMode = 'avg'
+28.3635 	EXP 	window1: blendMode = 'avg'
+28.3969 	EXP 	window1: blendMode = 'avg'
+28.4303 	EXP 	window1: blendMode = 'avg'
+28.4636 	EXP 	window1: blendMode = 'avg'
+28.4970 	EXP 	window1: blendMode = 'avg'
+28.5304 	EXP 	window1: blendMode = 'avg'
+28.5638 	EXP 	window1: blendMode = 'avg'
+28.5974 	EXP 	window1: blendMode = 'avg'
+28.6306 	EXP 	window1: blendMode = 'avg'
+28.6640 	EXP 	window1: blendMode = 'avg'
+28.6974 	EXP 	window1: blendMode = 'avg'
+28.7307 	EXP 	window1: blendMode = 'avg'
+28.7642 	EXP 	window1: blendMode = 'avg'
+28.7976 	EXP 	window1: blendMode = 'avg'
+28.8311 	EXP 	window1: blendMode = 'avg'
+28.8642 	EXP 	window1: blendMode = 'avg'
+28.8976 	EXP 	window1: blendMode = 'avg'
+28.9310 	EXP 	window1: blendMode = 'avg'
+28.9644 	EXP 	window1: blendMode = 'avg'
+28.9978 	EXP 	window1: blendMode = 'avg'
+29.0314 	EXP 	window1: blendMode = 'avg'
+29.0642 	EXP 	Countdown 5: autoDraw = False
+29.0642 	EXP 	Countdown 4: autoDraw = True
+29.0646 	EXP 	window1: blendMode = 'avg'
+29.0980 	EXP 	window1: blendMode = 'avg'
+29.1314 	EXP 	window1: blendMode = 'avg'
+29.1648 	EXP 	window1: blendMode = 'avg'
+29.1982 	EXP 	window1: blendMode = 'avg'
+29.2316 	EXP 	window1: blendMode = 'avg'
+29.2650 	EXP 	window1: blendMode = 'avg'
+29.2984 	EXP 	window1: blendMode = 'avg'
+29.3318 	EXP 	window1: blendMode = 'avg'
+29.3652 	EXP 	window1: blendMode = 'avg'
+29.3986 	EXP 	window1: blendMode = 'avg'
+29.4320 	EXP 	window1: blendMode = 'avg'
+29.4655 	EXP 	window1: blendMode = 'avg'
+29.4989 	EXP 	window1: blendMode = 'avg'
+29.5322 	EXP 	window1: blendMode = 'avg'
+29.5657 	EXP 	window1: blendMode = 'avg'
+29.5993 	EXP 	window1: blendMode = 'avg'
+29.6324 	EXP 	window1: blendMode = 'avg'
+29.6661 	EXP 	window1: blendMode = 'avg'
+29.6992 	EXP 	window1: blendMode = 'avg'
+29.7326 	EXP 	window1: blendMode = 'avg'
+29.7661 	EXP 	window1: blendMode = 'avg'
+29.7994 	EXP 	window1: blendMode = 'avg'
+29.8327 	EXP 	window1: blendMode = 'avg'
+29.8662 	EXP 	window1: blendMode = 'avg'
+29.8996 	EXP 	window1: blendMode = 'avg'
+29.9333 	EXP 	window1: blendMode = 'avg'
+29.9668 	EXP 	window1: blendMode = 'avg'
+30.0005 	EXP 	window1: blendMode = 'avg'
+30.0329 	EXP 	Countdown 4: autoDraw = False
+30.0329 	EXP 	Countdown 3: autoDraw = True
+30.0333 	EXP 	window1: blendMode = 'avg'
+30.0667 	EXP 	window1: blendMode = 'avg'
+30.1001 	EXP 	window1: blendMode = 'avg'
+30.1334 	EXP 	window1: blendMode = 'avg'
+30.1668 	EXP 	window1: blendMode = 'avg'
+30.2002 	EXP 	window1: blendMode = 'avg'
+30.2340 	EXP 	window1: blendMode = 'avg'
+30.2674 	EXP 	window1: blendMode = 'avg'
+30.3006 	EXP 	window1: blendMode = 'avg'
+30.3340 	EXP 	window1: blendMode = 'avg'
+30.3673 	EXP 	window1: blendMode = 'avg'
+30.4006 	EXP 	window1: blendMode = 'avg'
+30.4339 	EXP 	window1: blendMode = 'avg'
+30.4674 	EXP 	window1: blendMode = 'avg'
+30.5007 	EXP 	window1: blendMode = 'avg'
+30.5341 	EXP 	window1: blendMode = 'avg'
+30.5676 	EXP 	window1: blendMode = 'avg'
+30.6010 	EXP 	window1: blendMode = 'avg'
+30.6344 	EXP 	window1: blendMode = 'avg'
+30.6677 	EXP 	window1: blendMode = 'avg'
+30.7011 	EXP 	window1: blendMode = 'avg'
+30.7345 	EXP 	window1: blendMode = 'avg'
+30.7679 	EXP 	window1: blendMode = 'avg'
+30.8014 	EXP 	window1: blendMode = 'avg'
+30.8349 	EXP 	window1: blendMode = 'avg'
+30.8682 	EXP 	window1: blendMode = 'avg'
+30.9016 	EXP 	window1: blendMode = 'avg'
+30.9351 	EXP 	window1: blendMode = 'avg'
+30.9686 	EXP 	window1: blendMode = 'avg'
+31.0014 	EXP 	Countdown 3: autoDraw = False
+31.0014 	EXP 	Countdown 2: autoDraw = True
+31.0018 	EXP 	window1: blendMode = 'avg'
+31.0351 	EXP 	window1: blendMode = 'avg'
+31.0686 	EXP 	window1: blendMode = 'avg'
+31.1020 	EXP 	window1: blendMode = 'avg'
+31.1353 	EXP 	window1: blendMode = 'avg'
+31.1687 	EXP 	window1: blendMode = 'avg'
+31.2021 	EXP 	window1: blendMode = 'avg'
+31.2355 	EXP 	window1: blendMode = 'avg'
+31.2690 	EXP 	window1: blendMode = 'avg'
+31.3023 	EXP 	window1: blendMode = 'avg'
+31.3358 	EXP 	window1: blendMode = 'avg'
+31.3692 	EXP 	window1: blendMode = 'avg'
+31.4027 	EXP 	window1: blendMode = 'avg'
+31.4362 	EXP 	window1: blendMode = 'avg'
+31.4695 	EXP 	window1: blendMode = 'avg'
+31.5028 	EXP 	window1: blendMode = 'avg'
+31.5362 	EXP 	window1: blendMode = 'avg'
+31.5696 	EXP 	window1: blendMode = 'avg'
+31.6030 	EXP 	window1: blendMode = 'avg'
+31.6364 	EXP 	window1: blendMode = 'avg'
+31.6697 	EXP 	window1: blendMode = 'avg'
+31.7032 	EXP 	window1: blendMode = 'avg'
+31.7365 	EXP 	window1: blendMode = 'avg'
+31.7700 	EXP 	window1: blendMode = 'avg'
+31.8033 	EXP 	window1: blendMode = 'avg'
+31.8368 	EXP 	window1: blendMode = 'avg'
+31.8701 	EXP 	window1: blendMode = 'avg'
+31.9035 	EXP 	window1: blendMode = 'avg'
+31.9373 	EXP 	window1: blendMode = 'avg'
+31.9700 	EXP 	Countdown 2: autoDraw = False
+31.9700 	EXP 	Countdown 1: autoDraw = True
+31.9704 	EXP 	window1: blendMode = 'avg'
+32.0037 	EXP 	window1: blendMode = 'avg'
+32.0371 	EXP 	window1: blendMode = 'avg'
+32.0707 	EXP 	window1: blendMode = 'avg'
+32.1040 	EXP 	window1: blendMode = 'avg'
+32.1374 	EXP 	window1: blendMode = 'avg'
+32.1707 	EXP 	window1: blendMode = 'avg'
+32.2056 	EXP 	window1: blendMode = 'avg'
+32.2390 	EXP 	window1: blendMode = 'avg'
+32.2723 	EXP 	window1: blendMode = 'avg'
+32.3056 	EXP 	window1: blendMode = 'avg'
+32.3389 	EXP 	window1: blendMode = 'avg'
+32.3723 	EXP 	window1: blendMode = 'avg'
+32.4056 	EXP 	window1: blendMode = 'avg'
+32.4389 	EXP 	window1: blendMode = 'avg'
+32.4722 	EXP 	window1: blendMode = 'avg'
+32.5056 	EXP 	window1: blendMode = 'avg'
+32.5389 	EXP 	window1: blendMode = 'avg'
+32.5723 	EXP 	window1: blendMode = 'avg'
+32.6056 	EXP 	window1: blendMode = 'avg'
+32.6389 	EXP 	window1: blendMode = 'avg'
+32.6721 	EXP 	window1: blendMode = 'avg'
+32.7055 	EXP 	window1: blendMode = 'avg'
+32.7388 	EXP 	window1: blendMode = 'avg'
+32.7722 	EXP 	window1: blendMode = 'avg'
+32.8053 	EXP 	window1: blendMode = 'avg'
+32.8388 	EXP 	window1: blendMode = 'avg'
+32.8723 	EXP 	window1: blendMode = 'avg'
+32.9053 	INFO 	finished routine CountdownSequence ...
+32.9053 	INFO 	starting routine FacenameTrial ...
+32.9056 	INFO 	starting routine timer from 18.2278051376
+36.4248 	DATA 	Response Box: d
+36.4248 	DATA 	ResponseTime: 3.51919388771
+36.4250 	INFO 	finished routine FacenameTrial ...
+36.4253 	INFO 	starting routine Fixation ...
+36.4260 	EXP 	window1: blendMode = 'avg'
+36.4807 	EXP 	Countdown 1: autoDraw = False
+36.4807 	EXP 	No Prompt: autoDraw = True
+36.4807 	EXP 	Yes Prompt: autoDraw = True
+36.4807 	EXP 	Trial Name: LISA: autoDraw = True
+36.4807 	EXP 	Trial Prompt: autoDraw = True
+36.4807 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = True
+36.4807 	EXP 	No Prompt: autoDraw = False
+36.4807 	EXP 	Yes Prompt: autoDraw = False
+36.4807 	EXP 	Trial Name: LISA: autoDraw = False
+36.4807 	EXP 	Trial Prompt: autoDraw = False
+36.4807 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = False
+36.4807 	EXP 	Fixation: autoDraw = True
+36.4811 	EXP 	window1: blendMode = 'avg'
+36.5201 	EXP 	window1: blendMode = 'avg'
+36.5530 	EXP 	window1: blendMode = 'avg'
+36.6115 	EXP 	window1: blendMode = 'avg'
+36.6535 	EXP 	window1: blendMode = 'avg'
+36.6863 	EXP 	window1: blendMode = 'avg'
+36.7318 	EXP 	window1: blendMode = 'avg'
+36.7668 	EXP 	window1: blendMode = 'avg'
+36.8324 	EXP 	window1: blendMode = 'avg'
+36.8873 	EXP 	window1: blendMode = 'avg'
+36.9215 	EXP 	window1: blendMode = 'avg'
+36.9872 	EXP 	window1: blendMode = 'avg'
+37.0200 	EXP 	window1: blendMode = 'avg'
+37.0638 	INFO 	finished routine Fixation ...
+37.0639 	INFO 	starting routine FacenameTrial ...
+37.0641 	INFO 	starting routine timer from 22.3862981796
+37.0677 	DATA 	Response Box: d
+37.0677 	DATA 	ResponseTime: 0.00364685058594
+37.0678 	INFO 	finished routine FacenameTrial ...
+37.0679 	INFO 	starting routine Fixation ...
+37.0684 	EXP 	window1: blendMode = 'avg'
+37.1020 	EXP 	Fixation: autoDraw = False
+37.1020 	EXP 	No Prompt: autoDraw = True
+37.1020 	EXP 	Yes Prompt: autoDraw = True
+37.1020 	EXP 	Trial Name: DARREN: autoDraw = True
+37.1020 	EXP 	Trial Prompt: autoDraw = True
+37.1020 	EXP 	Trial Image: stimuli/CFD-WM-041-021-N.jpg: autoDraw = True
+37.1020 	EXP 	No Prompt: autoDraw = False
+37.1020 	EXP 	Yes Prompt: autoDraw = False
+37.1020 	EXP 	Trial Name: DARREN: autoDraw = False
+37.1020 	EXP 	Trial Prompt: autoDraw = False
+37.1020 	EXP 	Trial Image: stimuli/CFD-WM-041-021-N.jpg: autoDraw = False
+37.1020 	EXP 	Fixation: autoDraw = True
+37.1024 	EXP 	window1: blendMode = 'avg'
+37.1437 	EXP 	window1: blendMode = 'avg'
+37.1886 	EXP 	window1: blendMode = 'avg'
+37.2364 	EXP 	window1: blendMode = 'avg'
+37.2809 	EXP 	window1: blendMode = 'avg'
+37.3318 	EXP 	window1: blendMode = 'avg'
+37.3942 	EXP 	window1: blendMode = 'avg'
+37.4360 	EXP 	window1: blendMode = 'avg'
+37.4776 	EXP 	window1: blendMode = 'avg'
+37.5326 	EXP 	window1: blendMode = 'avg'
+37.5872 	EXP 	window1: blendMode = 'avg'
+37.6205 	EXP 	window1: blendMode = 'avg'
+37.6508 	EXP 	window1: blendMode = 'avg'
+37.6836 	INFO 	finished routine Fixation ...
+37.6837 	INFO 	starting routine FacenameTrial ...
+37.6840 	INFO 	starting routine timer from 23.0061950684
+37.6861 	DATA 	Response Box: d
+37.6861 	DATA 	ResponseTime: 0.0021390914917
+37.6862 	INFO 	finished routine FacenameTrial ...
+37.6863 	INFO 	starting routine Fixation ...
+37.6869 	EXP 	window1: blendMode = 'avg'
+37.7424 	EXP 	Fixation: autoDraw = False
+37.7424 	EXP 	No Prompt: autoDraw = True
+37.7424 	EXP 	Yes Prompt: autoDraw = True
+37.7424 	EXP 	Trial Name: LYNETTE: autoDraw = True
+37.7424 	EXP 	Trial Prompt: autoDraw = True
+37.7424 	EXP 	Trial Image: stimuli/CFD-WF-212-050-N.jpg: autoDraw = True
+37.7424 	EXP 	No Prompt: autoDraw = False
+37.7424 	EXP 	Yes Prompt: autoDraw = False
+37.7424 	EXP 	Trial Name: LYNETTE: autoDraw = False
+37.7424 	EXP 	Trial Prompt: autoDraw = False
+37.7424 	EXP 	Trial Image: stimuli/CFD-WF-212-050-N.jpg: autoDraw = False
+37.7424 	EXP 	Fixation: autoDraw = True
+37.7428 	EXP 	window1: blendMode = 'avg'
+37.7745 	EXP 	window1: blendMode = 'avg'
+37.8219 	EXP 	window1: blendMode = 'avg'
+37.8658 	EXP 	window1: blendMode = 'avg'
+37.9033 	EXP 	window1: blendMode = 'avg'
+37.9368 	EXP 	window1: blendMode = 'avg'
+37.9679 	EXP 	window1: blendMode = 'avg'
+38.0012 	EXP 	window1: blendMode = 'avg'
+38.0345 	EXP 	window1: blendMode = 'avg'
+38.0679 	EXP 	window1: blendMode = 'avg'
+38.1014 	EXP 	window1: blendMode = 'avg'
+38.1351 	EXP 	window1: blendMode = 'avg'
+38.1681 	EXP 	window1: blendMode = 'avg'
+38.2012 	INFO 	finished routine Fixation ...
+38.2013 	INFO 	starting routine FacenameTrial ...
+38.2015 	INFO 	starting routine timer from 23.523720026
+38.2104 	DATA 	Response Box: d
+38.2104 	DATA 	ResponseTime: 0.00892210006714
+38.2106 	INFO 	finished routine FacenameTrial ...
+38.2108 	INFO 	starting routine Fixation ...
+38.2118 	EXP 	window1: blendMode = 'avg'
+38.2562 	EXP 	Fixation: autoDraw = False
+38.2562 	EXP 	No Prompt: autoDraw = True
+38.2562 	EXP 	Yes Prompt: autoDraw = True
+38.2562 	EXP 	Trial Name: ETHAN: autoDraw = True
+38.2562 	EXP 	Trial Prompt: autoDraw = True
+38.2562 	EXP 	Trial Image: stimuli/CFD-WM-245-123-N.jpg: autoDraw = True
+38.2562 	EXP 	No Prompt: autoDraw = False
+38.2562 	EXP 	Yes Prompt: autoDraw = False
+38.2562 	EXP 	Trial Name: ETHAN: autoDraw = False
+38.2562 	EXP 	Trial Prompt: autoDraw = False
+38.2562 	EXP 	Trial Image: stimuli/CFD-WM-245-123-N.jpg: autoDraw = False
+38.2562 	EXP 	Fixation: autoDraw = True
+38.2565 	EXP 	window1: blendMode = 'avg'
+38.3025 	EXP 	window1: blendMode = 'avg'
+38.3528 	EXP 	window1: blendMode = 'avg'
+38.3969 	EXP 	window1: blendMode = 'avg'
+38.4543 	EXP 	window1: blendMode = 'avg'
+38.5025 	EXP 	window1: blendMode = 'avg'
+38.5698 	EXP 	window1: blendMode = 'avg'
+38.6152 	EXP 	window1: blendMode = 'avg'
+38.6690 	EXP 	window1: blendMode = 'avg'
+38.7185 	EXP 	window1: blendMode = 'avg'
+38.7807 	EXP 	window1: blendMode = 'avg'
+38.8342 	EXP 	window1: blendMode = 'avg'
+38.8965 	EXP 	window1: blendMode = 'avg'
+38.9344 	INFO 	finished routine Fixation ...
+38.9345 	INFO 	starting routine FacenameTrial ...
+38.9347 	INFO 	starting routine timer from 24.2568981647
+38.9394 	DATA 	Response Box: d
+38.9394 	DATA 	ResponseTime: 0.00471496582031
+38.9395 	INFO 	finished routine FacenameTrial ...
+38.9397 	INFO 	starting routine Fixation ...
+38.9403 	EXP 	window1: blendMode = 'avg'
+38.9982 	EXP 	Fixation: autoDraw = False
+38.9982 	EXP 	No Prompt: autoDraw = True
+38.9982 	EXP 	Yes Prompt: autoDraw = True
+38.9982 	EXP 	Trial Name: ROBERT: autoDraw = True
+38.9982 	EXP 	Trial Prompt: autoDraw = True
+38.9982 	EXP 	Trial Image: stimuli/CFD-WM-020-001-N.jpg: autoDraw = True
+38.9982 	EXP 	No Prompt: autoDraw = False
+38.9982 	EXP 	Yes Prompt: autoDraw = False
+38.9982 	EXP 	Trial Name: ROBERT: autoDraw = False
+38.9982 	EXP 	Trial Prompt: autoDraw = False
+38.9982 	EXP 	Trial Image: stimuli/CFD-WM-020-001-N.jpg: autoDraw = False
+38.9982 	EXP 	Fixation: autoDraw = True
+38.9988 	EXP 	window1: blendMode = 'avg'
+39.0506 	EXP 	window1: blendMode = 'avg'
+39.1128 	EXP 	window1: blendMode = 'avg'
+39.1510 	EXP 	window1: blendMode = 'avg'
+39.2095 	EXP 	window1: blendMode = 'avg'
+39.2514 	EXP 	window1: blendMode = 'avg'
+39.3136 	EXP 	window1: blendMode = 'avg'
+39.3518 	EXP 	window1: blendMode = 'avg'
+39.3975 	EXP 	window1: blendMode = 'avg'
+39.4517 	EXP 	window1: blendMode = 'avg'
+39.4979 	EXP 	window1: blendMode = 'avg'
+39.5480 	EXP 	window1: blendMode = 'avg'
+39.6170 	EXP 	window1: blendMode = 'avg'
+39.6524 	INFO 	finished routine Fixation ...
+39.6524 	INFO 	starting routine FacenameTrial ...
+39.6527 	INFO 	starting routine timer from 24.974968195
+39.6603 	DATA 	Response Box: d
+39.6603 	DATA 	ResponseTime: 0.00754284858704
+39.6604 	INFO 	finished routine FacenameTrial ...
+39.6606 	INFO 	starting routine Fixation ...
+39.6615 	EXP 	window1: blendMode = 'avg'
+39.7045 	EXP 	Fixation: autoDraw = False
+39.7045 	EXP 	No Prompt: autoDraw = True
+39.7045 	EXP 	Yes Prompt: autoDraw = True
+39.7045 	EXP 	Trial Name: RACHEL: autoDraw = True
+39.7045 	EXP 	Trial Prompt: autoDraw = True
+39.7045 	EXP 	Trial Image: stimuli/CFD-WF-026-002-N.jpg: autoDraw = True
+39.7045 	EXP 	No Prompt: autoDraw = False
+39.7045 	EXP 	Yes Prompt: autoDraw = False
+39.7045 	EXP 	Trial Name: RACHEL: autoDraw = False
+39.7045 	EXP 	Trial Prompt: autoDraw = False
+39.7045 	EXP 	Trial Image: stimuli/CFD-WF-026-002-N.jpg: autoDraw = False
+39.7045 	EXP 	Fixation: autoDraw = True
+39.7048 	EXP 	window1: blendMode = 'avg'
+39.7532 	EXP 	window1: blendMode = 'avg'
+39.7915 	EXP 	window1: blendMode = 'avg'
+39.8197 	EXP 	window1: blendMode = 'avg'
+39.8527 	EXP 	window1: blendMode = 'avg'
+39.8883 	EXP 	window1: blendMode = 'avg'
+39.9211 	EXP 	window1: blendMode = 'avg'
+39.9545 	EXP 	window1: blendMode = 'avg'
+39.9878 	EXP 	window1: blendMode = 'avg'
+40.0212 	EXP 	window1: blendMode = 'avg'
+40.0545 	EXP 	window1: blendMode = 'avg'
+40.0884 	EXP 	window1: blendMode = 'avg'
+40.1213 	EXP 	window1: blendMode = 'avg'
+40.1543 	INFO 	finished routine Fixation ...
+40.1543 	INFO 	starting routine FacenameTrial ...
+40.1545 	INFO 	starting routine timer from 25.4767642021
+40.1641 	DATA 	Response Box: d
+40.1641 	DATA 	ResponseTime: 0.0095329284668
+40.1643 	INFO 	finished routine FacenameTrial ...
+40.1644 	INFO 	starting routine Fixation ...
+40.1654 	EXP 	window1: blendMode = 'avg'
+40.2057 	EXP 	Fixation: autoDraw = False
+40.2057 	EXP 	No Prompt: autoDraw = True
+40.2057 	EXP 	Yes Prompt: autoDraw = True
+40.2057 	EXP 	Trial Name: JUDITH: autoDraw = True
+40.2057 	EXP 	Trial Prompt: autoDraw = True
+40.2057 	EXP 	Trial Image: stimuli/CFD-WF-027-003-N.jpg: autoDraw = True
+40.2057 	EXP 	No Prompt: autoDraw = False
+40.2057 	EXP 	Yes Prompt: autoDraw = False
+40.2057 	EXP 	Trial Name: JUDITH: autoDraw = False
+40.2057 	EXP 	Trial Prompt: autoDraw = False
+40.2057 	EXP 	Trial Image: stimuli/CFD-WF-027-003-N.jpg: autoDraw = False
+40.2057 	EXP 	Fixation: autoDraw = True
+40.2060 	EXP 	window1: blendMode = 'avg'
+40.2719 	EXP 	window1: blendMode = 'avg'
+40.3181 	EXP 	window1: blendMode = 'avg'
+40.3917 	EXP 	window1: blendMode = 'avg'
+40.4341 	EXP 	window1: blendMode = 'avg'
+40.5003 	EXP 	window1: blendMode = 'avg'
+40.5498 	EXP 	window1: blendMode = 'avg'
+40.6162 	EXP 	window1: blendMode = 'avg'
+40.6512 	EXP 	window1: blendMode = 'avg'
+40.7134 	EXP 	window1: blendMode = 'avg'
+40.7519 	EXP 	window1: blendMode = 'avg'
+40.8137 	EXP 	window1: blendMode = 'avg'
+40.8524 	EXP 	window1: blendMode = 'avg'
+40.8976 	INFO 	finished routine Fixation ...
+40.8977 	INFO 	starting routine FacenameTrial ...
+40.8979 	INFO 	starting routine timer from 26.2201011181
+40.9054 	DATA 	Response Box: d
+40.9054 	DATA 	ResponseTime: 0.00755286216736
+40.9055 	INFO 	finished routine FacenameTrial ...
+40.9056 	INFO 	starting routine RestBlock ...
+40.9061 	EXP 	window1: blendMode = 'avg'
+40.9518 	EXP 	Fixation: autoDraw = False
+40.9518 	EXP 	No Prompt: autoDraw = True
+40.9518 	EXP 	Yes Prompt: autoDraw = True
+40.9518 	EXP 	Trial Name: RILEY: autoDraw = True
+40.9518 	EXP 	Trial Prompt: autoDraw = True
+40.9518 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = True
+40.9518 	EXP 	No Prompt: autoDraw = False
+40.9518 	EXP 	Yes Prompt: autoDraw = False
+40.9518 	EXP 	Trial Name: RILEY: autoDraw = False
+40.9518 	EXP 	Trial Prompt: autoDraw = False
+40.9518 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = False
+40.9518 	EXP 	Rest Block: autoDraw = True
+40.9522 	EXP 	window1: blendMode = 'avg'
+41.0000 	EXP 	window1: blendMode = 'avg'
+41.0459 	EXP 	window1: blendMode = 'avg'
+41.0855 	EXP 	window1: blendMode = 'avg'
+41.1332 	EXP 	window1: blendMode = 'avg'
+41.1799 	EXP 	window1: blendMode = 'avg'
+41.2185 	EXP 	window1: blendMode = 'avg'
+41.2908 	EXP 	window1: blendMode = 'avg'
+41.3346 	EXP 	window1: blendMode = 'avg'
+41.3675 	EXP 	window1: blendMode = 'avg'
+41.4143 	EXP 	window1: blendMode = 'avg'
+41.4683 	EXP 	window1: blendMode = 'avg'
+41.5510 	EXP 	window1: blendMode = 'avg'
+41.5840 	EXP 	window1: blendMode = 'avg'
+41.6309 	EXP 	window1: blendMode = 'avg'
+41.6846 	EXP 	window1: blendMode = 'avg'
+41.7315 	EXP 	window1: blendMode = 'avg'
+41.7849 	EXP 	window1: blendMode = 'avg'
+41.8423 	EXP 	window1: blendMode = 'avg'
+41.9108 	EXP 	window1: blendMode = 'avg'
+41.9598 	EXP 	window1: blendMode = 'avg'
+41.9888 	EXP 	window1: blendMode = 'avg'
+42.0233 	EXP 	window1: blendMode = 'avg'
+42.0570 	EXP 	window1: blendMode = 'avg'
+42.0906 	EXP 	window1: blendMode = 'avg'
+42.1224 	EXP 	window1: blendMode = 'avg'
+42.1569 	EXP 	window1: blendMode = 'avg'
+42.1905 	EXP 	window1: blendMode = 'avg'
+42.2242 	EXP 	window1: blendMode = 'avg'
+42.2573 	EXP 	window1: blendMode = 'avg'
+42.2907 	EXP 	window1: blendMode = 'avg'
+42.3243 	EXP 	window1: blendMode = 'avg'
+42.3575 	EXP 	window1: blendMode = 'avg'
+42.3909 	EXP 	window1: blendMode = 'avg'
+42.4244 	EXP 	window1: blendMode = 'avg'
+42.4577 	EXP 	window1: blendMode = 'avg'
+42.4911 	EXP 	window1: blendMode = 'avg'
+42.5246 	EXP 	window1: blendMode = 'avg'
+42.5579 	EXP 	window1: blendMode = 'avg'
+42.5913 	EXP 	window1: blendMode = 'avg'
+42.6248 	EXP 	window1: blendMode = 'avg'
+42.6581 	EXP 	window1: blendMode = 'avg'
+42.6914 	EXP 	window1: blendMode = 'avg'
+42.7249 	EXP 	window1: blendMode = 'avg'
+42.7581 	EXP 	window1: blendMode = 'avg'
+42.7916 	EXP 	window1: blendMode = 'avg'
+42.8249 	EXP 	window1: blendMode = 'avg'
+42.8587 	EXP 	window1: blendMode = 'avg'
+42.8917 	EXP 	window1: blendMode = 'avg'
+42.9251 	EXP 	window1: blendMode = 'avg'
+42.9585 	EXP 	window1: blendMode = 'avg'
+42.9919 	EXP 	window1: blendMode = 'avg'
+43.0253 	EXP 	window1: blendMode = 'avg'
+43.0587 	EXP 	window1: blendMode = 'avg'
+43.0921 	EXP 	window1: blendMode = 'avg'
+43.1255 	EXP 	window1: blendMode = 'avg'
+43.1589 	EXP 	window1: blendMode = 'avg'
+43.1923 	EXP 	window1: blendMode = 'avg'
+43.2256 	EXP 	window1: blendMode = 'avg'
+43.2591 	EXP 	window1: blendMode = 'avg'
+43.2925 	EXP 	window1: blendMode = 'avg'
+43.3259 	EXP 	window1: blendMode = 'avg'
+43.3593 	EXP 	window1: blendMode = 'avg'
+43.3927 	EXP 	window1: blendMode = 'avg'
+43.4261 	EXP 	window1: blendMode = 'avg'
+43.4594 	EXP 	window1: blendMode = 'avg'
+43.4929 	EXP 	window1: blendMode = 'avg'
+43.5262 	EXP 	window1: blendMode = 'avg'
+43.5597 	EXP 	window1: blendMode = 'avg'
+43.5930 	EXP 	window1: blendMode = 'avg'
+43.6265 	EXP 	window1: blendMode = 'avg'
+43.6598 	EXP 	window1: blendMode = 'avg'
+43.6920 	EXP 	window1: blendMode = 'avg'
+43.7261 	EXP 	window1: blendMode = 'avg'
+43.7583 	EXP 	window1: blendMode = 'avg'
+43.7936 	EXP 	window1: blendMode = 'avg'
+43.8268 	EXP 	window1: blendMode = 'avg'
+43.8602 	EXP 	window1: blendMode = 'avg'
+43.8936 	EXP 	window1: blendMode = 'avg'
+43.9270 	EXP 	window1: blendMode = 'avg'
+43.9604 	EXP 	window1: blendMode = 'avg'
+43.9938 	EXP 	window1: blendMode = 'avg'
+44.0272 	EXP 	window1: blendMode = 'avg'
+44.0606 	EXP 	window1: blendMode = 'avg'
+44.0942 	EXP 	window1: blendMode = 'avg'
+44.1274 	EXP 	window1: blendMode = 'avg'
+44.1608 	EXP 	window1: blendMode = 'avg'
+44.1942 	EXP 	window1: blendMode = 'avg'
+44.2276 	EXP 	window1: blendMode = 'avg'
+44.2611 	EXP 	window1: blendMode = 'avg'
+44.2945 	EXP 	window1: blendMode = 'avg'
+44.3278 	EXP 	window1: blendMode = 'avg'
+44.3612 	EXP 	window1: blendMode = 'avg'
+44.3946 	EXP 	window1: blendMode = 'avg'
+44.4280 	EXP 	window1: blendMode = 'avg'
+44.4614 	EXP 	window1: blendMode = 'avg'
+44.4948 	EXP 	window1: blendMode = 'avg'
+44.5282 	EXP 	window1: blendMode = 'avg'
+44.5617 	EXP 	window1: blendMode = 'avg'
+44.5950 	EXP 	window1: blendMode = 'avg'
+44.6285 	EXP 	window1: blendMode = 'avg'
+44.6618 	EXP 	window1: blendMode = 'avg'
+44.6952 	EXP 	window1: blendMode = 'avg'
+44.7286 	EXP 	window1: blendMode = 'avg'
+44.7620 	EXP 	window1: blendMode = 'avg'
+44.7954 	EXP 	window1: blendMode = 'avg'
+44.8288 	EXP 	window1: blendMode = 'avg'
+44.8623 	EXP 	window1: blendMode = 'avg'
+44.8956 	EXP 	window1: blendMode = 'avg'
+44.9290 	EXP 	window1: blendMode = 'avg'
+44.9625 	EXP 	window1: blendMode = 'avg'
+44.9958 	EXP 	window1: blendMode = 'avg'
+45.0292 	EXP 	window1: blendMode = 'avg'
+45.0626 	EXP 	window1: blendMode = 'avg'
+45.0960 	EXP 	window1: blendMode = 'avg'
+45.1294 	EXP 	window1: blendMode = 'avg'
+45.1628 	EXP 	window1: blendMode = 'avg'
+45.1962 	EXP 	window1: blendMode = 'avg'
+45.2296 	EXP 	window1: blendMode = 'avg'
+45.2630 	EXP 	window1: blendMode = 'avg'
+45.2964 	EXP 	window1: blendMode = 'avg'
+45.3298 	EXP 	window1: blendMode = 'avg'
+45.3632 	EXP 	window1: blendMode = 'avg'
+45.3966 	EXP 	window1: blendMode = 'avg'
+45.4301 	EXP 	window1: blendMode = 'avg'
+45.4634 	EXP 	window1: blendMode = 'avg'
+45.4968 	EXP 	window1: blendMode = 'avg'
+45.5303 	EXP 	window1: blendMode = 'avg'
+45.5637 	EXP 	window1: blendMode = 'avg'
+45.5970 	EXP 	window1: blendMode = 'avg'
+45.6304 	EXP 	window1: blendMode = 'avg'
+45.6638 	EXP 	window1: blendMode = 'avg'
+45.6971 	EXP 	window1: blendMode = 'avg'
+45.7306 	EXP 	window1: blendMode = 'avg'
+45.7640 	EXP 	window1: blendMode = 'avg'
+45.7973 	EXP 	window1: blendMode = 'avg'
+45.8308 	EXP 	window1: blendMode = 'avg'
+45.8641 	EXP 	window1: blendMode = 'avg'
+45.8975 	EXP 	window1: blendMode = 'avg'
+45.9312 	EXP 	window1: blendMode = 'avg'
+45.9645 	EXP 	window1: blendMode = 'avg'
+45.9979 	EXP 	window1: blendMode = 'avg'
+46.0313 	EXP 	window1: blendMode = 'avg'
+46.0647 	EXP 	window1: blendMode = 'avg'
+46.0982 	EXP 	window1: blendMode = 'avg'
+46.1315 	EXP 	window1: blendMode = 'avg'
+46.1648 	EXP 	window1: blendMode = 'avg'
+46.1982 	EXP 	window1: blendMode = 'avg'
+46.2316 	EXP 	window1: blendMode = 'avg'
+46.2650 	EXP 	window1: blendMode = 'avg'
+46.2984 	EXP 	window1: blendMode = 'avg'
+46.3318 	EXP 	window1: blendMode = 'avg'
+46.3652 	EXP 	window1: blendMode = 'avg'
+46.3990 	EXP 	window1: blendMode = 'avg'
+46.4320 	EXP 	window1: blendMode = 'avg'
+46.4654 	EXP 	window1: blendMode = 'avg'
+46.4988 	EXP 	window1: blendMode = 'avg'
+46.5322 	EXP 	window1: blendMode = 'avg'
+46.5657 	EXP 	window1: blendMode = 'avg'
+46.5990 	EXP 	window1: blendMode = 'avg'
+46.6325 	EXP 	window1: blendMode = 'avg'
+46.6658 	EXP 	window1: blendMode = 'avg'
+46.6992 	EXP 	window1: blendMode = 'avg'
+46.7326 	EXP 	window1: blendMode = 'avg'
+46.7661 	EXP 	window1: blendMode = 'avg'
+46.8009 	EXP 	window1: blendMode = 'avg'
+46.8342 	EXP 	window1: blendMode = 'avg'
+46.8676 	EXP 	window1: blendMode = 'avg'
+46.9009 	EXP 	window1: blendMode = 'avg'
+46.9342 	EXP 	window1: blendMode = 'avg'
+46.9675 	EXP 	window1: blendMode = 'avg'
+47.0008 	EXP 	window1: blendMode = 'avg'
+47.0342 	EXP 	window1: blendMode = 'avg'
+47.0675 	EXP 	window1: blendMode = 'avg'
+47.1009 	EXP 	window1: blendMode = 'avg'
+47.1342 	EXP 	window1: blendMode = 'avg'
+47.1675 	EXP 	window1: blendMode = 'avg'
+47.2008 	EXP 	window1: blendMode = 'avg'
+47.2341 	EXP 	window1: blendMode = 'avg'
+47.2674 	EXP 	window1: blendMode = 'avg'
+47.3007 	EXP 	window1: blendMode = 'avg'
+47.3341 	EXP 	window1: blendMode = 'avg'
+47.3672 	EXP 	window1: blendMode = 'avg'
+47.4005 	EXP 	window1: blendMode = 'avg'
+47.4339 	EXP 	window1: blendMode = 'avg'
+47.4676 	EXP 	window1: blendMode = 'avg'
+47.5009 	EXP 	window1: blendMode = 'avg'
+47.5342 	EXP 	window1: blendMode = 'avg'
+47.5676 	EXP 	window1: blendMode = 'avg'
+47.6009 	EXP 	window1: blendMode = 'avg'
+47.6344 	EXP 	window1: blendMode = 'avg'
+47.6677 	EXP 	window1: blendMode = 'avg'
+47.7011 	EXP 	window1: blendMode = 'avg'
+47.7345 	EXP 	window1: blendMode = 'avg'
+47.7679 	EXP 	window1: blendMode = 'avg'
+47.8014 	EXP 	window1: blendMode = 'avg'
+47.8348 	EXP 	window1: blendMode = 'avg'
+47.8681 	EXP 	window1: blendMode = 'avg'
+47.9015 	EXP 	window1: blendMode = 'avg'
+47.9349 	EXP 	window1: blendMode = 'avg'
+47.9683 	EXP 	window1: blendMode = 'avg'
+48.0017 	EXP 	window1: blendMode = 'avg'
+48.0351 	EXP 	window1: blendMode = 'avg'
+48.0685 	EXP 	window1: blendMode = 'avg'
+48.1021 	EXP 	window1: blendMode = 'avg'
+48.1354 	EXP 	window1: blendMode = 'avg'
+48.1688 	EXP 	window1: blendMode = 'avg'
+48.2021 	EXP 	window1: blendMode = 'avg'
+48.2355 	EXP 	window1: blendMode = 'avg'
+48.2689 	EXP 	window1: blendMode = 'avg'
+48.3023 	EXP 	window1: blendMode = 'avg'
+48.3357 	EXP 	window1: blendMode = 'avg'
+48.3691 	EXP 	window1: blendMode = 'avg'
+48.4025 	EXP 	window1: blendMode = 'avg'
+48.4359 	EXP 	window1: blendMode = 'avg'
+48.4693 	EXP 	window1: blendMode = 'avg'
+48.5027 	EXP 	window1: blendMode = 'avg'
+48.5361 	EXP 	window1: blendMode = 'avg'
+48.5695 	EXP 	window1: blendMode = 'avg'
+48.6029 	EXP 	window1: blendMode = 'avg'
+48.6365 	EXP 	window1: blendMode = 'avg'
+48.6697 	EXP 	window1: blendMode = 'avg'
+48.7031 	EXP 	window1: blendMode = 'avg'
+48.7365 	EXP 	window1: blendMode = 'avg'
+48.7699 	EXP 	window1: blendMode = 'avg'
+48.8033 	EXP 	window1: blendMode = 'avg'
+48.8367 	EXP 	window1: blendMode = 'avg'
+48.8702 	EXP 	window1: blendMode = 'avg'
+48.9036 	EXP 	window1: blendMode = 'avg'
+48.9370 	EXP 	window1: blendMode = 'avg'
+48.9704 	EXP 	window1: blendMode = 'avg'
+49.0038 	EXP 	window1: blendMode = 'avg'
+49.0373 	EXP 	window1: blendMode = 'avg'
+49.0706 	EXP 	window1: blendMode = 'avg'
+49.1041 	EXP 	window1: blendMode = 'avg'
+49.1374 	EXP 	window1: blendMode = 'avg'
+49.1708 	EXP 	window1: blendMode = 'avg'
+49.2041 	EXP 	window1: blendMode = 'avg'
+49.2374 	EXP 	window1: blendMode = 'avg'
+49.2712 	EXP 	window1: blendMode = 'avg'
+49.3043 	EXP 	window1: blendMode = 'avg'
+49.3379 	EXP 	window1: blendMode = 'avg'
+49.3710 	EXP 	window1: blendMode = 'avg'
+49.4044 	EXP 	window1: blendMode = 'avg'
+49.4380 	EXP 	window1: blendMode = 'avg'
+49.4713 	EXP 	window1: blendMode = 'avg'
+49.5046 	EXP 	window1: blendMode = 'avg'
+49.5382 	EXP 	window1: blendMode = 'avg'
+49.5716 	EXP 	window1: blendMode = 'avg'
+49.6049 	EXP 	window1: blendMode = 'avg'
+49.6383 	EXP 	window1: blendMode = 'avg'
+49.6716 	EXP 	window1: blendMode = 'avg'
+49.7051 	EXP 	window1: blendMode = 'avg'
+49.7384 	EXP 	window1: blendMode = 'avg'
+49.7718 	EXP 	window1: blendMode = 'avg'
+49.8052 	EXP 	window1: blendMode = 'avg'
+49.8386 	EXP 	window1: blendMode = 'avg'
+49.8720 	EXP 	window1: blendMode = 'avg'
+49.9054 	EXP 	window1: blendMode = 'avg'
+49.9388 	EXP 	window1: blendMode = 'avg'
+49.9722 	EXP 	window1: blendMode = 'avg'
+50.0056 	EXP 	window1: blendMode = 'avg'
+50.0390 	EXP 	window1: blendMode = 'avg'
+50.0724 	EXP 	window1: blendMode = 'avg'
+50.1060 	EXP 	window1: blendMode = 'avg'
+50.1392 	EXP 	window1: blendMode = 'avg'
+50.1726 	EXP 	window1: blendMode = 'avg'
+50.2060 	EXP 	window1: blendMode = 'avg'
+50.2394 	EXP 	window1: blendMode = 'avg'
+50.2729 	EXP 	window1: blendMode = 'avg'
+50.3062 	EXP 	window1: blendMode = 'avg'
+50.3396 	EXP 	window1: blendMode = 'avg'
+50.3730 	EXP 	window1: blendMode = 'avg'
+50.4065 	EXP 	window1: blendMode = 'avg'
+50.4398 	EXP 	window1: blendMode = 'avg'
+50.4732 	EXP 	window1: blendMode = 'avg'
+50.5066 	EXP 	window1: blendMode = 'avg'
+50.5404 	EXP 	window1: blendMode = 'avg'
+50.5738 	EXP 	window1: blendMode = 'avg'
+50.6073 	EXP 	window1: blendMode = 'avg'
+50.6407 	EXP 	window1: blendMode = 'avg'
+50.6740 	EXP 	window1: blendMode = 'avg'
+50.7073 	EXP 	window1: blendMode = 'avg'
+50.7406 	EXP 	window1: blendMode = 'avg'
+50.7740 	EXP 	window1: blendMode = 'avg'
+50.8073 	EXP 	window1: blendMode = 'avg'
+50.8406 	EXP 	window1: blendMode = 'avg'
+50.8742 	EXP 	window1: blendMode = 'avg'
+50.9073 	EXP 	window1: blendMode = 'avg'
+50.9425 	EXP 	window1: blendMode = 'avg'
+50.9759 	EXP 	window1: blendMode = 'avg'
+51.0092 	EXP 	window1: blendMode = 'avg'
+51.0426 	EXP 	window1: blendMode = 'avg'
+51.0759 	EXP 	window1: blendMode = 'avg'
+51.1093 	EXP 	window1: blendMode = 'avg'
+51.1431 	EXP 	window1: blendMode = 'avg'
+51.1764 	EXP 	window1: blendMode = 'avg'
+51.2097 	EXP 	window1: blendMode = 'avg'
+51.2431 	EXP 	window1: blendMode = 'avg'
+51.2764 	EXP 	window1: blendMode = 'avg'
+51.3097 	EXP 	window1: blendMode = 'avg'
+51.3430 	EXP 	window1: blendMode = 'avg'
+51.3764 	EXP 	window1: blendMode = 'avg'
+51.4099 	EXP 	window1: blendMode = 'avg'
+51.4441 	EXP 	window1: blendMode = 'avg'
+51.4774 	EXP 	window1: blendMode = 'avg'
+51.5109 	EXP 	window1: blendMode = 'avg'
+51.5443 	EXP 	window1: blendMode = 'avg'
+51.5783 	EXP 	window1: blendMode = 'avg'
+51.6111 	EXP 	window1: blendMode = 'avg'
+51.6448 	EXP 	window1: blendMode = 'avg'
+51.6778 	EXP 	window1: blendMode = 'avg'
+51.7113 	EXP 	window1: blendMode = 'avg'
+51.7447 	EXP 	window1: blendMode = 'avg'
+51.7782 	EXP 	window1: blendMode = 'avg'
+51.8118 	EXP 	window1: blendMode = 'avg'
+51.8451 	EXP 	window1: blendMode = 'avg'
+51.8785 	EXP 	window1: blendMode = 'avg'
+51.9118 	EXP 	window1: blendMode = 'avg'
+51.9452 	EXP 	window1: blendMode = 'avg'
+51.9785 	EXP 	window1: blendMode = 'avg'
+52.0118 	EXP 	window1: blendMode = 'avg'
+52.0454 	EXP 	window1: blendMode = 'avg'
+52.0788 	EXP 	window1: blendMode = 'avg'
+52.1121 	EXP 	window1: blendMode = 'avg'
+52.1461 	EXP 	window1: blendMode = 'avg'
+52.1794 	EXP 	window1: blendMode = 'avg'
+52.2128 	EXP 	window1: blendMode = 'avg'
+52.2461 	EXP 	window1: blendMode = 'avg'
+52.2795 	EXP 	window1: blendMode = 'avg'
+52.3127 	EXP 	window1: blendMode = 'avg'
+52.3460 	EXP 	window1: blendMode = 'avg'
+52.3794 	EXP 	window1: blendMode = 'avg'
+52.4128 	EXP 	window1: blendMode = 'avg'
+52.4462 	EXP 	window1: blendMode = 'avg'
+52.4796 	EXP 	window1: blendMode = 'avg'
+52.5130 	EXP 	window1: blendMode = 'avg'
+52.5464 	EXP 	window1: blendMode = 'avg'
+52.5798 	EXP 	window1: blendMode = 'avg'
+52.6133 	EXP 	window1: blendMode = 'avg'
+52.6469 	EXP 	window1: blendMode = 'avg'
+52.6804 	EXP 	window1: blendMode = 'avg'
+52.7137 	EXP 	window1: blendMode = 'avg'
+52.7471 	EXP 	window1: blendMode = 'avg'
+52.7805 	EXP 	window1: blendMode = 'avg'
+52.8139 	EXP 	window1: blendMode = 'avg'
+52.8472 	EXP 	window1: blendMode = 'avg'
+52.8807 	EXP 	window1: blendMode = 'avg'
+52.9140 	EXP 	window1: blendMode = 'avg'
+52.9475 	EXP 	window1: blendMode = 'avg'
+52.9808 	EXP 	window1: blendMode = 'avg'
+53.0142 	EXP 	window1: blendMode = 'avg'
+53.0477 	EXP 	window1: blendMode = 'avg'
+53.0810 	EXP 	window1: blendMode = 'avg'
+53.1145 	EXP 	window1: blendMode = 'avg'
+53.1479 	EXP 	window1: blendMode = 'avg'
+53.1813 	EXP 	window1: blendMode = 'avg'
+53.2146 	EXP 	window1: blendMode = 'avg'
+53.2481 	EXP 	window1: blendMode = 'avg'
+53.2815 	EXP 	window1: blendMode = 'avg'
+53.3148 	EXP 	window1: blendMode = 'avg'
+53.3487 	EXP 	window1: blendMode = 'avg'
+53.3817 	EXP 	window1: blendMode = 'avg'
+53.4155 	EXP 	window1: blendMode = 'avg'
+53.4489 	EXP 	window1: blendMode = 'avg'
+53.4815 	EXP 	window1: blendMode = 'avg'
+53.5149 	EXP 	window1: blendMode = 'avg'
+53.5482 	EXP 	window1: blendMode = 'avg'
+53.5816 	EXP 	window1: blendMode = 'avg'
+53.6150 	EXP 	window1: blendMode = 'avg'
+53.6484 	EXP 	window1: blendMode = 'avg'
+53.6817 	EXP 	window1: blendMode = 'avg'
+53.7152 	EXP 	window1: blendMode = 'avg'
+53.7486 	EXP 	window1: blendMode = 'avg'
+53.7819 	EXP 	window1: blendMode = 'avg'
+53.8150 	EXP 	window1: blendMode = 'avg'
+53.8484 	EXP 	window1: blendMode = 'avg'
+53.8821 	EXP 	window1: blendMode = 'avg'
+53.9155 	EXP 	window1: blendMode = 'avg'
+53.9485 	EXP 	window1: blendMode = 'avg'
+53.9818 	EXP 	window1: blendMode = 'avg'
+54.0152 	EXP 	window1: blendMode = 'avg'
+54.0485 	EXP 	window1: blendMode = 'avg'
+54.0821 	EXP 	window1: blendMode = 'avg'
+54.1161 	EXP 	window1: blendMode = 'avg'
+54.1488 	EXP 	window1: blendMode = 'avg'
+54.1825 	EXP 	window1: blendMode = 'avg'
+54.2161 	EXP 	window1: blendMode = 'avg'
+54.2492 	EXP 	window1: blendMode = 'avg'
+54.2828 	EXP 	window1: blendMode = 'avg'
+54.3156 	EXP 	window1: blendMode = 'avg'
+54.3490 	EXP 	window1: blendMode = 'avg'
+54.3824 	EXP 	window1: blendMode = 'avg'
+54.4161 	EXP 	window1: blendMode = 'avg'
+54.4497 	EXP 	window1: blendMode = 'avg'
+54.4824 	EXP 	window1: blendMode = 'avg'
+54.5164 	EXP 	window1: blendMode = 'avg'
+54.5496 	EXP 	window1: blendMode = 'avg'
+54.5829 	EXP 	window1: blendMode = 'avg'
+54.6160 	EXP 	window1: blendMode = 'avg'
+54.6497 	EXP 	window1: blendMode = 'avg'
+54.6831 	EXP 	window1: blendMode = 'avg'
+54.7158 	EXP 	window1: blendMode = 'avg'
+54.7497 	EXP 	window1: blendMode = 'avg'
+54.7825 	EXP 	window1: blendMode = 'avg'
+54.8165 	EXP 	window1: blendMode = 'avg'
+54.8498 	EXP 	window1: blendMode = 'avg'
+54.8832 	EXP 	window1: blendMode = 'avg'
+54.9159 	EXP 	window1: blendMode = 'avg'
+54.9498 	EXP 	window1: blendMode = 'avg'
+54.9833 	EXP 	window1: blendMode = 'avg'
+55.0166 	EXP 	window1: blendMode = 'avg'
+55.0500 	EXP 	window1: blendMode = 'avg'
+55.0833 	EXP 	window1: blendMode = 'avg'
+55.1168 	EXP 	window1: blendMode = 'avg'
+55.1501 	EXP 	window1: blendMode = 'avg'
+55.1834 	EXP 	window1: blendMode = 'avg'
+55.2167 	EXP 	window1: blendMode = 'avg'
+55.2500 	EXP 	window1: blendMode = 'avg'
+55.2835 	EXP 	window1: blendMode = 'avg'
+55.3169 	EXP 	window1: blendMode = 'avg'
+55.3502 	EXP 	window1: blendMode = 'avg'
+55.3835 	EXP 	window1: blendMode = 'avg'
+55.4170 	EXP 	window1: blendMode = 'avg'
+55.4499 	EXP 	window1: blendMode = 'avg'
+55.4833 	EXP 	window1: blendMode = 'avg'
+55.5166 	EXP 	window1: blendMode = 'avg'
+55.5499 	EXP 	window1: blendMode = 'avg'
+55.5839 	EXP 	window1: blendMode = 'avg'
+55.6174 	EXP 	window1: blendMode = 'avg'
+55.6502 	EXP 	window1: blendMode = 'avg'
+55.6834 	EXP 	window1: blendMode = 'avg'
+55.7168 	EXP 	window1: blendMode = 'avg'
+55.7502 	EXP 	window1: blendMode = 'avg'
+55.7837 	EXP 	window1: blendMode = 'avg'
+55.8170 	EXP 	window1: blendMode = 'avg'
+55.8504 	EXP 	window1: blendMode = 'avg'
+55.8838 	EXP 	window1: blendMode = 'avg'
+55.9172 	EXP 	window1: blendMode = 'avg'
+55.9506 	EXP 	window1: blendMode = 'avg'
+55.9840 	EXP 	window1: blendMode = 'avg'
+56.0174 	EXP 	window1: blendMode = 'avg'
+56.0512 	EXP 	window1: blendMode = 'avg'
+56.0842 	EXP 	window1: blendMode = 'avg'
+56.1178 	EXP 	window1: blendMode = 'avg'
+56.1512 	EXP 	window1: blendMode = 'avg'
+56.1830 	EXP 	window1: blendMode = 'avg'
+56.2178 	EXP 	window1: blendMode = 'avg'
+56.2513 	EXP 	window1: blendMode = 'avg'
+56.2849 	EXP 	window1: blendMode = 'avg'
+56.3181 	EXP 	window1: blendMode = 'avg'
+56.3516 	EXP 	window1: blendMode = 'avg'
+56.3850 	EXP 	window1: blendMode = 'avg'
+56.4185 	EXP 	window1: blendMode = 'avg'
+56.4518 	EXP 	window1: blendMode = 'avg'
+56.4852 	EXP 	window1: blendMode = 'avg'
+56.5187 	EXP 	window1: blendMode = 'avg'
+56.5520 	EXP 	window1: blendMode = 'avg'
+56.5854 	EXP 	window1: blendMode = 'avg'
+56.6189 	EXP 	window1: blendMode = 'avg'
+56.6522 	EXP 	window1: blendMode = 'avg'
+56.6856 	EXP 	window1: blendMode = 'avg'
+56.7189 	EXP 	window1: blendMode = 'avg'
+56.7524 	EXP 	window1: blendMode = 'avg'
+56.7858 	EXP 	window1: blendMode = 'avg'
+56.8192 	EXP 	window1: blendMode = 'avg'
+56.8526 	EXP 	window1: blendMode = 'avg'
+56.8861 	EXP 	window1: blendMode = 'avg'
+56.9193 	EXP 	window1: blendMode = 'avg'
+56.9527 	EXP 	window1: blendMode = 'avg'
+56.9861 	EXP 	window1: blendMode = 'avg'
+57.0193 	EXP 	window1: blendMode = 'avg'
+57.0530 	EXP 	window1: blendMode = 'avg'
+57.0862 	EXP 	window1: blendMode = 'avg'
+57.1199 	EXP 	window1: blendMode = 'avg'
+57.1530 	EXP 	window1: blendMode = 'avg'
+57.1864 	EXP 	window1: blendMode = 'avg'
+57.2197 	EXP 	window1: blendMode = 'avg'
+57.2531 	EXP 	window1: blendMode = 'avg'
+57.2866 	EXP 	window1: blendMode = 'avg'
+57.3199 	EXP 	window1: blendMode = 'avg'
+57.3533 	EXP 	window1: blendMode = 'avg'
+57.3868 	EXP 	window1: blendMode = 'avg'
+57.4202 	EXP 	window1: blendMode = 'avg'
+57.4535 	EXP 	window1: blendMode = 'avg'
+57.4869 	EXP 	window1: blendMode = 'avg'
+57.5203 	EXP 	window1: blendMode = 'avg'
+57.5537 	EXP 	window1: blendMode = 'avg'
+57.5872 	EXP 	window1: blendMode = 'avg'
+57.6207 	EXP 	window1: blendMode = 'avg'
+57.6540 	EXP 	window1: blendMode = 'avg'
+57.6873 	EXP 	window1: blendMode = 'avg'
+57.7207 	EXP 	window1: blendMode = 'avg'
+57.7541 	EXP 	window1: blendMode = 'avg'
+57.7875 	EXP 	window1: blendMode = 'avg'
+57.8209 	EXP 	window1: blendMode = 'avg'
+57.8543 	EXP 	window1: blendMode = 'avg'
+57.8877 	EXP 	window1: blendMode = 'avg'
+57.9211 	EXP 	window1: blendMode = 'avg'
+57.9545 	EXP 	window1: blendMode = 'avg'
+57.9879 	EXP 	window1: blendMode = 'avg'
+58.0213 	EXP 	window1: blendMode = 'avg'
+58.0547 	EXP 	window1: blendMode = 'avg'
+58.0881 	EXP 	window1: blendMode = 'avg'
+58.1220 	EXP 	window1: blendMode = 'avg'
+58.1550 	EXP 	window1: blendMode = 'avg'
+58.1883 	EXP 	window1: blendMode = 'avg'
+58.2217 	EXP 	window1: blendMode = 'avg'
+58.2551 	EXP 	window1: blendMode = 'avg'
+58.2885 	EXP 	window1: blendMode = 'avg'
+58.3219 	EXP 	window1: blendMode = 'avg'
+58.3553 	EXP 	window1: blendMode = 'avg'
+58.3887 	EXP 	window1: blendMode = 'avg'
+58.4221 	EXP 	window1: blendMode = 'avg'
+58.4555 	EXP 	window1: blendMode = 'avg'
+58.4889 	EXP 	window1: blendMode = 'avg'
+58.5223 	EXP 	window1: blendMode = 'avg'
+58.5557 	EXP 	window1: blendMode = 'avg'
+58.5891 	EXP 	window1: blendMode = 'avg'
+58.6226 	EXP 	window1: blendMode = 'avg'
+58.6559 	EXP 	window1: blendMode = 'avg'
+58.6893 	EXP 	window1: blendMode = 'avg'
+58.7227 	EXP 	window1: blendMode = 'avg'
+58.7561 	EXP 	window1: blendMode = 'avg'
+58.7895 	EXP 	window1: blendMode = 'avg'
+58.8228 	EXP 	window1: blendMode = 'avg'
+58.8564 	EXP 	window1: blendMode = 'avg'
+58.8897 	EXP 	window1: blendMode = 'avg'
+58.9231 	EXP 	window1: blendMode = 'avg'
+58.9565 	EXP 	window1: blendMode = 'avg'
+58.9899 	EXP 	window1: blendMode = 'avg'
+59.0232 	EXP 	window1: blendMode = 'avg'
+59.0566 	EXP 	window1: blendMode = 'avg'
+59.0901 	EXP 	window1: blendMode = 'avg'
+59.1236 	EXP 	window1: blendMode = 'avg'
+59.1569 	EXP 	window1: blendMode = 'avg'
+59.1902 	EXP 	window1: blendMode = 'avg'
+59.2236 	EXP 	window1: blendMode = 'avg'
+59.2570 	EXP 	window1: blendMode = 'avg'
+59.2905 	EXP 	window1: blendMode = 'avg'
+59.3243 	EXP 	window1: blendMode = 'avg'
+59.3572 	EXP 	window1: blendMode = 'avg'
+59.3906 	EXP 	window1: blendMode = 'avg'
+59.4245 	EXP 	window1: blendMode = 'avg'
+59.4579 	EXP 	window1: blendMode = 'avg'
+59.4913 	EXP 	window1: blendMode = 'avg'
+59.5247 	EXP 	window1: blendMode = 'avg'
+59.5576 	EXP 	window1: blendMode = 'avg'
+59.5915 	EXP 	window1: blendMode = 'avg'
+59.6250 	EXP 	window1: blendMode = 'avg'
+59.6582 	EXP 	window1: blendMode = 'avg'
+59.6915 	EXP 	window1: blendMode = 'avg'
+59.7249 	EXP 	window1: blendMode = 'avg'
+59.7583 	EXP 	window1: blendMode = 'avg'
+59.7918 	EXP 	window1: blendMode = 'avg'
+59.8252 	EXP 	window1: blendMode = 'avg'
+59.8585 	EXP 	window1: blendMode = 'avg'
+59.8918 	EXP 	window1: blendMode = 'avg'
+59.9251 	EXP 	window1: blendMode = 'avg'
+59.9584 	EXP 	window1: blendMode = 'avg'
+59.9920 	EXP 	window1: blendMode = 'avg'
+60.0256 	EXP 	window1: blendMode = 'avg'
+60.0587 	EXP 	window1: blendMode = 'avg'
+60.0921 	EXP 	window1: blendMode = 'avg'
+60.1257 	EXP 	window1: blendMode = 'avg'
+60.1589 	EXP 	window1: blendMode = 'avg'
+60.1925 	EXP 	window1: blendMode = 'avg'
+60.2257 	EXP 	window1: blendMode = 'avg'
+60.2590 	EXP 	window1: blendMode = 'avg'
+60.2925 	EXP 	window1: blendMode = 'avg'
+60.3258 	EXP 	window1: blendMode = 'avg'
+60.3592 	EXP 	window1: blendMode = 'avg'
+60.3926 	EXP 	window1: blendMode = 'avg'
+60.4261 	EXP 	window1: blendMode = 'avg'
+60.4594 	EXP 	window1: blendMode = 'avg'
+60.4928 	EXP 	window1: blendMode = 'avg'
+60.5263 	EXP 	window1: blendMode = 'avg'
+60.5597 	EXP 	window1: blendMode = 'avg'
+60.5932 	EXP 	window1: blendMode = 'avg'
+60.6267 	EXP 	window1: blendMode = 'avg'
+60.6600 	EXP 	window1: blendMode = 'avg'
+60.6933 	EXP 	window1: blendMode = 'avg'
+60.7266 	EXP 	window1: blendMode = 'avg'
+60.7600 	EXP 	window1: blendMode = 'avg'
+60.7934 	EXP 	window1: blendMode = 'avg'
+60.8268 	EXP 	window1: blendMode = 'avg'
+60.8603 	EXP 	window1: blendMode = 'avg'
+60.8937 	EXP 	window1: blendMode = 'avg'
+60.9270 	EXP 	window1: blendMode = 'avg'
+60.9604 	EXP 	window1: blendMode = 'avg'
+60.9938 	EXP 	window1: blendMode = 'avg'
+61.0272 	EXP 	window1: blendMode = 'avg'
+61.0606 	EXP 	window1: blendMode = 'avg'
+61.0940 	EXP 	window1: blendMode = 'avg'
+61.1275 	EXP 	window1: blendMode = 'avg'
+61.1610 	EXP 	window1: blendMode = 'avg'
+61.1943 	EXP 	window1: blendMode = 'avg'
+61.2276 	EXP 	window1: blendMode = 'avg'
+61.2610 	EXP 	window1: blendMode = 'avg'
+61.2945 	EXP 	window1: blendMode = 'avg'
+61.3279 	EXP 	window1: blendMode = 'avg'
+61.3612 	EXP 	window1: blendMode = 'avg'
+61.3962 	EXP 	window1: blendMode = 'avg'
+61.4296 	EXP 	window1: blendMode = 'avg'
+61.4628 	EXP 	window1: blendMode = 'avg'
+61.4961 	EXP 	window1: blendMode = 'avg'
+61.5295 	EXP 	window1: blendMode = 'avg'
+61.5628 	EXP 	window1: blendMode = 'avg'
+61.5962 	EXP 	window1: blendMode = 'avg'
+61.6295 	EXP 	window1: blendMode = 'avg'
+61.6628 	EXP 	window1: blendMode = 'avg'
+61.6961 	EXP 	window1: blendMode = 'avg'
+61.7294 	EXP 	window1: blendMode = 'avg'
+61.7627 	EXP 	window1: blendMode = 'avg'
+61.7961 	EXP 	window1: blendMode = 'avg'
+61.8294 	EXP 	window1: blendMode = 'avg'
+61.8627 	EXP 	window1: blendMode = 'avg'
+61.8960 	EXP 	window1: blendMode = 'avg'
+61.9293 	EXP 	window1: blendMode = 'avg'
+61.9626 	EXP 	window1: blendMode = 'avg'
+61.9958 	EXP 	window1: blendMode = 'avg'
+62.0292 	EXP 	window1: blendMode = 'avg'
+62.0628 	EXP 	window1: blendMode = 'avg'
+62.0961 	EXP 	window1: blendMode = 'avg'
+62.1297 	EXP 	window1: blendMode = 'avg'
+62.1628 	EXP 	window1: blendMode = 'avg'
+62.1962 	EXP 	window1: blendMode = 'avg'
+62.2297 	EXP 	window1: blendMode = 'avg'
+62.2631 	EXP 	window1: blendMode = 'avg'
+62.2965 	EXP 	window1: blendMode = 'avg'
+62.3298 	EXP 	window1: blendMode = 'avg'
+62.3632 	EXP 	window1: blendMode = 'avg'
+62.3966 	EXP 	window1: blendMode = 'avg'
+62.4302 	EXP 	window1: blendMode = 'avg'
+62.4634 	EXP 	window1: blendMode = 'avg'
+62.4968 	EXP 	window1: blendMode = 'avg'
+62.5302 	EXP 	window1: blendMode = 'avg'
+62.5636 	EXP 	window1: blendMode = 'avg'
+62.5970 	EXP 	window1: blendMode = 'avg'
+62.6305 	EXP 	window1: blendMode = 'avg'
+62.6639 	EXP 	window1: blendMode = 'avg'
+62.6972 	EXP 	window1: blendMode = 'avg'
+62.7307 	EXP 	window1: blendMode = 'avg'
+62.7640 	EXP 	window1: blendMode = 'avg'
+62.7974 	EXP 	window1: blendMode = 'avg'
+62.8307 	EXP 	window1: blendMode = 'avg'
+62.8643 	EXP 	window1: blendMode = 'avg'
+62.8976 	EXP 	window1: blendMode = 'avg'
+62.9310 	EXP 	window1: blendMode = 'avg'
+62.9643 	EXP 	window1: blendMode = 'avg'
+62.9978 	EXP 	window1: blendMode = 'avg'
+63.0311 	EXP 	window1: blendMode = 'avg'
+63.0645 	EXP 	window1: blendMode = 'avg'
+63.0979 	EXP 	window1: blendMode = 'avg'
+63.1314 	EXP 	window1: blendMode = 'avg'
+63.1648 	EXP 	window1: blendMode = 'avg'
+63.1981 	EXP 	window1: blendMode = 'avg'
+63.2315 	EXP 	window1: blendMode = 'avg'
+63.2650 	EXP 	window1: blendMode = 'avg'
+63.2984 	EXP 	window1: blendMode = 'avg'
+63.3317 	EXP 	window1: blendMode = 'avg'
+63.3651 	EXP 	window1: blendMode = 'avg'
+63.3985 	EXP 	window1: blendMode = 'avg'
+63.4319 	EXP 	window1: blendMode = 'avg'
+63.4654 	EXP 	window1: blendMode = 'avg'
+63.4987 	EXP 	window1: blendMode = 'avg'
+63.5321 	EXP 	window1: blendMode = 'avg'
+63.5657 	EXP 	window1: blendMode = 'avg'
+63.5991 	EXP 	window1: blendMode = 'avg'
+63.6326 	EXP 	window1: blendMode = 'avg'
+63.6660 	EXP 	window1: blendMode = 'avg'
+63.6994 	EXP 	window1: blendMode = 'avg'
+63.7328 	EXP 	window1: blendMode = 'avg'
+63.7661 	EXP 	window1: blendMode = 'avg'
+63.7994 	EXP 	window1: blendMode = 'avg'
+63.8330 	EXP 	window1: blendMode = 'avg'
+63.8661 	EXP 	window1: blendMode = 'avg'
+63.8995 	EXP 	window1: blendMode = 'avg'
+63.9329 	EXP 	window1: blendMode = 'avg'
+63.9663 	EXP 	window1: blendMode = 'avg'
+63.9997 	EXP 	window1: blendMode = 'avg'
+64.0332 	EXP 	window1: blendMode = 'avg'
+64.0665 	EXP 	window1: blendMode = 'avg'
+64.0999 	EXP 	window1: blendMode = 'avg'
+64.1337 	EXP 	window1: blendMode = 'avg'
+64.1667 	EXP 	window1: blendMode = 'avg'
+64.2001 	EXP 	window1: blendMode = 'avg'
+64.2335 	EXP 	window1: blendMode = 'avg'
+64.2669 	EXP 	window1: blendMode = 'avg'
+64.3003 	EXP 	window1: blendMode = 'avg'
+64.3337 	EXP 	window1: blendMode = 'avg'
+64.3671 	EXP 	window1: blendMode = 'avg'
+64.4005 	EXP 	window1: blendMode = 'avg'
+64.4339 	EXP 	window1: blendMode = 'avg'
+64.4673 	EXP 	window1: blendMode = 'avg'
+64.5007 	EXP 	window1: blendMode = 'avg'
+64.5341 	EXP 	window1: blendMode = 'avg'
+64.5675 	EXP 	window1: blendMode = 'avg'
+64.6009 	EXP 	window1: blendMode = 'avg'
+64.6343 	EXP 	window1: blendMode = 'avg'
+64.6677 	EXP 	window1: blendMode = 'avg'
+64.7010 	EXP 	window1: blendMode = 'avg'
+64.7344 	EXP 	window1: blendMode = 'avg'
+64.7678 	EXP 	window1: blendMode = 'avg'
+64.8012 	EXP 	window1: blendMode = 'avg'
+64.8346 	EXP 	window1: blendMode = 'avg'
+64.8681 	EXP 	window1: blendMode = 'avg'
+64.9015 	EXP 	window1: blendMode = 'avg'
+64.9349 	EXP 	window1: blendMode = 'avg'
+64.9682 	EXP 	window1: blendMode = 'avg'
+65.0032 	EXP 	window1: blendMode = 'avg'
+65.0366 	EXP 	window1: blendMode = 'avg'
+65.0699 	EXP 	window1: blendMode = 'avg'
+65.1033 	EXP 	window1: blendMode = 'avg'
+65.1368 	EXP 	window1: blendMode = 'avg'
+65.1702 	EXP 	window1: blendMode = 'avg'
+65.2035 	EXP 	window1: blendMode = 'avg'
+65.2379 	EXP 	window1: blendMode = 'avg'
+65.2703 	EXP 	window1: blendMode = 'avg'
+65.3047 	EXP 	window1: blendMode = 'avg'
+65.3379 	EXP 	window1: blendMode = 'avg'
+65.3714 	EXP 	window1: blendMode = 'avg'
+65.4047 	EXP 	window1: blendMode = 'avg'
+65.4382 	EXP 	window1: blendMode = 'avg'
+65.4717 	EXP 	window1: blendMode = 'avg'
+65.5049 	EXP 	window1: blendMode = 'avg'
+65.5383 	EXP 	window1: blendMode = 'avg'
+65.5718 	EXP 	window1: blendMode = 'avg'
+65.6052 	EXP 	window1: blendMode = 'avg'
+65.6388 	EXP 	window1: blendMode = 'avg'
+65.6719 	EXP 	window1: blendMode = 'avg'
+65.7055 	EXP 	window1: blendMode = 'avg'
+65.7389 	EXP 	window1: blendMode = 'avg'
+65.7723 	EXP 	window1: blendMode = 'avg'
+65.8059 	EXP 	window1: blendMode = 'avg'
+65.8392 	EXP 	window1: blendMode = 'avg'
+65.8727 	EXP 	window1: blendMode = 'avg'
+65.9058 	EXP 	window1: blendMode = 'avg'
+65.9392 	EXP 	window1: blendMode = 'avg'
+65.9725 	EXP 	window1: blendMode = 'avg'
+66.0059 	EXP 	window1: blendMode = 'avg'
+66.0390 	INFO 	finished routine RestBlock ...
+66.0390 	INFO 	starting routine FacenameTrial ...
+66.0392 	INFO 	starting routine timer from 51.3614661694
+66.0453 	DATA 	Response Box: d
+66.0454 	DATA 	ResponseTime: 0.0061240196228
+66.0455 	INFO 	finished routine FacenameTrial ...
+66.0455 	INFO 	starting routine Fixation ...
+66.0466 	EXP 	window1: blendMode = 'avg'
+66.0819 	EXP 	Rest Block: autoDraw = False
+66.0819 	EXP 	No Prompt: autoDraw = True
+66.0819 	EXP 	Yes Prompt: autoDraw = True
+66.0819 	EXP 	Trial Name: CHRISTINE: autoDraw = True
+66.0819 	EXP 	Trial Prompt: autoDraw = True
+66.0819 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = True
+66.0819 	EXP 	No Prompt: autoDraw = False
+66.0819 	EXP 	Yes Prompt: autoDraw = False
+66.0819 	EXP 	Trial Name: CHRISTINE: autoDraw = False
+66.0819 	EXP 	Trial Prompt: autoDraw = False
+66.0819 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = False
+66.0819 	EXP 	Fixation: autoDraw = True
+66.0824 	EXP 	window1: blendMode = 'avg'
+66.1247 	EXP 	window1: blendMode = 'avg'
+66.1771 	EXP 	window1: blendMode = 'avg'
+66.2364 	EXP 	window1: blendMode = 'avg'
+66.2948 	EXP 	window1: blendMode = 'avg'
+66.3502 	EXP 	window1: blendMode = 'avg'
+66.3934 	EXP 	window1: blendMode = 'avg'
+66.4604 	EXP 	window1: blendMode = 'avg'
+66.5177 	EXP 	window1: blendMode = 'avg'
+66.5767 	EXP 	window1: blendMode = 'avg'
+66.6311 	EXP 	window1: blendMode = 'avg'
+66.6706 	EXP 	window1: blendMode = 'avg'
+66.7107 	EXP 	window1: blendMode = 'avg'
+66.7437 	INFO 	finished routine Fixation ...
+66.7437 	INFO 	starting routine FacenameTrial ...
+66.7439 	INFO 	starting routine timer from 52.0661330223
+66.7500 	DATA 	Response Box: d
+66.7501 	DATA 	ResponseTime: 0.00612616539001
+66.7503 	INFO 	finished routine FacenameTrial ...
+66.7504 	INFO 	starting routine Fixation ...
+66.7515 	EXP 	window1: blendMode = 'avg'
+66.8074 	EXP 	Fixation: autoDraw = False
+66.8074 	EXP 	No Prompt: autoDraw = True
+66.8074 	EXP 	Yes Prompt: autoDraw = True
+66.8074 	EXP 	Trial Name: SAMUEL: autoDraw = True
+66.8074 	EXP 	Trial Prompt: autoDraw = True
+66.8074 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = True
+66.8074 	EXP 	No Prompt: autoDraw = False
+66.8074 	EXP 	Yes Prompt: autoDraw = False
+66.8074 	EXP 	Trial Name: SAMUEL: autoDraw = False
+66.8074 	EXP 	Trial Prompt: autoDraw = False
+66.8074 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = False
+66.8074 	EXP 	Fixation: autoDraw = True
+66.8080 	EXP 	window1: blendMode = 'avg'
+66.8662 	EXP 	window1: blendMode = 'avg'
+66.9172 	EXP 	window1: blendMode = 'avg'
+66.9419 	EXP 	window1: blendMode = 'avg'
+66.9750 	EXP 	window1: blendMode = 'avg'
+67.0084 	EXP 	window1: blendMode = 'avg'
+67.0419 	EXP 	window1: blendMode = 'avg'
+67.0751 	EXP 	window1: blendMode = 'avg'
+67.1084 	EXP 	window1: blendMode = 'avg'
+67.1421 	EXP 	window1: blendMode = 'avg'
+67.1751 	EXP 	window1: blendMode = 'avg'
+67.2088 	EXP 	window1: blendMode = 'avg'
+67.2422 	EXP 	window1: blendMode = 'avg'
+67.2749 	INFO 	finished routine Fixation ...
+67.2750 	INFO 	starting routine FacenameTrial ...
+67.2753 	INFO 	starting routine timer from 52.5975260735
+67.2782 	DATA 	Response Box: d
+67.2782 	DATA 	ResponseTime: 0.00285410881042
+67.2783 	INFO 	finished routine FacenameTrial ...
+67.2785 	INFO 	starting routine Fixation ...
+67.2796 	EXP 	window1: blendMode = 'avg'
+67.3312 	EXP 	Fixation: autoDraw = False
+67.3312 	EXP 	No Prompt: autoDraw = True
+67.3312 	EXP 	Yes Prompt: autoDraw = True
+67.3312 	EXP 	Trial Name: CHRISTINE: autoDraw = True
+67.3312 	EXP 	Trial Prompt: autoDraw = True
+67.3312 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = True
+67.3312 	EXP 	No Prompt: autoDraw = False
+67.3312 	EXP 	Yes Prompt: autoDraw = False
+67.3312 	EXP 	Trial Name: CHRISTINE: autoDraw = False
+67.3312 	EXP 	Trial Prompt: autoDraw = False
+67.3312 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = False
+67.3312 	EXP 	Fixation: autoDraw = True
+67.3317 	EXP 	window1: blendMode = 'avg'
+67.3853 	EXP 	window1: blendMode = 'avg'
+67.4236 	EXP 	window1: blendMode = 'avg'
+67.4886 	EXP 	window1: blendMode = 'avg'
+67.5519 	EXP 	window1: blendMode = 'avg'
+67.5792 	EXP 	window1: blendMode = 'avg'
+67.6104 	EXP 	window1: blendMode = 'avg'
+67.6439 	EXP 	window1: blendMode = 'avg'
+67.6758 	EXP 	window1: blendMode = 'avg'
+67.7092 	EXP 	window1: blendMode = 'avg'
+67.7429 	EXP 	window1: blendMode = 'avg'
+67.7759 	EXP 	window1: blendMode = 'avg'
+67.8093 	EXP 	window1: blendMode = 'avg'
+67.8422 	INFO 	finished routine Fixation ...
+67.8423 	INFO 	starting routine FacenameTrial ...
+67.8425 	INFO 	starting routine timer from 53.1647410393
+67.8475 	DATA 	Response Box: d
+67.8475 	DATA 	ResponseTime: 0.00501894950867
+67.8476 	INFO 	finished routine FacenameTrial ...
+67.8477 	INFO 	starting routine Fixation ...
+67.8486 	EXP 	window1: blendMode = 'avg'
+67.8980 	EXP 	Fixation: autoDraw = False
+67.8980 	EXP 	No Prompt: autoDraw = True
+67.8980 	EXP 	Yes Prompt: autoDraw = True
+67.8980 	EXP 	Trial Name: SAMUEL: autoDraw = True
+67.8980 	EXP 	Trial Prompt: autoDraw = True
+67.8980 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = True
+67.8980 	EXP 	No Prompt: autoDraw = False
+67.8980 	EXP 	Yes Prompt: autoDraw = False
+67.8980 	EXP 	Trial Name: SAMUEL: autoDraw = False
+67.8980 	EXP 	Trial Prompt: autoDraw = False
+67.8980 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = False
+67.8980 	EXP 	Fixation: autoDraw = True
+67.8984 	EXP 	window1: blendMode = 'avg'
+67.9412 	EXP 	window1: blendMode = 'avg'
+68.0099 	EXP 	window1: blendMode = 'avg'
+68.0549 	EXP 	window1: blendMode = 'avg'
+68.1104 	EXP 	window1: blendMode = 'avg'
+68.1606 	EXP 	window1: blendMode = 'avg'
+68.2259 	EXP 	window1: blendMode = 'avg'
+68.2727 	EXP 	window1: blendMode = 'avg'
+68.3405 	EXP 	window1: blendMode = 'avg'
+68.3769 	EXP 	window1: blendMode = 'avg'
+68.4102 	EXP 	window1: blendMode = 'avg'
+68.4435 	EXP 	window1: blendMode = 'avg'
+68.4768 	EXP 	window1: blendMode = 'avg'
+68.5095 	INFO 	finished routine Fixation ...
+68.5095 	INFO 	starting routine FacenameTrial ...
+68.5097 	INFO 	starting routine timer from 53.8319320679
+68.5110 	DATA 	Response Box: d
+68.5110 	DATA 	ResponseTime: 0.00132012367249
+68.5111 	INFO 	finished routine FacenameTrial ...
+68.5112 	INFO 	starting routine Fixation ...
+68.5118 	EXP 	window1: blendMode = 'avg'
+68.5574 	EXP 	Fixation: autoDraw = False
+68.5574 	EXP 	No Prompt: autoDraw = True
+68.5574 	EXP 	Yes Prompt: autoDraw = True
+68.5574 	EXP 	Trial Name: CHRISTINE: autoDraw = True
+68.5574 	EXP 	Trial Prompt: autoDraw = True
+68.5574 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = True
+68.5574 	EXP 	No Prompt: autoDraw = False
+68.5574 	EXP 	Yes Prompt: autoDraw = False
+68.5574 	EXP 	Trial Name: CHRISTINE: autoDraw = False
+68.5574 	EXP 	Trial Prompt: autoDraw = False
+68.5574 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = False
+68.5574 	EXP 	Fixation: autoDraw = True
+68.5579 	EXP 	window1: blendMode = 'avg'
+68.6110 	EXP 	window1: blendMode = 'avg'
+68.6435 	EXP 	window1: blendMode = 'avg'
+68.6767 	EXP 	window1: blendMode = 'avg'
+68.7105 	EXP 	window1: blendMode = 'avg'
+68.7438 	EXP 	window1: blendMode = 'avg'
+68.7772 	EXP 	window1: blendMode = 'avg'
+68.8106 	EXP 	window1: blendMode = 'avg'
+68.8439 	EXP 	window1: blendMode = 'avg'
+68.8771 	EXP 	window1: blendMode = 'avg'
+68.9107 	EXP 	window1: blendMode = 'avg'
+68.9440 	EXP 	window1: blendMode = 'avg'
+68.9774 	EXP 	window1: blendMode = 'avg'
+69.0100 	INFO 	finished routine Fixation ...
+69.0101 	INFO 	starting routine FacenameTrial ...
+69.0104 	INFO 	starting routine timer from 54.3326301575
+69.0107 	DATA 	Response Box: d
+69.0107 	DATA 	ResponseTime: 0.000304937362671
+69.0108 	INFO 	finished routine FacenameTrial ...
+69.0110 	INFO 	starting routine Fixation ...
+69.0120 	EXP 	window1: blendMode = 'avg'
+69.0438 	EXP 	Fixation: autoDraw = False
+69.0438 	EXP 	No Prompt: autoDraw = True
+69.0438 	EXP 	Yes Prompt: autoDraw = True
+69.0438 	EXP 	Trial Name: SAMUEL: autoDraw = True
+69.0438 	EXP 	Trial Prompt: autoDraw = True
+69.0438 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = True
+69.0438 	EXP 	No Prompt: autoDraw = False
+69.0438 	EXP 	Yes Prompt: autoDraw = False
+69.0438 	EXP 	Trial Name: SAMUEL: autoDraw = False
+69.0438 	EXP 	Trial Prompt: autoDraw = False
+69.0438 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = False
+69.0438 	EXP 	Fixation: autoDraw = True
+69.0443 	EXP 	window1: blendMode = 'avg'
+69.0776 	EXP 	window1: blendMode = 'avg'
+69.1109 	EXP 	window1: blendMode = 'avg'
+69.1445 	EXP 	window1: blendMode = 'avg'
+69.1776 	EXP 	window1: blendMode = 'avg'
+69.2110 	EXP 	window1: blendMode = 'avg'
+69.2437 	EXP 	window1: blendMode = 'avg'
+69.2777 	EXP 	window1: blendMode = 'avg'
+69.3105 	EXP 	window1: blendMode = 'avg'
+69.3445 	EXP 	window1: blendMode = 'avg'
+69.3775 	EXP 	window1: blendMode = 'avg'
+69.4112 	EXP 	window1: blendMode = 'avg'
+69.4445 	EXP 	window1: blendMode = 'avg'
+69.4772 	INFO 	finished routine Fixation ...
+69.4773 	INFO 	starting routine FacenameTrial ...
+69.4776 	INFO 	starting routine timer from 54.7998239994
+69.4817 	DATA 	Response Box: d
+69.4817 	DATA 	ResponseTime: 0.00411605834961
+69.4819 	INFO 	finished routine FacenameTrial ...
+69.4820 	INFO 	starting routine Fixation ...
+69.4825 	EXP 	window1: blendMode = 'avg'
+69.5285 	EXP 	Fixation: autoDraw = False
+69.5285 	EXP 	No Prompt: autoDraw = True
+69.5285 	EXP 	Yes Prompt: autoDraw = True
+69.5285 	EXP 	Trial Name: CHRISTINE: autoDraw = True
+69.5285 	EXP 	Trial Prompt: autoDraw = True
+69.5285 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = True
+69.5285 	EXP 	No Prompt: autoDraw = False
+69.5285 	EXP 	Yes Prompt: autoDraw = False
+69.5285 	EXP 	Trial Name: CHRISTINE: autoDraw = False
+69.5285 	EXP 	Trial Prompt: autoDraw = False
+69.5285 	EXP 	Trial Image: stimuli/CFD-WF-223-133-N.jpg: autoDraw = False
+69.5285 	EXP 	Fixation: autoDraw = True
+69.5289 	EXP 	window1: blendMode = 'avg'
+69.5907 	EXP 	window1: blendMode = 'avg'
+69.6558 	EXP 	window1: blendMode = 'avg'
+69.7089 	EXP 	window1: blendMode = 'avg'
+69.7713 	EXP 	window1: blendMode = 'avg'
+69.8070 	EXP 	window1: blendMode = 'avg'
+69.8524 	EXP 	window1: blendMode = 'avg'
+69.8908 	EXP 	window1: blendMode = 'avg'
+69.9274 	EXP 	window1: blendMode = 'avg'
+69.9605 	EXP 	window1: blendMode = 'avg'
+69.9948 	EXP 	window1: blendMode = 'avg'
+70.0282 	EXP 	window1: blendMode = 'avg'
+70.0616 	EXP 	window1: blendMode = 'avg'
+70.0946 	INFO 	finished routine Fixation ...
+70.0947 	INFO 	starting routine FacenameTrial ...
+70.0949 	INFO 	starting routine timer from 55.4171161652
+70.1002 	DATA 	Response Box: d
+70.1002 	DATA 	ResponseTime: 0.00531482696533
+70.1003 	INFO 	finished routine FacenameTrial ...
+70.1004 	INFO 	starting routine RestBlock ...
+70.1015 	EXP 	window1: blendMode = 'avg'
+70.1473 	EXP 	Fixation: autoDraw = False
+70.1473 	EXP 	No Prompt: autoDraw = True
+70.1473 	EXP 	Yes Prompt: autoDraw = True
+70.1473 	EXP 	Trial Name: SAMUEL: autoDraw = True
+70.1473 	EXP 	Trial Prompt: autoDraw = True
+70.1473 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = True
+70.1473 	EXP 	No Prompt: autoDraw = False
+70.1473 	EXP 	Yes Prompt: autoDraw = False
+70.1473 	EXP 	Trial Name: SAMUEL: autoDraw = False
+70.1473 	EXP 	Trial Prompt: autoDraw = False
+70.1473 	EXP 	Trial Image: stimuli/CFD-WM-206-045-N.jpg: autoDraw = False
+70.1473 	EXP 	Rest Block: autoDraw = True
+70.1478 	EXP 	window1: blendMode = 'avg'
+70.1933 	EXP 	window1: blendMode = 'avg'
+70.2603 	EXP 	window1: blendMode = 'avg'
+70.3261 	EXP 	window1: blendMode = 'avg'
+70.3835 	EXP 	window1: blendMode = 'avg'
+70.4221 	EXP 	window1: blendMode = 'avg'
+70.4578 	EXP 	window1: blendMode = 'avg'
+70.5082 	EXP 	window1: blendMode = 'avg'
+70.5410 	EXP 	window1: blendMode = 'avg'
+70.5952 	EXP 	window1: blendMode = 'avg'
+70.6514 	EXP 	window1: blendMode = 'avg'
+70.6784 	EXP 	window1: blendMode = 'avg'
+70.7130 	EXP 	window1: blendMode = 'avg'
+70.7462 	EXP 	window1: blendMode = 'avg'
+70.7798 	EXP 	window1: blendMode = 'avg'
+70.8133 	EXP 	window1: blendMode = 'avg'
+70.8467 	EXP 	window1: blendMode = 'avg'
+70.8802 	EXP 	window1: blendMode = 'avg'
+70.9122 	EXP 	window1: blendMode = 'avg'
+70.9466 	EXP 	window1: blendMode = 'avg'
+70.9802 	EXP 	window1: blendMode = 'avg'
+71.0136 	EXP 	window1: blendMode = 'avg'
+71.0470 	EXP 	window1: blendMode = 'avg'
+71.0803 	EXP 	window1: blendMode = 'avg'
+71.1141 	EXP 	window1: blendMode = 'avg'
+71.1474 	EXP 	window1: blendMode = 'avg'
+71.1810 	EXP 	window1: blendMode = 'avg'
+71.2144 	EXP 	window1: blendMode = 'avg'
+71.2477 	EXP 	window1: blendMode = 'avg'
+71.2810 	EXP 	window1: blendMode = 'avg'
+71.3145 	EXP 	window1: blendMode = 'avg'
+71.3477 	EXP 	window1: blendMode = 'avg'
+71.3808 	EXP 	window1: blendMode = 'avg'
+71.4142 	EXP 	window1: blendMode = 'avg'
+71.4476 	EXP 	window1: blendMode = 'avg'
+71.4810 	EXP 	window1: blendMode = 'avg'
+71.5144 	EXP 	window1: blendMode = 'avg'
+71.5478 	EXP 	window1: blendMode = 'avg'
+71.5815 	EXP 	window1: blendMode = 'avg'
+71.6146 	EXP 	window1: blendMode = 'avg'
+71.6481 	EXP 	window1: blendMode = 'avg'
+71.6814 	EXP 	window1: blendMode = 'avg'
+71.7148 	EXP 	window1: blendMode = 'avg'
+71.7483 	EXP 	window1: blendMode = 'avg'
+71.7816 	EXP 	window1: blendMode = 'avg'
+71.8150 	EXP 	window1: blendMode = 'avg'
+71.8484 	EXP 	window1: blendMode = 'avg'
+71.8818 	EXP 	window1: blendMode = 'avg'
+71.9152 	EXP 	window1: blendMode = 'avg'
+71.9486 	EXP 	window1: blendMode = 'avg'
+71.9819 	EXP 	window1: blendMode = 'avg'
+72.0154 	EXP 	window1: blendMode = 'avg'
+72.0488 	EXP 	window1: blendMode = 'avg'
+72.0821 	EXP 	window1: blendMode = 'avg'
+72.1156 	EXP 	window1: blendMode = 'avg'
+72.1491 	EXP 	window1: blendMode = 'avg'
+72.1824 	EXP 	window1: blendMode = 'avg'
+72.2158 	EXP 	window1: blendMode = 'avg'
+72.2492 	EXP 	window1: blendMode = 'avg'
+72.2826 	EXP 	window1: blendMode = 'avg'
+72.3160 	EXP 	window1: blendMode = 'avg'
+72.3493 	EXP 	window1: blendMode = 'avg'
+72.3828 	EXP 	window1: blendMode = 'avg'
+72.4162 	EXP 	window1: blendMode = 'avg'
+72.4495 	EXP 	window1: blendMode = 'avg'
+72.4829 	EXP 	window1: blendMode = 'avg'
+72.5162 	DATA 	Keypress: escape
+72.5163 	WARNING 	escape button pressed ... aborting experiment

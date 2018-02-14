@@ -1,0 +1,5 @@
+blockFile,isKnown,isNovel
+encodefn/blocks/s2r1-1b0.csv,0,1
+encodefn/blocks/s2r1-1b1.csv,1,0
+encodefn/blocks/s2r1-1b2.csv,0,1
+encodefn/blocks/s2r1-1b3.csv,1,0

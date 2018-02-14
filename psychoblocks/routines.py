@@ -159,9 +159,9 @@ class FacenameTrial(AbstractCollection):
         super(FacenameTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
         feature = ResponseBox(feature, None)
-        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image)
-        feature = TextFeature(feature, text = "Is this person's name", 
-                                       pos=(0,.8), name = 'Novel Trial Prompt')
+        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='pix',size=(569,400))
+        feature = TextFeature(feature, text = "Is this name a good fit for the face?", 
+                                       pos=(0,.8), name = 'Trial Prompt')
         feature = TextFeature(feature, text= name+'?', pos= (0,.6), name= 'Trial Name: '+name)
         feature = TextFeature(feature, text = 'YES', name = 'Yes Prompt', pos = (-.33, -.66))
         feature = TextFeature(feature, text = 'NO', name = 'No Prompt', pos = (.33,-.66))

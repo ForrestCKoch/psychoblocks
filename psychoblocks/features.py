@@ -384,3 +384,28 @@ class ExaminerTextFeature(AbstractFeature):
         """
         self._textStim.setAutoDraw(False)
         super(ExaminerTextFeature,self).end()
+
+    
+class WaitForResponse(AbstractLoop):
+
+    def __init__(self, responseFeature, experiment = None):
+        super(WaitForResponse,self).__init__(responseFeature,experiment = experiment)
+        self.responseFeature = responseFeature
+        self._status = False
+
+    @property
+    def status(self):
+        """
+        Boolean : Execution status of the loop.
+        """
+        return not self.responseFeature._responseRead
+
+    def initializeLoop(self):
+        self._status = True
+
+    def updateStatus(self):
+        self.experiment.participantWindow.flip()
+        pass
+
+    def destroyLoop(self):
+        pass
