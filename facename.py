@@ -13,13 +13,13 @@ from psychopy import core, gui, data, logging, visual, clock
 from psychoblocks import const, experiment, routines, features
 
 if (__name__ == '__main__'):
-    app = experiment.Experiment('facename')
+    app = experiment.Experiment('encodefn')
 
     if app.examinerWindow:
         examinerUpdate = routines.UpdateExaminerWindow(app)
         app.addRoutine(examinerUpdate) 
 
-    app.addRoutine(routines.FacenameInstructions(app))
+    app.addRoutine(routines.FNInstructions(app))
     # sync before instructions
     app.addRoutine(features.MRISync(None, experiment = app))
     app.addRoutine(routines.CountdownSequence(app))
@@ -30,41 +30,35 @@ if (__name__ == '__main__'):
     firstBlock = True
     for line in runCSV:
 
-        if firstBlock: 
-            firstBlock = False
-        else:
-            # after each block there should be a rest block
-            if app.examinerWindow:
-                app.addRoutine(examinerUpdate) 
-            app.addRoutine(routines.RestBlock(app))
 
         blockCSV = data.importConditions(line['blockFile'])
         # discriminate between known and novel trials
         if (int(line['isKnown']) == 1):
             isKnown = True
-            app.addRoutine(routines.KnownCue(app))
         else:
             isKnown = False
-            app.addRoutine(routines.NovelCue(app))
         firstTrial = True
         
-        # sync before each block
-        app.addRoutine(features.MRISync(None, experiment = app))
+        firstTrial = True
 
         for trial in blockCSV:
             image = os.path.join(const.DEFAULT_STIMULI_FOLDER,trial['image'])
             if isKnown:
-                trialRoutine = routines.KnownTrial(app, image, trial['name1'], trial['name2'], None)
+                trialRoutine = routines.FacenameTrial(app, image, trial['name'],duration=4.5)
             else:
-                trialRoutine = routines.NovelTrial(app, image, trial['name'])
+                trialRoutine = routines.FacenameTrial(app, image, trial['name'],duration=4.5)
 
-            # after each trial there should be a brief fixation
             if firstTrial:
                 firstTrial = False
-            else: 
-                app.addRoutine(routines.Fixation(app))
+            else:
+                app.addRoutine(routines.Fixation(app,duration=0.5))
 
             app.addRoutine(trialRoutine)
+
+        # after each block there should be a rest block
+        if app.examinerWindow:
+            app.addRoutine(examinerUpdate) 
+        app.addRoutine(routines.RestBlock(app,duration=24.775))
 
     
     # ready freddy go!
