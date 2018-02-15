@@ -104,7 +104,7 @@ class Experiment(object):
         self._expName = name
         expInfo={   'participant':const.DEFAULT_PARTICIPANT,
                     'run session':const.DEFAULT_SESSION,
-                    'run file':os.path.join(name,'runs',const.DEFAULT_RUN_FILE),
+                    'run file':os.path.join('data','runs',const.DEFAULT_RUN_FILE),
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
                     'serial baudrate':const.DEFAULT_BAUDRATE,
@@ -112,7 +112,7 @@ class Experiment(object):
                     'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
                     'participant screen width':const.DEFAULT_SCREEN_WIDTH,
                     'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
-                    'path to results folder':os.path.join(name,const.DEFAULT_RESULTS_FOLDER),
+                    'path to results folder':os.path.join('data',const.DEFAULT_RESULTS_FOLDER),
                     'examiner fullscreen':const.DEFAULT_FULLSCREEN,
                     'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
                     'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
@@ -252,8 +252,8 @@ class Experiment(object):
         """
 
         # setup logging -- do we need to hold onto the returns?
-        datafile = os.path.join(self.resultsFolder,'%s_%s_%s' %
-                               (self.participant, self.session, self.date))
+        datafile = os.path.join(self.resultsFolder,'%s_%s_%s_%s' %
+                               (self.expName,self.participant, self.session, self.date))
 
         self._logfile = logging.LogFile(datafile+'.log', level = logging.INFO)
         logging.console.setLevel(logging.WARNING)

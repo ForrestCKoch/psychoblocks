@@ -13,8 +13,8 @@
     This left __ female and __ male stimuli.
 
 -- Randomized Run Generation --
-    Lists of faces and names for each gender are loaded.  A subset of them are 
-    randomly removed for generation of the runs, and the resulting lists are
+    Lists of faces and names for each gender are loaded and shuffled for randomization. 
+    A subset of them are removed for generation of the runs, and the resulting lists are
     zipped together to form random facename pairs.  The last pair from each
     gender list are used as the Repeated Faces.  For each novel block 0..n,
     indices (4*n)..(4*(n+1)) of each gender are alocated to that block.

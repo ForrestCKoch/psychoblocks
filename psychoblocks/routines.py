@@ -136,3 +136,53 @@ class FacenameTrial(AbstractCollection):
         # advance the data entry to next
         self.feature.experiment.experimentHandler.nextEntry()
         super(FacenameTrial,self).run()
+
+class RecallTrial(AbstractCollection):
+    
+    def __init__(self, experiment, image, rname, lname, correct):
+        super(RecallTrial,self).__init__(None, experiment = experiment)
+        feature = EscapeCheck(None, experiment = experiment)
+        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='pix',size=(569,400))
+        feature = TextFeature(feature, text = "Who is this?", 
+                                       pos=(0,.8), name = 'Trial Prompt')
+        feature = TextFeature(feature, text = lname, name = 'Yes Prompt', pos = (-.33, -.66))
+        feature = TextFeature(feature, text = rname, name = 'No Prompt', pos = (.33,-.66))
+
+        if correct == 'left':
+            corr_resp = const.RIGHT_INDEX
+        else:
+            corr_resp = const.RIGHT_MIDDLE
+
+        feature = ResponseBox(feature, corr_resp)
+        feature = WaitForResponse(feature, None)
+        self._feature = feature
+     
+    @property
+    def feature(self):
+        return self._feature
+
+    def run(self):
+        # advance the data entry to next
+        self.feature.experiment.experimentHandler.nextEntry()
+        super(RecallTrial,self).run()
+
+class ConfidenceTrial(AbstractCollection):
+
+    def __init__(self, experiment):
+        super(ConfidenceTrial,self).__init__(None, experiment = experiment)
+        feature = EscapeCheck(None, experiment = experiment)
+        feature = TextFeature(feature, text = "How confident are you?")
+        feature = TextFeature(feature, text = "High", pos = (-.33,-.66))
+        feature = TextFeature(feature, text = "Low", pos = (.33,-.66))
+        feature = ResponseBox(feature, None)
+        feature = WaitForResponse(feature)
+        self._feature = feature
+
+    @property
+    def feature(self):
+        return self._feature
+
+    def run(self):
+        # advance the data entry to next
+        self.feature.experiment.experimentHandler.nextEntry()
+        super(ConfidenceTrial,self).run()
