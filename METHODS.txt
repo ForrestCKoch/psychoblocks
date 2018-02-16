@@ -8,9 +8,9 @@
 -- Name Stimuli -- 
     Names have been selected from a list of the most popular baby names in South
     Australia from 1944-2013 (https://data.sa.gov.au/data/dataset/popular-baby-names)
-    Removing duplicates, the __  most popular names for each gender for each year
+    Removing duplicates, the 20  most popular names for each gender for each year
     were used for randomly selecting the stimuli for names.
-    This left __ female and __ male stimuli.
+    This left 124 female and 85 male stimuli (*NOTE "UNAMED" was removed from the list).
 
 -- Randomized Run Generation --
     Lists of faces and names for each gender are loaded and shuffled for randomization. 
@@ -21,3 +21,4 @@
     The blocks are shuffled.  This preserves gender balence, but not necessarily
     order within each block. For repeated blocks, the two faces are simply
     alternated, randomly selecting the gender to start.
+    This is then repeated to generate a second sequence with different stimuli.

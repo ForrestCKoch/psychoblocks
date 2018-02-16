@@ -16,9 +16,11 @@ if (__name__ == '__main__'):
     app = experiment.Experiment('recall')
 
     # build the trial sequence and add to the app
-    runCSV = data.importConditions('data/blocks/test_recall.csv')
+    runCSV = data.importConditions(app.runfile)
     
     for line in runCSV:
+        print(const.DEFAULT_STIMULI_FOLDER)
+        print(line['image'])
         image = os.path.join(const.DEFAULT_STIMULI_FOLDER,line['image'])
         app.addRoutine(routines.RecallTrial(app,image,line['lname'],line['rname'],line['correct']))
         app.addRoutine(routines.ConfidenceTrial(app))
