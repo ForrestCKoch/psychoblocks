@@ -20,9 +20,8 @@ if (__name__ == '__main__'):
         app.addRoutine(examinerUpdate) 
 
     app.addRoutine(routines.FNInstructions(app))
-    # sync before instructions
-    app.addRoutine(features.MRISync(None, experiment = app))
     app.addRoutine(routines.CountdownSequence(app))
+    app.addRoutine(features.MRISync(None, experiment = app))
 
     # build the trial sequence and add to the app
     runCSV = data.importConditions(app.runfile)
