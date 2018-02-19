@@ -253,7 +253,7 @@ class Experiment(object):
 
         # setup logging -- do we need to hold onto the returns?
         datafile = os.path.join(self.resultsFolder,'%s_%s_%s_%s' %
-                               (self.expName,self.participant, self.session, self.date))
+                               (self.expName,self.participant, self.getRun(), self.date))
 
         self._logfile = logging.LogFile(datafile+'.log', level = logging.INFO)
         logging.console.setLevel(logging.WARNING)
@@ -261,6 +261,7 @@ class Experiment(object):
     def _setupWindows(self):
         """
         Setup the windows
+
         """
         # setup the participant's window
         if self.fullscreen == 'yes':
@@ -318,8 +319,8 @@ class Experiment(object):
         Setup the experiment handler
         """
 
-        datafile = os.path.join(self.resultsFolder, '%s_%s_%s' %
-                               (self.participant, self.session, self.date))
+        datafile = os.path.join(self.resultsFolder, '%s_%s_%s_%s' %
+                               (self.expName, self.participant, self.getRun(), self.date))
 
         self._expHandler = data.ExperimentHandler(name = self.expName, 
                                                  version = self.runfile,
@@ -463,3 +464,6 @@ class Experiment(object):
     @property
     def examinerScreen(self):
         return self._examinerScreen
+
+    def getRun(self):
+        return os.path.splitext(os.path.basename(self.runfile))[0]

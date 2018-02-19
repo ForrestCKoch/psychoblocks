@@ -21,7 +21,8 @@ if (__name__ == '__main__'):
 
     app.addRoutine(routines.FNInstructions(app))
     app.addRoutine(routines.CountdownSequence(app))
-    app.addRoutine(features.MRISync(None, experiment = app))
+    if app.mode != 'practice':
+        app.addRoutine(features.MRISync(None, experiment = app))
 
     # build the trial sequence and add to the app
     runCSV = data.importConditions(app.runfile)

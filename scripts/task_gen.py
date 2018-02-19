@@ -6,8 +6,8 @@ import re
 import csv
 import copy
 import sys
-
-random.seed(1)
+SEED_VALUE = 221293
+random.seed()
 
 STIMULI_FOLDER = os.path.abspath('../stimuli')
 # total number of runs to be created
@@ -59,7 +59,7 @@ random.shuffle(female_stimuli)
 random.shuffle(male_stimuli)
 
 # create both initial and follow-up sets
-for scan in ['s0','s1']:
+for scan in ['s1','s2']:
 
     # random stimuli lists
     rand_female_stimuli = list()
@@ -138,7 +138,7 @@ for scan in ['s0','s1']:
 
     for i in range(0, RUNS):
         # write our runfile
-        with open('csvfiles/'+scan+'r'+str(i)+'.csv','w') as r:
+        with open('csvfiles/'+scan+'r'+str(i+1)+'.csv','w') as r:
             runwriter = csv.writer(r, delimiter=',')
             # setup the entries expected
             runwriter.writerow(['blockFile','isKnown','isNovel'])
@@ -150,43 +150,126 @@ for scan in ['s0','s1']:
                 else:
                     isKnown = 1
                 # write the block info
-                runwriter.writerow(['data/blocks/'+scan+'r'+str(i)+'b'+str(j)+'.csv',isKnown,(isKnown+1)%2]) 
-                with open('csvfiles/'+scan+'r'+str(i)+'b'+str(j)+'.csv','w') as b:
+                runwriter.writerow(['data/blocks/'+scan+'r'+str(i+1)+'b'+str(j+1)+'.csv',isKnown,(isKnown+1)%2]) 
+                with open('csvfiles/'+scan+'r'+str(i+1)+'b'+str(j+1)+'.csv','w') as b:
                     blockwriter = csv.writer(b,delimiter=',')
                     blockwriter.writerow(['image','name','corr'])
                     for trial in block[0]:
                         blockwriter.writerow(trial)
 
-    # now to create the post-scan test
-    test_male_pairs = copy.deepcopy(male_pairs)
-    test_female_pairs = copy.deepcopy(female_pairs)
-    test_male_names = copy.deepcopy(rand_male_names)
-    test_female_names = copy.deepcopy(rand_female_names)
-    # shuffle the lists
-    random.shuffle(test_male_pairs)
-    random.shuffle(test_male_names)
-    random.shuffle(test_female_pairs)
-    random.shuffle(test_female_names)
 
 
-    # create a list of 'trials'
-    test_trials = list()
-    # there is currently a bug, where if there is an odd number of
-    # stimuli for each gender, there is a chance that the last
-    # subject to be randomly assigned a fake name will be paired with their true name
-    # if this happens, just re-run...
-    c = 0
-    while(len(test_male_pairs) and len(test_female_pairs)):
-        if 'WILLIAM\n' in test_female_names:
-            print(c)
-            exit()
-        else:
-            c += 1 
+    for r in range(0, RUNS):
+        # now to create the post-scan test
+        test_male_pairs=copy.deepcopy(male_pairs[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
+        test_female_pairs=copy.deepcopy(female_pairs[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
+        test_male_names=copy.deepcopy(rand_male_names[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
+        test_female_names=copy.deepcopy(rand_female_names[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
+        # append the repeated pairs
+        """
+        test_male_pairs.append(copy.deepcopy(male_pairs[-1]))
+        test_female_pairs.append(copy.deepcopy(female_pairs[-1]))
+        test_male_names.append(copy.deepcopy(male_names[-1]))
+        test_female_names.append(copy.deepcopy(female_names[-1]))
+        """    
 
-        if random.choice([True,False]):
+        # shuffle the lists
+        random.shuffle(test_male_pairs)
+        random.shuffle(test_male_names)
+        random.shuffle(test_female_pairs)
+        random.shuffle(test_female_names)
+
+        # create a list of 'trials'
+        test_trials = list()
+        while(len(test_male_pairs) and len(test_female_pairs)):
+            if random.choice([True,False]):
+                # try to prevent last name pairing with self
+                if(len(test_male_pairs) == 2):
+                    for p in test_male_pairs:
+                        if p[1] in test_male_names:
+                            pair = p
+                            test_male_pairs.remove(pair)
+                            if test_male_names[0] == p[1]:
+                                false_name = test_male_names[1]
+                            else:
+                                false_name = test_male_names[0]
+                            test_male_names.remove(false_name)
+                            break
+                    pair = test_male_pairs.pop()
+                    false_name = test_male_names.pop()
+                else:
+                    pair = test_male_pairs.pop()
+                    false_name = test_male_names.pop()
+                if false_name == pair[1]:
+                    try:
+                        tmp = test_male_names.pop()
+                    except:
+                        # not sure how to resolve this bug
+                        # so crash and tell the user to re-run
+                        print("ERROR: BAD SEQUENCE GENERATED, PLEASE RE-RUN")
+                        exit()
+                    test_male_names.append(false_name)
+                    random.shuffle(test_male_names)
+                    false_name = tmp
+            else:
+                # add a female to the trial
+                # try to prevent last name pairing with self
+                if(len(test_female_pairs) == 2):
+                    for p in test_female_pairs:
+                        if p[1] in test_female_names:
+                            pair = p
+                            test_female_pairs.remove(pair)
+                            if test_female_names[0] == p[1]:
+                                false_name = test_female_names[1]
+                            else:
+                                false_name = test_female_names[0]
+                            test_female_names.remove(false_name)
+                            break
+                    pair = test_female_pairs.pop()
+                    false_name = test_female_names.pop()
+                else:
+                    pair = test_female_pairs.pop()
+                    false_name = test_female_names.pop()
+                if false_name == pair[1]:
+                    try:
+                        tmp = test_female_names.pop()
+                    except:
+                        # not sure how to resolve this bug
+                        # so crash and tell the user to re-run
+                        print("ERROR: BAD SEQUENCE GENERATED, PLEASE RE-RUN")
+                        exit()
+                    test_female_names.append(false_name)
+                    random.shuffle(test_female_names)
+                    false_name = tmp
+
+            # randomize the name order
+            if random.choice([True,False]):
+                # correct name on left
+                test_trials.append([pair[0],pair[1],false_name,'left'])
+            else:
+                # correct name on right
+                test_trials.append([pair[0],false_name,pair[1],'right'])
+
+        # finish off the remaining genders
+        while(len(test_male_pairs)):
             # add a male to the trial
-            pair = test_male_pairs.pop()
-            false_name = test_male_names.pop()
+            # try to prevent last name pairing with self
+            if(len(test_male_pairs) == 2):
+                for p in test_male_pairs:
+                    if p[1] in test_male_names:
+                        pair = p
+                        test_male_pairs.remove(pair)
+                        if test_male_names[0] == p[1]:
+                            false_name = test_male_names[1]
+                        else:
+                            false_name = test_male_names[0]
+                        test_male_names.remove(false_name)
+                        break
+                pair = test_male_pairs.pop()
+                false_name = test_male_names.pop()
+            else:
+                pair = test_male_pairs.pop()
+                false_name = test_male_names.pop()
             if false_name == pair[1]:
                 try:
                     tmp = test_male_names.pop()
@@ -198,10 +281,32 @@ for scan in ['s0','s1']:
                 test_male_names.append(false_name)
                 random.shuffle(test_male_names)
                 false_name = tmp
-        else:
+            # randomize the name order
+            if random.choice([True,False]):
+                # correct name on left
+                test_trials.append([pair[0],pair[1],false_name,'left'])
+            else:
+                # correct name on right
+                test_trials.append([pair[0],false_name,pair[1],'right'])
+        while(len(test_female_pairs)):
             # add a female to the trial
-            pair = test_female_pairs.pop()
-            false_name = test_female_names.pop()
+            # try to prevent last name pairing with self
+            if(len(test_female_pairs) == 2):
+                for p in test_female_pairs:
+                    if p[1] in test_female_names:
+                        pair = p
+                        test_female_pairs.remove(pair)
+                        if test_female_names[0] == p[1]:
+                            false_name = test_female_names[1]
+                        else:
+                            false_name = test_female_names[0]
+                        test_female_names.remove(false_name)
+                        break
+                pair = test_female_pairs.pop()
+                false_name = test_female_names.pop()
+            else:
+                pair = test_female_pairs.pop()
+                false_name = test_female_names.pop()
             if false_name == pair[1]:
                 try:
                     tmp = test_female_names.pop()
@@ -213,70 +318,23 @@ for scan in ['s0','s1']:
                 test_female_names.append(false_name)
                 random.shuffle(test_female_names)
                 false_name = tmp
-
-        # randomize the name order
-        if random.choice([True,False]):
-            # correct name on left
-            test_trials.append([pair[0],pair[1],false_name,'left'])
-        else:
-            # correct name on right
-            test_trials.append([pair[0],false_name,pair[1],'right'])
-
-    # finish off the remaining genders
-    while(len(test_male_pairs)):
-        # add a male to the trial
-        pair = test_male_pairs.pop()
-        false_name = test_male_names.pop()
-        if false_name == pair[1]:
-            try:
-                tmp = test_male_names.pop()
-            except:
-                # not sure how to resolve this bug
-                # so crash and tell the user to re-run
-                print("ERROR: BAD SEQUENCE GENERATED, PLEASE RE-RUN")
-                exit()
-            test_male_names.append(false_name)
-            random.shuffle(test_male_names)
-            false_name = tmp
-        # randomize the name order
-        if random.choice([True,False]):
-            # correct name on left
-            test_trials.append([pair[0],pair[1],false_name,'left'])
-        else:
-            # correct name on right
-            test_trials.append([pair[0],false_name,pair[1],'right'])
-    while(len(test_female_pairs)):
-        # add a female to the trial
-        pair = test_female_pairs.pop()
-        false_name = test_female_names.pop()
-        if false_name == pair[1]:
-            try:
-                tmp = test_female_names.pop()
-            except:
-                # not sure how to resolve this bug
-                # so crash and tell the user to re-run
-                print("ERROR: BAD SEQUENCE GENERATED, PLEASE RE-RUN")
-                exit()
-            test_female_names.append(false_name)
-            random.shuffle(test_female_names)
-            false_name = tmp
-        # randomize the name order
-        if random.choice([True,False]):
-            # correct name on left
-            test_trials.append([pair[0],pair[1],false_name,'left'])
-        else:
-            # correct name on right
-            test_trials.append([pair[0],false_name,pair[1],'right'])
-     
-    # write the trials to a csv
-    with open('csvfiles/'+scan+'-test_recall.csv','w') as fh:
-        fh.write("image,lname,rname,correct\n")
-        for trial in test_trials:
-            fh.write(trial[0]+","+trial[1]+","+trial[2]+","+trial[3]+"\n")
+            # randomize the name order
+            if random.choice([True,False]):
+                # correct name on left
+                test_trials.append([pair[0],pair[1],false_name,'left'])
+            else:
+                # correct name on right
+                test_trials.append([pair[0],false_name,pair[1],'right'])
+         
+        # write the trials to a csv
+        with open('csvfiles/'+scan+'t'+str(r+1)+'.csv','w') as fh:
+            fh.write("image,lname,rname,correct\n")
+            for trial in test_trials:
+                fh.write(trial[0]+","+trial[1]+","+trial[2]+","+trial[3]+"\n")
 
 
     # and let's store the stimuli information to a summary file for easy reference
-    with open('csvfiles/StimuliSummary.txt','w') as fh:
+    with open('csvfiles/'+scan+'StimuliSummary.txt','w') as fh:
         for i in range(0,len(male_pairs)-(KNOWN_STIMULI/2)):
             fh.write(male_pairs[i][0]+","+male_pairs[i][1]+",novel\n")
             fh.write(female_pairs[i][0]+","+female_pairs[i][1]+",novel\n")
@@ -284,4 +342,4 @@ for scan in ['s0','s1']:
             fh.write(male_pairs[i][0]+","+male_pairs[i][1]+",repeated\n")
             fh.write(female_pairs[i][0]+","+female_pairs[i][1]+",repeated\n")
 
-    
+        
