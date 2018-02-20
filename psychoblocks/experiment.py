@@ -103,19 +103,19 @@ class Experiment(object):
         # get some basic information for the experiment
         self._expName = name
         expInfo={   'participant':const.DEFAULT_PARTICIPANT,
-                    'run session':const.DEFAULT_SESSION,
+        #           'run session':const.DEFAULT_SESSION,
                     'run file':os.path.join('data','runs',const.DEFAULT_RUN_FILE),
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
-                    'serial baudrate':const.DEFAULT_BAUDRATE,
+        #           'serial baudrate':const.DEFAULT_BAUDRATE,
                     'participant fullscreen':const.DEFAULT_FULLSCREEN,
-                    'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
-                    'participant screen width':const.DEFAULT_SCREEN_WIDTH,
-                    'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
-                    'path to results folder':os.path.join('data',const.DEFAULT_RESULTS_FOLDER),
-                    'examiner fullscreen':const.DEFAULT_FULLSCREEN,
-                    'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
-                    'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
+        #           'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
+        #           'participant screen width':const.DEFAULT_SCREEN_WIDTH,
+        #           'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
+        #           'path to results folder':os.path.join('data',const.DEFAULT_RESULTS_FOLDER),
+        #           'examiner fullscreen':const.DEFAULT_FULLSCREEN,
+        #           'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
+        #           'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
                     'examiner screen':'yes'}
 
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)
@@ -126,7 +126,8 @@ class Experiment(object):
         self._date = data.getDateStr()
 
         self._participant = expInfo['participant']
-        self._session = expInfo['run session']
+        #self._session = expInfo['run session']
+        self._session = const.DEFAULT_SESSION
         self._port = expInfo['serial port']
         
         # check that the run file exists
@@ -136,7 +137,8 @@ class Experiment(object):
             core.quit() 
 
         # check for results folder and create if necessary
-        self._resultsFolder = os.path.join(expInfo['path to results folder'],self.participant)
+        #self._resultsFolder = os.path.join(expInfo['path to results folder'],self.participant)
+        self._resultsFolder = os.path.join(const.DEFAULT_RESULTS_FOLDER,self.participant)
         if not os.path.exists(self.resultsFolder):
             logging.warn(self.resultsFolder+' does not exist ... creating folder')
             try:
@@ -147,7 +149,8 @@ class Experiment(object):
         
 
         # check for stimuli folder
-        self._stimuliFolder = expInfo['path to stimuli folder']
+        #self._stimuliFolder = expInfo['path to stimuli folder']
+        self._stimuliFolder = const.DEFAULT_STIMULI_FOLDER
         if not os.path.exists(self.stimuliFolder):
             logging.error('Could not find '+self.stimuliFolder)
             core.quit()
@@ -165,7 +168,8 @@ class Experiment(object):
             self._examinerScreen = 'no'
 
         # examiner fullscreen should be 'yes' or 'no'
-        self._examinerFullscreen = expInfo['examiner fullscreen']
+        #self._examinerFullscreen = expInfo['examiner fullscreen']
+        self._examinerFullscreen = 'no'
         if self.examinerFullscreen != 'yes' and self.examinerFullscreen != 'no':
             logging.warn('examiner fullscreen should either be yes or no ... defaulting to false')
             self._examinerFullscreen = 'no'
@@ -178,7 +182,8 @@ class Experiment(object):
 
         # baudrate should be an integer
         try:
-            self._baudrate = int(expInfo['serial baudrate'])
+            #self._baudrate = int(expInfo['serial baudrate'])
+            self._baudrate = const.DEFAULT_BAUDRATE
         except ValueError:
             if self.mode == 'serial':
                 logging.error('baudrate is not an integer ('+expInfo['serial baudrate']+')')
@@ -188,7 +193,8 @@ class Experiment(object):
 
         # screen height should be an integer
         try:
-            self._screenHeight = int(expInfo['participant screen height'])
+            #self._screenHeight = int(expInfo['participant screen height'])
+            self._screenHeight = const.DEFAULT_SCREEN_HEIGHT
         except ValueError:
             if self.fullscreen == 'no':
                 logging.error('screen height is not an integer ('+expInfo['participant screen height']+')')
@@ -198,7 +204,8 @@ class Experiment(object):
 
         # screen width should be an integer
         try:
-            self._screenWidth = int(expInfo['participant screen width'])
+            #self._screenWidth = int(expInfo['participant screen width'])
+            self._screenWidth = const.DEFAULT_SCREEN_WIDTH
         except ValueError:
             if self.fullscreen == 'no':
                 logging.error('screen width is not an integer ('+expInfo['participant screen width']+')')
@@ -208,7 +215,8 @@ class Experiment(object):
 
         # examiner screen height should be an integer
         try:
-            self._examinerScreenHeight = int(expInfo['examiner screen height'])
+            #self._examinerScreenHeight = int(expInfo['examiner screen height'])
+            self._examinerScreenHeight = const.DEFAULT_SCREEN_HEIGHT
         except ValueError:
             if self.examinerFullscreen == 'no':
                 logging.error('examiner screen height is not an integer ('+expInfo['examiner screen height']+')')
@@ -218,7 +226,8 @@ class Experiment(object):
 
         # examiner screen width should be an integer
         try:
-            self._examinerScreenWidth = int(expInfo['examiner screen width'])
+            #self._examinerScreenWidth = int(expInfo['examiner screen width'])
+            self._examinerScreenWidth = const.DEFAULT_SCREEN_WIDTH
         except ValueError:
             if self.examinerFullscreen == 'no':
                 logging.error('examiner screen width is not an integer ('+expInfo['examiner screen width']+')')
