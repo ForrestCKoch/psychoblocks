@@ -17,7 +17,7 @@ from psychoblocks import const, experiment, routines, features
 
 TRIAL_DURATION = 4.5
 ISI = 0.5 # InterStimulus Interval
-REST_DURATION = 24.775
+REST_DURATION = 16
 
 if (__name__ == '__main__'):
     app = experiment.Experiment('facename')

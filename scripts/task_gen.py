@@ -161,17 +161,15 @@ for scan in ['s1','s2']:
 
     for r in range(0, RUNS):
         # now to create the post-scan test
-        test_male_pairs=copy.deepcopy(male_pairs[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
-        test_female_pairs=copy.deepcopy(female_pairs[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
-        test_male_names=copy.deepcopy(rand_male_names[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
-        test_female_names=copy.deepcopy(rand_female_names[i*TRIALS*NOVEL/2:(i+1)*TRIALS*NOVEL/2])
+        test_male_pairs=copy.deepcopy(male_pairs[r*TRIALS*NOVEL/2:(r+1)*TRIALS*NOVEL/2])
+        test_female_pairs=copy.deepcopy(female_pairs[r*TRIALS*NOVEL/2:(r+1)*TRIALS*NOVEL/2])
+        test_male_names=copy.deepcopy(rand_male_names[r*TRIALS*NOVEL/2:(r+1)*TRIALS*NOVEL/2])
+        test_female_names=copy.deepcopy(rand_female_names[r*TRIALS*NOVEL/2:(r+1)*TRIALS*NOVEL/2])
         # append the repeated pairs
-        """
         test_male_pairs.append(copy.deepcopy(male_pairs[-1]))
         test_female_pairs.append(copy.deepcopy(female_pairs[-1]))
         test_male_names.append(copy.deepcopy(male_names[-1]))
         test_female_names.append(copy.deepcopy(female_names[-1]))
-        """    
 
         # shuffle the lists
         random.shuffle(test_male_pairs)

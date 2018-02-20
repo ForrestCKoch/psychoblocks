@@ -138,7 +138,7 @@ class Experiment(object):
 
         # check for results folder and create if necessary
         #self._resultsFolder = os.path.join(expInfo['path to results folder'],self.participant)
-        self._resultsFolder = os.path.join(const.DEFAULT_RESULTS_FOLDER,self.participant)
+        self._resultsFolder = os.path.join('data',const.DEFAULT_RESULTS_FOLDER,self.participant)
         if not os.path.exists(self.resultsFolder):
             logging.warn(self.resultsFolder+' does not exist ... creating folder')
             try:

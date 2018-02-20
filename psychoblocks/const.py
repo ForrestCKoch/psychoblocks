@@ -14,22 +14,22 @@ TLL_PULSE   = 84
 int: The byte code for the TLL pulse sent from the scanner
 """
 
-RIGHT_INDEX   = 99
+RIGHT_INDEX   = 'c'
 """
 int: The byte code for the right index button
 """
 
-RIGHT_MIDDLE  = 100
+RIGHT_MIDDLE  = 'd'
 """
 int: The byte code for the right middle button
 """
 
-LEFT_INDEX    = 98
+LEFT_INDEX    = 'b'
 """
 int: The byte code for the left index button
 """
 
-LEFT_MIDDLE   = 97
+LEFT_MIDDLE   = 'a'
 """
 int: The byte code for the left middle button
 """
