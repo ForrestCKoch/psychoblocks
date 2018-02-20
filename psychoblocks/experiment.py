@@ -108,14 +108,14 @@ class Experiment(object):
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
         #           'serial baudrate':const.DEFAULT_BAUDRATE,
-                    'participant fullscreen':const.DEFAULT_FULLSCREEN,
-        #           'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
-        #           'participant screen width':const.DEFAULT_SCREEN_WIDTH,
+        #           'participant fullscreen':const.DEFAULT_FULLSCREEN,
+                    'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
+                    'participant screen width':const.DEFAULT_SCREEN_WIDTH,
         #           'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
         #           'path to results folder':os.path.join('data',const.DEFAULT_RESULTS_FOLDER),
         #           'examiner fullscreen':const.DEFAULT_FULLSCREEN,
-        #           'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
-        #           'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
+                    'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
+                    'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
                     'examiner screen':'yes'}
 
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)
@@ -156,7 +156,8 @@ class Experiment(object):
             core.quit()
 
         # fullscreen should be 'yes' or 'no'
-        self._fullscreen = expInfo['participant fullscreen']
+        #self._fullscreen = expInfo['participant fullscreen']
+        self._fullscreen = 'no'
         if self.fullscreen != 'yes' and self.fullscreen != 'no':
             logging.warn('fullscreen should either be yes or no ... defaulting to false')
             self._fullscreen = 'no'
@@ -193,8 +194,7 @@ class Experiment(object):
 
         # screen height should be an integer
         try:
-            #self._screenHeight = int(expInfo['participant screen height'])
-            self._screenHeight = const.DEFAULT_SCREEN_HEIGHT
+            self._screenHeight = int(expInfo['participant screen height'])
         except ValueError:
             if self.fullscreen == 'no':
                 logging.error('screen height is not an integer ('+expInfo['participant screen height']+')')
@@ -204,8 +204,7 @@ class Experiment(object):
 
         # screen width should be an integer
         try:
-            #self._screenWidth = int(expInfo['participant screen width'])
-            self._screenWidth = const.DEFAULT_SCREEN_WIDTH
+            self._screenWidth = int(expInfo['participant screen width'])
         except ValueError:
             if self.fullscreen == 'no':
                 logging.error('screen width is not an integer ('+expInfo['participant screen width']+')')
@@ -215,8 +214,7 @@ class Experiment(object):
 
         # examiner screen height should be an integer
         try:
-            #self._examinerScreenHeight = int(expInfo['examiner screen height'])
-            self._examinerScreenHeight = const.DEFAULT_SCREEN_HEIGHT
+            self._examinerScreenHeight = int(expInfo['examiner screen height'])
         except ValueError:
             if self.examinerFullscreen == 'no':
                 logging.error('examiner screen height is not an integer ('+expInfo['examiner screen height']+')')
@@ -226,8 +224,7 @@ class Experiment(object):
 
         # examiner screen width should be an integer
         try:
-            #self._examinerScreenWidth = int(expInfo['examiner screen width'])
-            self._examinerScreenWidth = const.DEFAULT_SCREEN_WIDTH
+            self._examinerScreenWidth = int(expInfo['examiner screen width'])
         except ValueError:
             if self.examinerFullscreen == 'no':
                 logging.error('examiner screen width is not an integer ('+expInfo['examiner screen width']+')')
@@ -341,9 +338,15 @@ class Experiment(object):
                                                  dataFileName = datafile)
     
     def addRoutine(self,routine):
+        """
+        Add a routine to the list of routines to be run by this experiment
+        """
         self._routines.append(routine)
 
     def run(self):
+        """
+        Run the experiment
+        """
         # reverse our list because I'm too lazy to use a proper queue
         self._routines.reverse()
         while(len(self._routines)):
@@ -475,4 +478,7 @@ class Experiment(object):
         return self._examinerScreen
 
     def getRun(self):
+        """
+        Helper function to return the name of the run file without extra fluff
+        """
         return os.path.splitext(os.path.basename(self.runfile))[0]

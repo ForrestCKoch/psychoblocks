@@ -12,7 +12,10 @@ from abstracts import *
 from features import *
 
 class CountdownSequence(AbstractCollection):
-
+    """
+    This routine will display the digits 1-5 in decreasing order for 1s each.
+    """
+    
     def __init__(self, experiment):
         super(CountdownSequence,self).__init__(None, experiment = experiment)
         featureList = list()
@@ -30,6 +33,9 @@ class CountdownSequence(AbstractCollection):
     
 
 class Fixation(AbstractCollection):
+    """
+    This routine will display a fixation ("+") for the specified duration.
+    """
 
     def __init__(self, experiment, duration = 0.8):
         super(Fixation,self).__init__(None, experiment = experiment)
@@ -43,6 +49,9 @@ class Fixation(AbstractCollection):
         return self._feature
 
 class RestBlock(AbstractCollection):
+    """
+    Effectively the same as Fixation... I'm not actually sure why we have this
+    """
     
     def __init__(self, experiment, duration = 20.0):
         super(RestBlock,self).__init__(None, experiment = experiment)
@@ -56,6 +65,16 @@ class RestBlock(AbstractCollection):
         return self._feature
 
 class UpdateExaminerWindow(AbstractCollection):
+    """
+    Update the examiner window with patient response information.  This includes:
+        - Number of responses under 200ms
+        - Number of non-responses
+        - Number of Total responses
+
+    This routine should be called sparingly as it will introduce ~1 frame's worth
+    of delay to be added to the experiment with each call.
+    """
+
     def __init__(self,experiment):
         super(UpdateExaminerWindow,self).__init__(None,experiment = experiment)
 
@@ -90,6 +109,10 @@ class UpdateExaminerWindow(AbstractCollection):
 # Facename Collections
 ###############################################################################
 class FNInstructions(AbstractCollection):
+    """
+    This routine will display the instructions for the face name pair task.
+    It will remain on the screen until the spacebar is pressed.
+    """
     
     def __init__(self, experiment):
         super(FNInstructions,self).__init__(None, experiment = experiment)
@@ -116,8 +139,23 @@ class FNInstructions(AbstractCollection):
         return self._feature
 
 class FacenameTrial(AbstractCollection):
-    
+    """
+    This routine will run the face name trial.
+    """
+ 
     def __init__(self, experiment, image, name, duration = 5.0):
+        """
+        Parameters
+        ----------
+        experiment : Experiment
+            The experiment to which this routine belongs.
+        image : Str
+            The path of the image to be used for this trial.
+        name : Str
+            The name to be associated with this face.
+        duration : float
+            The number of seconds which this trial should run for
+        """
         super(FacenameTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
         feature = ResponseBox(feature, None)
@@ -140,8 +178,25 @@ class FacenameTrial(AbstractCollection):
         super(FacenameTrial,self).run()
 
 class RecallTrial(AbstractCollection):
+    """
+    This routine will run the recall trial used for post-scan testing
+    """
     
-    def __init__(self, experiment, image, rname, lname, correct):
+    def __init__(self, experiment, image, lname, rname, correct):
+        """
+        Parameters
+        ----------
+        experiment : Experiment
+            The experiment to which this routine belongs.
+        image : Str
+            The path of the image to be used for this trial.
+        rname : Str
+            The name to be displayed on the right of the screen.
+        lname : Str
+            The name to be displayed on the left of the screen.
+        correct : Str
+            'left' or 'right'.  Indicates which name is actually correct.
+        """
         super(RecallTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
         feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='pix',size=(569,400))
@@ -169,6 +224,10 @@ class RecallTrial(AbstractCollection):
         super(RecallTrial,self).run()
 
 class ConfidenceTrial(AbstractCollection):
+    """
+    This routine is to follow RecalTrial, and is used to indicate how confident the 
+    participant is in their previous answer.
+    """
 
     def __init__(self, experiment):
         super(ConfidenceTrial,self).__init__(None, experiment = experiment)

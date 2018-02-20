@@ -210,10 +210,20 @@ class AbstractLoop(AbstractFeature):
         pass
 
 class IteratingFeature(AbstractFeature):
+    """
+    Use this feature as a container to iterate through features in the feature list
+    """
 
     def __init__(self, featureList, experiment):
         """
         Create an instance of IteratingFeature. 
+
+        Parameters
+        ----------
+        featureList : list
+            The list containing the features that should be iterated through
+        experiment : Experiment
+            The experiment to which this feature belongs
         """
         super(IteratingFeature,self).__init__(None, experiment = experiment)
         self._featureList = list(featureList)

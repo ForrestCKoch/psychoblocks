@@ -387,8 +387,21 @@ class ExaminerTextFeature(AbstractFeature):
 
     
 class WaitForResponse(AbstractLoop):
-
+    """
+    Apply this directly on top of a ResponseBox feature to make the program halt
+    until a response is registered
+    """
     def __init__(self, responseFeature, experiment = None):
+        """
+        Initialization
+
+        Parameters
+        ----------
+        responseFeature : ResponseBox
+            The ReponseBox feature being expanded on
+        Experiment : Experiment
+            The experiment to which this feature belongs.
+        """
         super(WaitForResponse,self).__init__(responseFeature,experiment = experiment)
         self.responseFeature = responseFeature
         self._status = False

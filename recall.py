@@ -6,6 +6,10 @@
 # PyschoPy Version: 1.85.3
 # Python Version:   2.7.5
 ###############################################################################
+# This script runs the recall task component of the facename pair task.
+# For each face, the participant will be prompted to select the correct choice between
+# two names, and to rate their confidence 'high/low'.
+# There is no enforced time limit.  The program will wait for input from the response box
 import os
 import serial
 from psychopy import core, gui, data, logging, visual, clock
