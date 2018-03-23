@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
 ###############################################################################
 # Written by:       Forrest Koch (forrest.koch@unsw.edu.au)
