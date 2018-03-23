@@ -69,7 +69,7 @@ DEFAULT_MODE = 'serial'
 str: default mode
 """
 
-DEFAULT_PORT = '/dev/ttyACM0'
+DEFAULT_PORT = '/dev/tty.wchusbserial1420'
 """
 str: default port for serial device
 """
