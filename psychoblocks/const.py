@@ -79,17 +79,17 @@ DEFAULT_BAUDRATE = '57600'
 str: default baudrate for serial device
 """ 
 
-DEFAULT_FULLSCREEN = 'yes'
+DEFAULT_FULLSCREEN = 'no'
 """
 str: default fullscreen status
 """
 
-DEFAULT_SCREEN_WIDTH = '1024'
+DEFAULT_SCREEN_WIDTH = '1280'
 """
 str: default screen width
 """
 
-DEFAULT_SCREEN_HEIGHT = '768'
+DEFAULT_SCREEN_HEIGHT = '1024'
 """
 str: default screen height
 """
