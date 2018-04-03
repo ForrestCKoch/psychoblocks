@@ -108,7 +108,7 @@ class Experiment(object):
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
         #           'serial baudrate':const.DEFAULT_BAUDRATE,
-        #           'participant fullscreen':const.DEFAULT_FULLSCREEN,
+                    'participant fullscreen':const.DEFAULT_FULLSCREEN,
                     'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
                     'participant screen width':const.DEFAULT_SCREEN_WIDTH,
         #           'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
@@ -156,8 +156,8 @@ class Experiment(object):
             core.quit()
 
         # fullscreen should be 'yes' or 'no'
-        #self._fullscreen = expInfo['participant fullscreen']
-        self._fullscreen = 'no'
+        self._fullscreen = expInfo['participant fullscreen']
+        #self._fullscreen = 'no'
         if self.fullscreen != 'yes' and self.fullscreen != 'no':
             logging.warn('fullscreen should either be yes or no ... defaulting to false')
             self._fullscreen = 'no'
@@ -177,7 +177,7 @@ class Experiment(object):
 
         # mode should be 'serial' or 'test'
         self._mode = expInfo['run mode']
-        if self.mode != 'serial' and self.mode != 'test':
+        if self.mode!='serial' and self.mode!='test' and self.mode!='practice':
             logging.warn('unrecognized mode ... defaulting to no'+self.mode)
             self._mode = 'test'
 
@@ -241,7 +241,7 @@ class Experiment(object):
         self.responseBox = None if the experiment isn't using it
         """
         # setup the response box if there is one
-        if (self.mode == 'serial'):
+        if (self.mode == 'serial' or self.mode == 'practice'):
             try:
                 self._responseBox = serial.Serial(port = self.port,
                                         baudrate = self.baudrate,
@@ -280,7 +280,7 @@ class Experiment(object):
 
         self._participantWindow = visual.Window(size = [width,height],
                                               fullscr = screenFlag,
-                                              screen = 1,
+                                              screen = 0,
                                               allowGUI = True,
                                               allowStencil = False,
                                               monitor = 'particpant',

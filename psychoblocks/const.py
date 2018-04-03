@@ -74,7 +74,7 @@ DEFAULT_PORT = '/dev/tty.wchusbserial1420'
 str: default port for serial device
 """
 
-DEFAULT_BAUDRATE = '57600'
+DEFAULT_BAUDRATE = '115200'
 """
 str: default baudrate for serial device
 """ 

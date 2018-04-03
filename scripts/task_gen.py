@@ -7,7 +7,7 @@ import csv
 import copy
 import sys
 SEED_VALUE = 221293
-random.seed()
+random.seed(SEED_VALUE)
 
 STIMULI_FOLDER = os.path.abspath('../stimuli')
 # total number of runs to be created

@@ -116,11 +116,11 @@ class FNInstructions(AbstractCollection):
     
     def __init__(self, experiment):
         super(FNInstructions,self).__init__(None, experiment = experiment)
-        textlist = ['You will be shown a series of face name pairs.'
-                    'We will test your memory of these pairs after the scan.'
-                    'During the task, please press with you RIGHT INDEX finger'
-                    'if you the the name is a good fit for the face.'
-                    'otherwise press with your RIGHT MIDDLE finger.']
+        textlist = ['You will be shown pairs of faces and names.',
+                    'We will test your memory of these pairs after the scan.',
+                    'During this task, press with your RIGHT INDEX finger'
+                    ' if you think the the name is a good fit for the face.',
+                    'Otherwise, press with your RIGHT MIDDLE finger.']
                 
         featureList = list()
         count = 1
