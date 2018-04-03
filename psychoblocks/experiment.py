@@ -114,8 +114,8 @@ class Experiment(object):
         #           'path to stimuli folder':const.DEFAULT_STIMULI_FOLDER,
         #           'path to results folder':os.path.join('data',const.DEFAULT_RESULTS_FOLDER),
         #           'examiner fullscreen':const.DEFAULT_FULLSCREEN,
-                    'examiner screen height':const.DEFAULT_SCREEN_HEIGHT,
-                    'examiner screen width':const.DEFAULT_SCREEN_WIDTH,
+                    'examiner screen height':const.DEFAULT_EXAMINER_SCREEN_HEIGHT,
+                    'examiner screen width':const.DEFAULT_EXAMINER_SCREEN_WIDTH,
                     'examiner screen':'yes'}
 
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)

@@ -68,7 +68,7 @@ class SpacebarLoop(AbstractLoop):
     Prevents experiment from progessing until the spacebar has been pressed.
     """
 
-    def __init__(self, origin, experiment = None):
+    def __init__(self, origin, experiment = None, updateExaminer=False):
         """
         Initialize an instance of TimedLoop.
 
@@ -81,6 +81,7 @@ class SpacebarLoop(AbstractLoop):
         """
         super(SpacebarLoop,self).__init__(origin, experiment = experiment)
         self._status = False
+        self._updateExaminer = updateExaminer
 
     @property
     def status(self):
@@ -100,6 +101,8 @@ class SpacebarLoop(AbstractLoop):
         Check for spacebar keypress.
         """
         self.experiment.participantWindow.flip()
+        if self._updateExaminer:
+            self.experiment.examinerWindow.flip()
         if 'space' in event.getKeys(keyList = ['space']):
             self._status = False
 

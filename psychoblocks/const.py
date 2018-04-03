@@ -84,12 +84,14 @@ DEFAULT_FULLSCREEN = 'no'
 str: default fullscreen status
 """
 
-DEFAULT_SCREEN_WIDTH = '1280'
+DEFAULT_SCREEN_WIDTH = '1920'
+DEFAULT_EXAMINER_SCREEN_WIDTH = '1280'
 """
 str: default screen width
 """
 
-DEFAULT_SCREEN_HEIGHT = '1024'
+DEFAULT_SCREEN_HEIGHT = '1080'
+DEFAULT_EXAMINER_SCREEN_HEIGHT = '720'
 """
 str: default screen height
 """

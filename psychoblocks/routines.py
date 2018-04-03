@@ -120,7 +120,8 @@ class FNInstructions(AbstractCollection):
                     'We will test your memory of these pairs after the scan.',
                     'During this task, press with your RIGHT INDEX finger'
                     ' if you think the the name is a good fit for the face.',
-                    'Otherwise, press with your RIGHT MIDDLE finger.']
+                    'Otherwise, press with your RIGHT MIDDLE finger.',
+                    'Are you ready to continue?']
                 
         featureList = list()
         count = 1
@@ -128,7 +129,9 @@ class FNInstructions(AbstractCollection):
         for text in textlist:
             feature = EscapeCheck(None, experiment = experiment)
             feature = TextFeature(feature, text = text, name = 'Instructions '+str(count))
-            feature = SpacebarLoop(feature)
+            if experiment.examinerScreen == 'yes':
+                feature = ExaminerTextFeature(feature, text = text, name = 'Instructions '+str(count))
+            feature = SpacebarLoop(feature,updateExaminer=True)
             featureList.append(feature)
             count += 1
 
