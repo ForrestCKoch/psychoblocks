@@ -108,6 +108,7 @@ class Experiment(object):
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
         #           'serial baudrate':const.DEFAULT_BAUDRATE,
+                    'participant refresh rate':'120',
                     'participant fullscreen':const.DEFAULT_FULLSCREEN,
                     'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
                     'participant screen width':const.DEFAULT_SCREEN_WIDTH,
@@ -118,10 +119,14 @@ class Experiment(object):
                     'examiner screen width':const.DEFAULT_EXAMINER_SCREEN_WIDTH,
                     'examiner screen':'yes'}
 
+
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)
         if dlg.OK == False:
             logging.error("Couldn't establish experiment parameters")
             core.quit()
+
+        # manual frame rate
+        self._participantFrameRate = float(expInfo['participant refresh rate'])
 
         self._date = data.getDateStr()
 
@@ -280,7 +285,7 @@ class Experiment(object):
 
         self._participantWindow = visual.Window(size = [width,height],
                                               fullscr = screenFlag,
-                                              screen = 0,
+                                              screen = 1,
                                               allowGUI = True,
                                               allowStencil = False,
                                               monitor = 'particpant',
@@ -313,8 +318,9 @@ class Experiment(object):
         else:
             self._examinerWindow = None 
 
-        #self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
-        self._participantFrameRate = 120
+        self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
+        print('Particpant framerate: '+str(self.participantFrameRate))
+        #self._participantFrameRate = 120
         if self.participantFrameRate:
             logging.info('Particpant screen has a framerate of '+str(self.participantFrameRate)+" hz")
         else:

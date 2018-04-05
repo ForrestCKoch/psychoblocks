@@ -130,12 +130,12 @@ class MRISync(AbstractFeature):
         """
         super(MRISync,self).__init__(origin,experiment = experiment)
 
-    def start(self):
+    def run(self):
         """
         Halt execution until TLL pulse is read
         """
         # run the origin features first
-        super(MRISync,self).start() 
+        super(MRISync,self).run() 
         # only execute if we have a response box
         if self.experiment.responseBox:
             # wait for TLL pulse until being allowed to continue
@@ -323,6 +323,11 @@ class ImageFeature(AbstractFeature):
                     colorSpace=colorSpace, contrast=contrast, opacity=opacity, depth=depth, 
                     interpolate=interpolate, flipHoriz=flipHoriz, flipVert=flipVert, 
                     texRes=texRes, name=name, autoLog=autoLog, maskParams=maskParams)
+
+        #scale the image to screen
+        screenHeight = self.experiment.screenHeight
+        imageHeight = 400 # the images are 400px
+        self._imageStim.size *= (screenHeight)/(imageHeight*2.0)
 
 
     def start(self):

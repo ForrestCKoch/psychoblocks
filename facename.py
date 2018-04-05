@@ -21,18 +21,19 @@ REST_DURATION = 16
 
 if (__name__ == '__main__'):
     app = experiment.Experiment('facename')
-
+    app.addRoutine(routines.Calibration(app))
     app.addRoutine(routines.FNInstructions(app))
     # only try to update the examiner window if the user has requested one
     if app.examinerWindow:
         examinerUpdate = routines.UpdateExaminerWindow(app)
-        app.addRoutine(examinerUpdate) 
+        #app.addRoutine(examinerUpdate) 
     app.addRoutine(routines.CountdownSequence(app))
 
 
     # no need to sync if this is a practice run
     if app.mode != 'practice':
-        app.addRoutine(features.MRISync(None, experiment = app))
+        app.addRoutine(routines.WaitForTLL(app))
+
 
     # build the trial sequence and add to the app
     runCSV = data.importConditions(app.runfile)

@@ -120,8 +120,7 @@ class FNInstructions(AbstractCollection):
                     'Please do your best to remember these pairs.',
                     'Press the left button if the the name is a good fit.',
                     'Otherwise, press the right button.',
-                    'Remember, there is no right or wrong answer.',
-                    'Are you ready to continue?']
+                    'Remember, there is no right or wrong answer.']
                 
         featureList = list()
         count = 1
@@ -164,12 +163,10 @@ class FacenameTrial(AbstractCollection):
         super(FacenameTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
         feature = ResponseBox(feature, None)
-        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='pix',size=(569,400))
-        feature = TextFeature(feature, text = "Is this name a good fit for the face?", 
-                                       pos=(0,.8), name = 'Trial Prompt')
-        feature = TextFeature(feature, text= name+'?', pos= (0,.6), name= 'Trial Name: '+name)
-        feature = TextFeature(feature, text = 'YES', name = 'Yes Prompt', pos = (-.33, -.66))
-        feature = TextFeature(feature, text = 'NO', name = 'No Prompt', pos = (.33,-.66))
+        feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='norm')
+        feature = TextFeature(feature, text= name, pos= (0,.8), name= 'Trial Name: '+name)
+        feature = TextFeature(feature, text = 'YES', name = 'Yes Prompt', pos = (-.33, -.8))
+        feature = TextFeature(feature, text = 'NO', name = 'No Prompt', pos = (.33,-.8))
         feature = TimedLoop(feature, duration)
         self._feature = feature
      
@@ -205,10 +202,8 @@ class RecallTrial(AbstractCollection):
         super(RecallTrial,self).__init__(None, experiment = experiment)
         feature = EscapeCheck(None, experiment = experiment)
         feature = ImageFeature(feature, image = image, name = 'Trial Image: ' + image, units='pix',size=(569,400))
-        feature = TextFeature(feature, text = "Who is this?", 
-                                       pos=(0,.8), name = 'Trial Prompt')
-        feature = TextFeature(feature, text = lname, name = 'Yes Prompt', pos = (-.33, -.66))
-        feature = TextFeature(feature, text = rname, name = 'No Prompt', pos = (.33,-.66))
+        feature = TextFeature(feature, text = lname, name = 'Yes Prompt', pos = (-.5, -.8))
+        feature = TextFeature(feature, text = rname, name = 'No Prompt', pos = (.5,-.8))
 
         if correct == 'left':
             corr_resp = const.RIGHT_INDEX
@@ -252,3 +247,52 @@ class ConfidenceTrial(AbstractCollection):
         # advance the data entry to next
         self.feature.experiment.experimentHandler.nextEntry()
         super(ConfidenceTrial,self).run()
+
+class WaitForTLL(AbstractCollection):
+    """
+    This routine is used to sync with the MRI machine.  It will
+    display a 'waiting for TLL pulse' message and hang until
+    the pulse is recieved
+    """
+
+    def __init__(self, experiment):
+        super(WaitForTLL,self).__init__(None, experiment = experiment)
+        feature = TextFeature(None,experiment = experiment, text = "Waiting for TLL pulse")
+        if self.experiment.examinerScreen == 'yes':
+            feature = ExaminerTextFeature(feature,text = "Waiting for TLL pulse")
+        feature = MRISync(feature)
+        self._feature = feature
+
+    def run(self):
+        self.feature.start()
+        self.experiment.participantWindow.flip()
+        if self.experiment.examinerScreen == 'yes':
+            self.experiment.examinerWindow.flip()
+        self.feature.run()
+        self.feature.end()
+        # need to clear the examinerScreen
+        if self.experiment.examinerScreen == 'yes':
+            self.experiment.examinerWindow.flip()
+
+    @property
+    def feature(self):
+        return self._feature
+
+class Calibration(AbstractCollection):
+    """
+    This routine will display an X in each corner for calibration purposes
+    It will remain on the screen until the spacebar is pressed.
+    """
+    
+    def __init__(self, experiment):
+        super(Calibration,self).__init__(None, experiment = experiment)
+
+        feature = TextFeature(None, experiment = experiment, text = 'X', name = 'BR',pos=(0.6,-0.85))
+        feature = TextFeature(feature, text = 'X', name = 'BL',pos=(0.6,0.85))
+        feature = TextFeature(feature, text = 'X', name = 'TR',pos=(-0.6,-0.85))
+        feature = TextFeature(feature, text = 'X', name = 'TL',pos=(-0.6,0.85))
+        self._feature = SpacebarLoop(feature,updateExaminer=False)
+    
+    @property
+    def feature(self):
+        return self._feature
