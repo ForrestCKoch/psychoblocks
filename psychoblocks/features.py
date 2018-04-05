@@ -252,9 +252,9 @@ class TextFeature(AbstractFeature):
     
     def __init__(self, origin, experiment = None, text='Hello World', font=const.DEFAULT_FONT, 
                     pos=(0.0, 0.0), depth=0, rgb=None, color=(1.0, 1.0, 1.0), colorSpace='rgb', 
-                    opacity=1.0, contrast=1.0, units='', ori=0.0, height=None, antialias=True, 
+                    opacity=1.0, contrast=1.0, units='', ori=0.0, height=0.2, antialias=True, 
                     bold=False, italic=False, alignHoriz='center', alignVert='center', 
-                    fontFiles=(), wrapWidth=1.75, flipHoriz=False, flipVert=False, 
+                    fontFiles=(), wrapWidth=1, flipHoriz=False, flipVert=False, 
                     name=None, autoLog=True):
         """
         Initialize an instance of TextFeature.

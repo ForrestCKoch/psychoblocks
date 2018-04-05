@@ -117,10 +117,10 @@ class FNInstructions(AbstractCollection):
     def __init__(self, experiment):
         super(FNInstructions,self).__init__(None, experiment = experiment)
         textlist = ['You will be shown pairs of faces and names.',
-                    'We will test your memory of these pairs after the scan.',
-                    'During this task, press with your RIGHT INDEX finger'
-                    ' if you think the the name is a good fit for the face.',
-                    'Otherwise, press with your RIGHT MIDDLE finger.',
+                    'Please do your best to remember these pairs.',
+                    'Press the left button if the the name is a good fit.',
+                    'Otherwise, press the right button.',
+                    'Remember, there is no right or wrong answer.',
                     'Are you ready to continue?']
                 
         featureList = list()
@@ -131,7 +131,9 @@ class FNInstructions(AbstractCollection):
             feature = TextFeature(feature, text = text, name = 'Instructions '+str(count))
             if experiment.examinerScreen == 'yes':
                 feature = ExaminerTextFeature(feature, text = text, name = 'Instructions '+str(count))
-            feature = SpacebarLoop(feature,updateExaminer=True)
+                feature = SpacebarLoop(feature,updateExaminer=True)
+            else:
+                feature = SpacebarLoop(feature,updateExaminer=False)
             featureList.append(feature)
             count += 1
 

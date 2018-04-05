@@ -313,7 +313,8 @@ class Experiment(object):
         else:
             self._examinerWindow = None 
 
-        self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
+        #self._participantFrameRate = self.participantWindow.getActualFrameRate(nIdentical=100,nMaxFrames=1000,nWarmUpFrames=100)
+        self._participantFrameRate = 120
         if self.participantFrameRate:
             logging.info('Particpant screen has a framerate of '+str(self.participantFrameRate)+" hz")
         else:
