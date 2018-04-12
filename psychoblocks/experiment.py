@@ -108,7 +108,7 @@ class Experiment(object):
                     'run mode':const.DEFAULT_MODE,
                     'serial port':const.DEFAULT_PORT,
         #           'serial baudrate':const.DEFAULT_BAUDRATE,
-                    'participant refresh rate':'120',
+        #           'participant refresh rate':'120',
                     'participant fullscreen':const.DEFAULT_FULLSCREEN,
                     'participant screen height':const.DEFAULT_SCREEN_HEIGHT,
                     'participant screen width':const.DEFAULT_SCREEN_WIDTH,
@@ -126,7 +126,7 @@ class Experiment(object):
             core.quit()
 
         # manual frame rate
-        self._participantFrameRate = float(expInfo['participant refresh rate'])
+        #self._participantFrameRate = float(expInfo['participant refresh rate'])
 
         self._date = data.getDateStr()
 
