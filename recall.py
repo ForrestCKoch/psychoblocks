@@ -11,12 +11,16 @@
 # two names, and to rate their confidence 'high/low'.
 # There is no enforced time limit.  The program will wait for input from the response box
 import os
+import sys
 import serial
 from psychopy import core, gui, data, logging, visual, clock
 
 from psychoblocks import const, experiment, routines, features
 
 if (__name__ == '__main__'):
+
+    os.chdir(os.path.dirname(sys.argv[0]))
+
     app = experiment.Experiment('recall')
 
     # build the trial sequence and add to the app

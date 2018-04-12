@@ -10,6 +10,7 @@
 # Participants will be shown a series of face name pairs for which they will
 # be asked to indicate whether they feel the face is a good fit for the name.
 import os
+import sys
 import serial
 from psychopy import core, gui, data, logging, visual, clock
 
@@ -20,6 +21,9 @@ ISI = 0.5 # InterStimulus Interval
 REST_DURATION = 16
 
 if (__name__ == '__main__'):
+    # make sure we start out in the right directory
+    os.chdir(os.path.dirname(sys.argv[0]))
+
     app = experiment.Experiment('facename')
     app.addRoutine(routines.Calibration(app))
     app.addRoutine(routines.FNInstructions(app))
