@@ -257,7 +257,7 @@ class WaitForTLL(AbstractCollection):
 
     def __init__(self, experiment):
         super(WaitForTLL,self).__init__(None, experiment = experiment)
-        feature = TextFeature(None,experiment = experiment, text = "Waiting for TLL pulse")
+        feature = TextFeature(None,experiment = experiment, text = "Get Ready.  Waiting for scanner.")
         if self.experiment.examinerScreen == 'yes':
             feature = ExaminerTextFeature(feature,text = "Waiting for TLL pulse")
         feature = MRISync(feature)

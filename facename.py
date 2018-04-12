@@ -27,7 +27,7 @@ if (__name__ == '__main__'):
     if app.examinerWindow:
         examinerUpdate = routines.UpdateExaminerWindow(app)
         #app.addRoutine(examinerUpdate) 
-    app.addRoutine(routines.CountdownSequence(app))
+    #app.addRoutine(routines.CountdownSequence(app))
 
 
     # no need to sync if this is a practice run
