@@ -280,17 +280,17 @@ class WaitForTLL(AbstractCollection):
 
 class Calibration(AbstractCollection):
     """
-    This routine will display an X in each corner for calibration purposes
+    This routine will display a number in each corner for calibration purposes
     It will remain on the screen until the spacebar is pressed.
     """
     
     def __init__(self, experiment):
         super(Calibration,self).__init__(None, experiment = experiment)
 
-        feature = TextFeature(None, experiment = experiment, text = 'X', name = 'BR',pos=(0.6,-0.85))
-        feature = TextFeature(feature, text = 'X', name = 'BL',pos=(0.6,0.85))
-        feature = TextFeature(feature, text = 'X', name = 'TR',pos=(-0.6,-0.85))
-        feature = TextFeature(feature, text = 'X', name = 'TL',pos=(-0.6,0.85))
+        feature = TextFeature(None, experiment = experiment, text = '4', name = 'BR',pos=(0.6,-0.85))
+        feature = TextFeature(feature, text = '2', name = 'TR',pos=(0.6,0.85))
+        feature = TextFeature(feature, text = '3', name = 'BL',pos=(-0.6,-0.85))
+        feature = TextFeature(feature, text = '1', name = 'TL',pos=(-0.6,0.85))
         self._feature = SpacebarLoop(feature,updateExaminer=False)
     
     @property
