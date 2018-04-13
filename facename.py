@@ -35,7 +35,7 @@ if (__name__ == '__main__'):
 
 
     # no need to sync if this is a practice run
-    if app.mode != 'practice':
+    if app.mode != 'practice' or True:
         app.addRoutine(routines.WaitForTLL(app))
 
 

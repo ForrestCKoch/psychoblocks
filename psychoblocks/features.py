@@ -141,10 +141,18 @@ class MRISync(AbstractFeature):
             # wait for TLL pulse until being allowed to continue
             self.experiment.responseBox.reset_input_buffer()
             pulseSeen = False
+
+            startTime = self.experiment.clock.getTime()
+            print(self.experiment.mode)
+
             while(not pulseSeen):
                 data = self.experiment.responseBox.read()
+                currTime = self.experiment.clock.getTime()
+                if self.experiment.mode == 'practice':
+                    if currTime-startTime > 10.0:
+                        break
                 if data and ord(data) == const.TLL_PULSE:
-                    timestamp = str(self.experiment.clock.getTime())
+                    timestamp = str(currTime)
                     self.experiment.experimentHandler.nextEntry()
                     self.experiment.experimentHandler.addData('syncPulse',timestamp)
                     logging.info('Synced with pulse at '+str(self.experiment.clock.getTime()))

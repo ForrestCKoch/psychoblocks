@@ -32,7 +32,7 @@ class Experiment(object):
     runfile : str
         The path of the run file to be used
     mode : str
-        The type of experiment being run (serial/test).
+        The type of experiment being run (serial/test/practice).
     port : str
         The port which the serial device is connected to (for serial mode).
     baudrate : int
