@@ -64,7 +64,7 @@ DEFAULT_RUN_FILE = 's1r1.csv'
 str: default run
 """
 
-DEFAULT_MODE = 'practice
+DEFAULT_MODE = 'practice'
 '
 """
 str: default mode
