@@ -65,7 +65,7 @@ str: default run
 """
 
 DEFAULT_MODE = 'practice'
-'
+
 """
 str: default mode
 """
