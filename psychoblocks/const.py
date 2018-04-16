@@ -59,7 +59,7 @@ DEFAULT_SESSION = '001'
 str: default session number
 """
 
-DEFAULT_RUN_FILE = 's0r0.csv'
+DEFAULT_RUN_FILE = 's1r1.csv'
 """
 str: default run
 """
@@ -79,7 +79,7 @@ DEFAULT_BAUDRATE = '115200'
 str: default baudrate for serial device
 """ 
 
-DEFAULT_FULLSCREEN = 'no'
+DEFAULT_FULLSCREEN = 'yes'
 """
 str: default fullscreen status
 """
