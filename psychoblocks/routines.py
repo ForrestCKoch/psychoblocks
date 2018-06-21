@@ -116,8 +116,8 @@ class FNInstructions(AbstractCollection):
     
     def __init__(self, experiment):
         super(FNInstructions,self).__init__(None, experiment = experiment)
-        textlist = ['You will be shown pairs of faces and names.',
-                    'Please do your best to remember these pairs.',
+        textlist = ['You will be shown faces and names.',
+                    'Try and remember the face and name for each person.',
                     'Press the left button if the the name is a good fit.',
                     'Otherwise, press the right button.',
                     'Remember, there is no right or wrong answer.']

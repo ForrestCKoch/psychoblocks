@@ -25,7 +25,7 @@ const.DEFAULT_EXAMINER_SCREEN = 'no'
 const.DEFAULT_FULLSCREEN = 'yes'
 const.DEFAULT_PORT = '/dev/tty.wchusbserial1420'
 const.DEFAULT_RUN_FILE = 's1r1.csv'
-const.DEFAULT_MODE = 'test'
+const.DEFAULT_MODE = 'practice'
 
 if (__name__ == '__main__'):
     # make sure we start out in the right directory

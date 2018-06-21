@@ -1,0 +1,789 @@
+22.1145 	WARNING 	unknown type:examiner screen
+22.1146 	WARNING 	unknown type:examiner screen height
+22.1146 	WARNING 	unknown type:examiner screen width
+22.1146 	WARNING 	unknown type:participant
+22.1147 	WARNING 	unknown type:participant fullscreen
+22.1147 	WARNING 	unknown type:participant screen height
+22.1147 	WARNING 	unknown type:participant screen width
+22.1148 	WARNING 	unknown type:run file
+22.1148 	WARNING 	unknown type:run mode
+22.1148 	WARNING 	unknown type:serial port
+22.1157 	WARNING 	Monitor specification not found. Creating a temporary one...
+22.6830 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x113cb9b90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=1, size=array([1680, 1050]), stereo=False, units=u'norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+22.6834 	WARNING 	Monitor specification not found. Creating a temporary one...
+23.2671 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x116869a10>, multiSample=False, name='window1', numSamples=2, pos=[80.0, 90.0], screen=0, size=array([1280,  720]), stereo=False, units=u'norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+23.2672 	EXP 	window1: recordFrameIntervals = False
+24.9336 	EXP 	window1: recordFrameIntervals = True
+26.6186 	EXP 	window1: recordFrameIntervals = False
+26.6187 	INFO 	Particpant screen has a framerate of 59.9491598221094 hz
+26.6790 	EXP 	Created BR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='BR', opacity=1.0, ori=0.0, pos=array([ 0.6 , -0.85]), rgb=array([1., 1., 1.]), text='4', units=u'norm', win=Window(...), wrapWidth=1)
+26.6836 	EXP 	Created TR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='TR', opacity=1.0, ori=0.0, pos=array([0.6 , 0.85]), rgb=array([1., 1., 1.]), text='2', units=u'norm', win=Window(...), wrapWidth=1)
+26.6878 	EXP 	Created BL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='BL', opacity=1.0, ori=0.0, pos=array([-0.6 , -0.85]), rgb=array([1., 1., 1.]), text='3', units=u'norm', win=Window(...), wrapWidth=1)
+26.6920 	EXP 	Created TL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='TL', opacity=1.0, ori=0.0, pos=array([-0.6 ,  0.85]), rgb=array([1., 1., 1.]), text='1', units=u'norm', win=Window(...), wrapWidth=1)
+26.7362 	EXP 	Created Instructions 1 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Instructions 1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='You will be shown pairs of faces and names.', units=u'norm', win=Window(...), wrapWidth=1)
+26.7638 	EXP 	Created Instructions 1 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='You will be shown pairs of faces and names.', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8031 	EXP 	Created Instructions 2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Instructions 2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Please do your best to remember these pairs.', units=u'norm', win=Window(...), wrapWidth=1)
+26.8262 	EXP 	Created Instructions 2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Please do your best to remember these pairs.', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.8681 	EXP 	Created Instructions 3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Instructions 3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1)
+26.8940 	EXP 	Created Instructions 3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=1.75)
+26.9234 	EXP 	Created Instructions 4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Instructions 4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Otherwise, press the right button.', units=u'norm', win=Window(...), wrapWidth=1)
+26.9425 	EXP 	Created Instructions 4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Otherwise, press the right button.', units=u'norm', win=Window(...), wrapWidth=1.75)
+26.9812 	EXP 	Created Instructions 5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Instructions 5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Remember, there is no right or wrong answer.', units=u'norm', win=Window(...), wrapWidth=1)
+27.0040 	EXP 	Created Instructions 5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Instructions 5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Remember, there is no right or wrong answer.', units=u'norm', win=Window(...), wrapWidth=1.75)
+27.0142 	EXP 	Created Ex1 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Ex1', opacity=1.0, ori=0.0, pos=array([0. , 0.5]), rgb=array([1., 1., 1.]), text='Hello World', units=u'norm', win=Window(...), wrapWidth=1.75)
+27.0226 	EXP 	Created Ex2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Ex2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Hello World', units=u'norm', win=Window(...), wrapWidth=1.75)
+27.0308 	EXP 	Created Ex3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='Ex3', opacity=1.0, ori=0.0, pos=array([ 0. , -0.5]), rgb=array([1., 1., 1.]), text='Hello World', units=u'norm', win=Window(...), wrapWidth=1.75)
+27.0617 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Get Ready.  Waiting for scanner.', units=u'norm', win=Window(...), wrapWidth=1)
+27.0764 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='Waiting for TLL pulse', units=u'norm', win=Window(...), wrapWidth=1.75)
+27.0823 	EXP 	Imported data/runs/s1r1.csv as conditions, 4 conditions, 3 params
+27.0840 	EXP 	Imported data/blocks/s1r1b1.csv as conditions, 8 conditions, 3 params
+27.1052 	EXP 	Created Trial Image: stimuli/CFD-WM-010-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-010-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-010-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.1161 	EXP 	Created Trial Name: MITCHELL = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: MITCHELL', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='MITCHELL', units=u'norm', win=Window(...), wrapWidth=1)
+27.1228 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.1338 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.1472 	EXP 	Created Trial Image: stimuli/CFD-WM-251-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-251-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-251-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.1562 	EXP 	Created Trial Name: LACHLAN = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: LACHLAN', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='LACHLAN', units=u'norm', win=Window(...), wrapWidth=1)
+27.1610 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.1656 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.1697 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.1845 	EXP 	Created Trial Image: stimuli/CFD-WF-217-085-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-217-085-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-217-085-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.1933 	EXP 	Created Trial Name: MATILDA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: MATILDA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='MATILDA', units=u'norm', win=Window(...), wrapWidth=1)
+27.1983 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.2028 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.2060 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.2201 	EXP 	Created Trial Image: stimuli/CFD-WF-007-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-007-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-007-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.2271 	EXP 	Created Trial Name: JANET = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: JANET', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='JANET', units=u'norm', win=Window(...), wrapWidth=1)
+27.2320 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.2365 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.2396 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.2540 	EXP 	Created Trial Image: stimuli/CFD-WF-028-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-028-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-028-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.2616 	EXP 	Created Trial Name: SOPHIA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: SOPHIA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='SOPHIA', units=u'norm', win=Window(...), wrapWidth=1)
+27.2668 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.2713 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.2745 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.2894 	EXP 	Created Trial Image: stimuli/CFD-WF-238-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-238-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-238-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.2969 	EXP 	Created Trial Name: JILLIAN = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: JILLIAN', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='JILLIAN', units=u'norm', win=Window(...), wrapWidth=1)
+27.3018 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.3062 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.3094 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.3239 	EXP 	Created Trial Image: stimuli/CFD-WM-224-197-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-224-197-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-224-197-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.3304 	EXP 	Created Trial Name: SCOTT = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: SCOTT', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='SCOTT', units=u'norm', win=Window(...), wrapWidth=1)
+27.3354 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.3397 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.3429 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.3551 	EXP 	Created Trial Image: stimuli/CFD-WM-024-015-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-024-015-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-024-015-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.3614 	EXP 	Created Trial Name: MAX = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: MAX', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='MAX', units=u'norm', win=Window(...), wrapWidth=1)
+27.3664 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.3707 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.3768 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.3815 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.3834 	EXP 	Imported data/blocks/s1r1b2.csv as conditions, 8 conditions, 3 params
+27.3989 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.4097 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+27.4146 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.4189 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.4324 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.4407 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+27.4455 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.4499 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.4530 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.4683 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.4763 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+27.4811 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.4855 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.4886 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.5020 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.5103 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+27.5151 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.5194 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.5228 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.5382 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.5462 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+27.5511 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.5554 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.5587 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.5719 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.5800 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+27.5848 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.5893 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.5929 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.6081 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.6161 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+27.6209 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.6253 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.6286 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.6418 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.6498 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+27.6546 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.6589 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.6620 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.6651 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.6670 	EXP 	Imported data/blocks/s1r1b3.csv as conditions, 8 conditions, 3 params
+27.6797 	EXP 	Created Trial Image: stimuli/CFD-WF-246-087-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-246-087-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-246-087-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.6889 	EXP 	Created Trial Name: SAMANTHA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: SAMANTHA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='SAMANTHA', units=u'norm', win=Window(...), wrapWidth=1)
+27.6941 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.6984 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.7104 	EXP 	Created Trial Image: stimuli/CFD-WM-227-099-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-227-099-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-227-099-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.7179 	EXP 	Created Trial Name: DENNIS = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: DENNIS', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='DENNIS', units=u'norm', win=Window(...), wrapWidth=1)
+27.7229 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.7273 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.7305 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.7488 	EXP 	Created Trial Image: stimuli/CFD-WM-019-003-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-019-003-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-019-003-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.7589 	EXP 	Created Trial Name: RAYMOND = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: RAYMOND', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='RAYMOND', units=u'norm', win=Window(...), wrapWidth=1)
+27.7639 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.7682 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.7712 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.7838 	EXP 	Created Trial Image: stimuli/CFD-WM-258-125-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-258-125-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-258-125-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.7914 	EXP 	Created Trial Name: ADAM = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: ADAM', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='ADAM', units=u'norm', win=Window(...), wrapWidth=1)
+27.7962 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.8004 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.8034 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.8180 	EXP 	Created Trial Image: stimuli/CFD-WF-030-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-030-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-030-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.8238 	EXP 	Created Trial Name: LILY = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: LILY', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='LILY', units=u'norm', win=Window(...), wrapWidth=1)
+27.8288 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.8331 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.8361 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.8494 	EXP 	Created Trial Image: stimuli/CFD-WF-020-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-020-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-020-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.8576 	EXP 	Created Trial Name: KIRSTY = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: KIRSTY', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='KIRSTY', units=u'norm', win=Window(...), wrapWidth=1)
+27.8624 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.8667 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.8697 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.8822 	EXP 	Created Trial Image: stimuli/CFD-WF-242-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-242-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-242-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.8910 	EXP 	Created Trial Name: TAYLOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: TAYLOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='TAYLOR', units=u'norm', win=Window(...), wrapWidth=1)
+27.8958 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.9003 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.9035 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.9173 	EXP 	Created Trial Image: stimuli/CFD-WM-209-038-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-209-038-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-209-038-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.9254 	EXP 	Created Trial Name: RONALD = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: RONALD', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='RONALD', units=u'norm', win=Window(...), wrapWidth=1)
+27.9302 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.9347 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.9379 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.9410 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+27.9428 	EXP 	Imported data/blocks/s1r1b4.csv as conditions, 8 conditions, 3 params
+27.9581 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.9660 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+27.9709 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+27.9754 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+27.9886 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+27.9966 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+28.0015 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.0059 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.0091 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.0244 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.0324 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+28.0373 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.0415 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.0446 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.0579 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.0660 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+28.0709 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.0751 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.0781 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.0935 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.1016 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+28.1065 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.1107 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.1138 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.1271 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.1353 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+28.1403 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.1446 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.1477 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.1630 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.1730 	EXP 	Created Trial Name: REBECCA = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: REBECCA', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+28.1779 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.1822 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.1852 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.1988 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.67738095, 0.76190476]), texRes=128, units='norm', win=Window(...))
+28.2070 	EXP 	Created Trial Name: CONNOR = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name=u'Trial Name: CONNOR', opacity=1.0, ori=0.0, pos=array([0. , 0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+28.2120 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='YES', units=u'norm', win=Window(...), wrapWidth=1)
+28.2164 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.8 ]), rgb=array([1., 1., 1.]), text='NO', units=u'norm', win=Window(...), wrapWidth=1)
+28.2195 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Fixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.2227 	EXP 	Created Rest Block = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Rest Block', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='+', units=u'norm', win=Window(...), wrapWidth=1)
+28.2227 	INFO 	starting routine Calibration ...
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-246-087-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([0.8890625, 1.       ])
+28.2344 	EXP 	TL: autoDraw = True
+28.2344 	EXP 	BL: autoDraw = True
+28.2344 	EXP 	TR: autoDraw = True
+28.2344 	EXP 	BR: autoDraw = True
+37.1481 	DATA 	Keypress: space
+37.1497 	INFO 	finished routine Calibration ...
+37.1498 	INFO 	starting routine FNInstructions ...
+37.1596 	EXP 	TL: autoDraw = False
+37.1596 	EXP 	BL: autoDraw = False
+37.1596 	EXP 	TR: autoDraw = False
+37.1596 	EXP 	BR: autoDraw = False
+37.1596 	EXP 	Instructions 1: autoDraw = True
+37.1753 	EXP 	Instructions 1: autoDraw = True
+40.4138 	DATA 	Keypress: space
+40.4288 	EXP 	Instructions 1: autoDraw = False
+40.4288 	EXP 	Instructions 2: autoDraw = True
+40.4447 	EXP 	Instructions 1: autoDraw = False
+40.4447 	EXP 	Instructions 2: autoDraw = True
+41.8342 	DATA 	Keypress: space
+41.8797 	EXP 	Instructions 2: autoDraw = False
+41.8797 	EXP 	Instructions 3: autoDraw = True
+41.8957 	EXP 	Instructions 2: autoDraw = False
+41.8957 	EXP 	Instructions 3: autoDraw = True
+42.8299 	DATA 	Keypress: space
+42.8473 	EXP 	Instructions 3: autoDraw = False
+42.8473 	EXP 	Instructions 4: autoDraw = True
+42.8634 	EXP 	Instructions 3: autoDraw = False
+42.8634 	EXP 	Instructions 4: autoDraw = True
+43.6692 	DATA 	Keypress: space
+43.7142 	EXP 	Instructions 4: autoDraw = False
+43.7142 	EXP 	Instructions 5: autoDraw = True
+43.7303 	EXP 	Instructions 4: autoDraw = False
+43.7303 	EXP 	Instructions 5: autoDraw = True
+44.1686 	DATA 	Keypress: space
+44.1984 	INFO 	finished routine FNInstructions ...
+44.1986 	INFO 	starting routine WaitForTLL ...
+44.2151 	EXP 	Instructions 5: autoDraw = False
+44.2151 	EXP 	unnamed TextStim: autoDraw = True
+44.2308 	EXP 	Instructions 5: autoDraw = False
+44.2308 	EXP 	unnamed TextStim: autoDraw = True
+44.2350 	EXP 	unnamed TextStim: autoDraw = False
+44.2351 	INFO 	finished routine WaitForTLL ...
+44.2352 	INFO 	starting routine FacenameTrial ...
+44.2355 	INFO 	starting routine timer from 22.1204168797
+44.2522 	EXP 	unnamed TextStim: autoDraw = False
+44.2522 	EXP 	No Prompt: autoDraw = True
+44.2522 	EXP 	Yes Prompt: autoDraw = True
+44.2522 	EXP 	Trial Name: MITCHELL: autoDraw = True
+44.2522 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: autoDraw = True
+48.7189 	INFO 	finished routine FacenameTrial ...
+48.7192 	INFO 	starting routine Fixation ...
+48.7357 	EXP 	No Prompt: autoDraw = False
+48.7357 	EXP 	Yes Prompt: autoDraw = False
+48.7357 	EXP 	Trial Name: MITCHELL: autoDraw = False
+48.7357 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: autoDraw = False
+48.7357 	EXP 	Fixation: autoDraw = True
+49.2027 	INFO 	finished routine Fixation ...
+49.2027 	INFO 	starting routine FacenameTrial ...
+49.2030 	INFO 	starting routine timer from 27.0879149437
+49.2192 	EXP 	Fixation: autoDraw = False
+49.2192 	EXP 	No Prompt: autoDraw = True
+49.2192 	EXP 	Yes Prompt: autoDraw = True
+49.2192 	EXP 	Trial Name: LACHLAN: autoDraw = True
+49.2192 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: autoDraw = True
+53.6894 	INFO 	finished routine FacenameTrial ...
+53.6896 	INFO 	starting routine Fixation ...
+53.7060 	EXP 	No Prompt: autoDraw = False
+53.7060 	EXP 	Yes Prompt: autoDraw = False
+53.7060 	EXP 	Trial Name: LACHLAN: autoDraw = False
+53.7060 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: autoDraw = False
+53.7060 	EXP 	Fixation: autoDraw = True
+54.1731 	INFO 	finished routine Fixation ...
+54.1732 	INFO 	starting routine FacenameTrial ...
+54.1734 	INFO 	starting routine timer from 32.0583450794
+54.1896 	EXP 	Fixation: autoDraw = False
+54.1896 	EXP 	No Prompt: autoDraw = True
+54.1896 	EXP 	Yes Prompt: autoDraw = True
+54.1896 	EXP 	Trial Name: MATILDA: autoDraw = True
+54.1896 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: autoDraw = True
+58.6601 	INFO 	finished routine FacenameTrial ...
+58.6603 	INFO 	starting routine Fixation ...
+58.6767 	EXP 	No Prompt: autoDraw = False
+58.6767 	EXP 	Yes Prompt: autoDraw = False
+58.6767 	EXP 	Trial Name: MATILDA: autoDraw = False
+58.6767 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: autoDraw = False
+58.6767 	EXP 	Fixation: autoDraw = True
+59.1437 	INFO 	finished routine Fixation ...
+59.1438 	INFO 	starting routine FacenameTrial ...
+59.1440 	INFO 	starting routine timer from 37.0289568901
+59.1603 	EXP 	Fixation: autoDraw = False
+59.1603 	EXP 	No Prompt: autoDraw = True
+59.1603 	EXP 	Yes Prompt: autoDraw = True
+59.1603 	EXP 	Trial Name: JANET: autoDraw = True
+59.1603 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = True
+63.6307 	INFO 	finished routine FacenameTrial ...
+63.6309 	INFO 	starting routine Fixation ...
+63.6473 	EXP 	No Prompt: autoDraw = False
+63.6473 	EXP 	Yes Prompt: autoDraw = False
+63.6473 	EXP 	Trial Name: JANET: autoDraw = False
+63.6473 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = False
+63.6473 	EXP 	Fixation: autoDraw = True
+64.1143 	INFO 	finished routine Fixation ...
+64.1143 	INFO 	starting routine FacenameTrial ...
+64.1146 	INFO 	starting routine timer from 41.9995188713
+64.1306 	EXP 	Fixation: autoDraw = False
+64.1306 	EXP 	No Prompt: autoDraw = True
+64.1306 	EXP 	Yes Prompt: autoDraw = True
+64.1306 	EXP 	Trial Name: SOPHIA: autoDraw = True
+64.1306 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: autoDraw = True
+68.6017 	INFO 	finished routine FacenameTrial ...
+68.6019 	INFO 	starting routine Fixation ...
+68.6178 	EXP 	No Prompt: autoDraw = False
+68.6178 	EXP 	Yes Prompt: autoDraw = False
+68.6178 	EXP 	Trial Name: SOPHIA: autoDraw = False
+68.6178 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: autoDraw = False
+68.6178 	EXP 	Fixation: autoDraw = True
+69.0850 	INFO 	finished routine Fixation ...
+69.0851 	INFO 	starting routine FacenameTrial ...
+69.0853 	INFO 	starting routine timer from 46.9702830315
+69.1016 	EXP 	Fixation: autoDraw = False
+69.1016 	EXP 	No Prompt: autoDraw = True
+69.1016 	EXP 	Yes Prompt: autoDraw = True
+69.1016 	EXP 	Trial Name: JILLIAN: autoDraw = True
+69.1016 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: autoDraw = True
+73.5718 	INFO 	finished routine FacenameTrial ...
+73.5721 	INFO 	starting routine Fixation ...
+73.5885 	EXP 	No Prompt: autoDraw = False
+73.5885 	EXP 	Yes Prompt: autoDraw = False
+73.5885 	EXP 	Trial Name: JILLIAN: autoDraw = False
+73.5885 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: autoDraw = False
+73.5885 	EXP 	Fixation: autoDraw = True
+74.0554 	INFO 	finished routine Fixation ...
+74.0555 	INFO 	starting routine FacenameTrial ...
+74.0558 	INFO 	starting routine timer from 51.9407029152
+74.0720 	EXP 	Fixation: autoDraw = False
+74.0720 	EXP 	No Prompt: autoDraw = True
+74.0720 	EXP 	Yes Prompt: autoDraw = True
+74.0720 	EXP 	Trial Name: SCOTT: autoDraw = True
+74.0720 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: autoDraw = True
+78.5424 	INFO 	finished routine FacenameTrial ...
+78.5426 	INFO 	starting routine Fixation ...
+78.5590 	EXP 	No Prompt: autoDraw = False
+78.5590 	EXP 	Yes Prompt: autoDraw = False
+78.5590 	EXP 	Trial Name: SCOTT: autoDraw = False
+78.5590 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: autoDraw = False
+78.5590 	EXP 	Fixation: autoDraw = True
+79.0260 	INFO 	finished routine Fixation ...
+79.0261 	INFO 	starting routine FacenameTrial ...
+79.0263 	INFO 	starting routine timer from 56.9112489223
+79.0426 	EXP 	Fixation: autoDraw = False
+79.0426 	EXP 	No Prompt: autoDraw = True
+79.0426 	EXP 	Yes Prompt: autoDraw = True
+79.0426 	EXP 	Trial Name: MAX: autoDraw = True
+79.0426 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: autoDraw = True
+83.5464 	INFO 	finished routine FacenameTrial ...
+83.5466 	INFO 	starting routine UpdateExaminerWindow ...
+83.6050 	EXP 	Ex1: text = 'Responses Under 200ms = 0'
+83.6050 	EXP 	Ex2: text = 'Non - Reponses = 8'
+83.6050 	EXP 	Ex3: text = 'Total Responses = 0'
+83.6050 	EXP 	Ex3: autoDraw = True
+83.6050 	EXP 	Ex2: autoDraw = True
+83.6050 	EXP 	Ex1: autoDraw = True
+83.6051 	INFO 	finished routine UpdateExaminerWindow ...
+83.6051 	INFO 	starting routine RestBlock ...
+83.6228 	EXP 	No Prompt: autoDraw = False
+83.6228 	EXP 	Yes Prompt: autoDraw = False
+83.6228 	EXP 	Trial Name: MAX: autoDraw = False
+83.6228 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: autoDraw = False
+83.6228 	EXP 	Rest Block: autoDraw = True
+99.5922 	INFO 	finished routine RestBlock ...
+99.5922 	INFO 	starting routine FacenameTrial ...
+99.5925 	INFO 	starting routine timer from 77.4774389267
+99.6088 	EXP 	Rest Block: autoDraw = False
+99.6088 	EXP 	No Prompt: autoDraw = True
+99.6088 	EXP 	Yes Prompt: autoDraw = True
+99.6088 	EXP 	Trial Name: REBECCA: autoDraw = True
+99.6088 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+104.0792 	INFO 	finished routine FacenameTrial ...
+104.0794 	INFO 	starting routine Fixation ...
+104.0958 	EXP 	No Prompt: autoDraw = False
+104.0958 	EXP 	Yes Prompt: autoDraw = False
+104.0958 	EXP 	Trial Name: REBECCA: autoDraw = False
+104.0958 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+104.0958 	EXP 	Fixation: autoDraw = True
+104.5628 	INFO 	finished routine Fixation ...
+104.5629 	INFO 	starting routine FacenameTrial ...
+104.5631 	INFO 	starting routine timer from 82.4480390549
+104.5790 	EXP 	Fixation: autoDraw = False
+104.5790 	EXP 	No Prompt: autoDraw = True
+104.5790 	EXP 	Yes Prompt: autoDraw = True
+104.5790 	EXP 	Trial Name: CONNOR: autoDraw = True
+104.5790 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+109.0498 	INFO 	finished routine FacenameTrial ...
+109.0500 	INFO 	starting routine Fixation ...
+109.0664 	EXP 	No Prompt: autoDraw = False
+109.0664 	EXP 	Yes Prompt: autoDraw = False
+109.0664 	EXP 	Trial Name: CONNOR: autoDraw = False
+109.0664 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+109.0664 	EXP 	Fixation: autoDraw = True
+109.5333 	INFO 	finished routine Fixation ...
+109.5334 	INFO 	starting routine FacenameTrial ...
+109.5337 	INFO 	starting routine timer from 87.4185888767
+109.5500 	EXP 	Fixation: autoDraw = False
+109.5500 	EXP 	No Prompt: autoDraw = True
+109.5500 	EXP 	Yes Prompt: autoDraw = True
+109.5500 	EXP 	Trial Name: REBECCA: autoDraw = True
+109.5500 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+114.0202 	INFO 	finished routine FacenameTrial ...
+114.0204 	INFO 	starting routine Fixation ...
+114.0369 	EXP 	No Prompt: autoDraw = False
+114.0369 	EXP 	Yes Prompt: autoDraw = False
+114.0369 	EXP 	Trial Name: REBECCA: autoDraw = False
+114.0369 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+114.0369 	EXP 	Fixation: autoDraw = True
+114.5039 	INFO 	finished routine Fixation ...
+114.5040 	INFO 	starting routine FacenameTrial ...
+114.5042 	INFO 	starting routine timer from 92.3891689777
+114.5205 	EXP 	Fixation: autoDraw = False
+114.5205 	EXP 	No Prompt: autoDraw = True
+114.5205 	EXP 	Yes Prompt: autoDraw = True
+114.5205 	EXP 	Trial Name: CONNOR: autoDraw = True
+114.5205 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+118.9911 	INFO 	finished routine FacenameTrial ...
+118.9913 	INFO 	starting routine Fixation ...
+119.0076 	EXP 	No Prompt: autoDraw = False
+119.0076 	EXP 	Yes Prompt: autoDraw = False
+119.0076 	EXP 	Trial Name: CONNOR: autoDraw = False
+119.0076 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+119.0076 	EXP 	Fixation: autoDraw = True
+119.4747 	INFO 	finished routine Fixation ...
+119.4748 	INFO 	starting routine FacenameTrial ...
+119.4750 	INFO 	starting routine timer from 97.3599689007
+119.4913 	EXP 	Fixation: autoDraw = False
+119.4913 	EXP 	No Prompt: autoDraw = True
+119.4913 	EXP 	Yes Prompt: autoDraw = True
+119.4913 	EXP 	Trial Name: REBECCA: autoDraw = True
+119.4913 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+123.9614 	INFO 	finished routine FacenameTrial ...
+123.9616 	INFO 	starting routine Fixation ...
+123.9780 	EXP 	No Prompt: autoDraw = False
+123.9780 	EXP 	Yes Prompt: autoDraw = False
+123.9780 	EXP 	Trial Name: REBECCA: autoDraw = False
+123.9780 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+123.9780 	EXP 	Fixation: autoDraw = True
+124.4451 	INFO 	finished routine Fixation ...
+124.4452 	INFO 	starting routine FacenameTrial ...
+124.4455 	INFO 	starting routine timer from 102.330388069
+124.4617 	EXP 	Fixation: autoDraw = False
+124.4617 	EXP 	No Prompt: autoDraw = True
+124.4617 	EXP 	Yes Prompt: autoDraw = True
+124.4617 	EXP 	Trial Name: CONNOR: autoDraw = True
+124.4617 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+128.9320 	INFO 	finished routine FacenameTrial ...
+128.9322 	INFO 	starting routine Fixation ...
+128.9486 	EXP 	No Prompt: autoDraw = False
+128.9486 	EXP 	Yes Prompt: autoDraw = False
+128.9486 	EXP 	Trial Name: CONNOR: autoDraw = False
+128.9486 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+128.9486 	EXP 	Fixation: autoDraw = True
+129.4157 	INFO 	finished routine Fixation ...
+129.4157 	INFO 	starting routine FacenameTrial ...
+129.4160 	INFO 	starting routine timer from 107.300900936
+129.4322 	EXP 	Fixation: autoDraw = False
+129.4322 	EXP 	No Prompt: autoDraw = True
+129.4322 	EXP 	Yes Prompt: autoDraw = True
+129.4322 	EXP 	Trial Name: REBECCA: autoDraw = True
+129.4322 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+133.9026 	INFO 	finished routine FacenameTrial ...
+133.9028 	INFO 	starting routine Fixation ...
+133.9192 	EXP 	No Prompt: autoDraw = False
+133.9192 	EXP 	Yes Prompt: autoDraw = False
+133.9192 	EXP 	Trial Name: REBECCA: autoDraw = False
+133.9192 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+133.9192 	EXP 	Fixation: autoDraw = True
+134.3862 	INFO 	finished routine Fixation ...
+134.3863 	INFO 	starting routine FacenameTrial ...
+134.3866 	INFO 	starting routine timer from 112.271502018
+134.4026 	EXP 	Fixation: autoDraw = False
+134.4026 	EXP 	No Prompt: autoDraw = True
+134.4026 	EXP 	Yes Prompt: autoDraw = True
+134.4026 	EXP 	Trial Name: CONNOR: autoDraw = True
+134.4026 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+138.8735 	INFO 	finished routine FacenameTrial ...
+138.8737 	INFO 	starting routine UpdateExaminerWindow ...
+138.9049 	EXP 	Ex1: text = 'Responses Under 200ms = 0'
+138.9049 	EXP 	Ex2: text = 'Non - Reponses = 16'
+138.9049 	EXP 	Ex3: text = 'Total Responses = 0'
+138.9049 	EXP 	Ex3: autoDraw = True
+138.9049 	EXP 	Ex2: autoDraw = True
+138.9049 	EXP 	Ex1: autoDraw = True
+138.9051 	INFO 	finished routine UpdateExaminerWindow ...
+138.9051 	INFO 	starting routine RestBlock ...
+138.9228 	EXP 	No Prompt: autoDraw = False
+138.9228 	EXP 	Yes Prompt: autoDraw = False
+138.9228 	EXP 	Trial Name: CONNOR: autoDraw = False
+138.9228 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+138.9228 	EXP 	Rest Block: autoDraw = True
+154.9524 	INFO 	finished routine RestBlock ...
+154.9525 	INFO 	starting routine FacenameTrial ...
+154.9527 	INFO 	starting routine timer from 132.837665081
+154.9690 	EXP 	Rest Block: autoDraw = False
+154.9690 	EXP 	No Prompt: autoDraw = True
+154.9690 	EXP 	Yes Prompt: autoDraw = True
+154.9690 	EXP 	Trial Name: SAMANTHA: autoDraw = True
+154.9690 	EXP 	Trial Image: stimuli/CFD-WF-246-087-N.jpg: autoDraw = True
+159.4394 	INFO 	finished routine FacenameTrial ...
+159.4396 	INFO 	starting routine Fixation ...
+159.4560 	EXP 	No Prompt: autoDraw = False
+159.4560 	EXP 	Yes Prompt: autoDraw = False
+159.4560 	EXP 	Trial Name: SAMANTHA: autoDraw = False
+159.4560 	EXP 	Trial Image: stimuli/CFD-WF-246-087-N.jpg: autoDraw = False
+159.4560 	EXP 	Fixation: autoDraw = True
+159.9230 	INFO 	finished routine Fixation ...
+159.9231 	INFO 	starting routine FacenameTrial ...
+159.9233 	INFO 	starting routine timer from 137.808279991
+159.9396 	EXP 	Fixation: autoDraw = False
+159.9396 	EXP 	No Prompt: autoDraw = True
+159.9396 	EXP 	Yes Prompt: autoDraw = True
+159.9396 	EXP 	Trial Name: DENNIS: autoDraw = True
+159.9396 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = True
+164.4104 	INFO 	finished routine FacenameTrial ...
+164.4106 	INFO 	starting routine Fixation ...
+164.4266 	EXP 	No Prompt: autoDraw = False
+164.4266 	EXP 	Yes Prompt: autoDraw = False
+164.4266 	EXP 	Trial Name: DENNIS: autoDraw = False
+164.4266 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = False
+164.4266 	EXP 	Fixation: autoDraw = True
+164.8937 	INFO 	finished routine Fixation ...
+164.8938 	INFO 	starting routine FacenameTrial ...
+164.8941 	INFO 	starting routine timer from 142.778985977
+164.9103 	EXP 	Fixation: autoDraw = False
+164.9103 	EXP 	No Prompt: autoDraw = True
+164.9103 	EXP 	Yes Prompt: autoDraw = True
+164.9103 	EXP 	Trial Name: RAYMOND: autoDraw = True
+164.9103 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: autoDraw = True
+169.3807 	INFO 	finished routine FacenameTrial ...
+169.3809 	INFO 	starting routine Fixation ...
+169.3973 	EXP 	No Prompt: autoDraw = False
+169.3973 	EXP 	Yes Prompt: autoDraw = False
+169.3973 	EXP 	Trial Name: RAYMOND: autoDraw = False
+169.3973 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: autoDraw = False
+169.3973 	EXP 	Fixation: autoDraw = True
+169.8642 	INFO 	finished routine Fixation ...
+169.8643 	INFO 	starting routine FacenameTrial ...
+169.8646 	INFO 	starting routine timer from 147.749486923
+169.8808 	EXP 	Fixation: autoDraw = False
+169.8808 	EXP 	No Prompt: autoDraw = True
+169.8808 	EXP 	Yes Prompt: autoDraw = True
+169.8808 	EXP 	Trial Name: ADAM: autoDraw = True
+169.8808 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: autoDraw = True
+174.3510 	INFO 	finished routine FacenameTrial ...
+174.3512 	INFO 	starting routine Fixation ...
+174.3677 	EXP 	No Prompt: autoDraw = False
+174.3677 	EXP 	Yes Prompt: autoDraw = False
+174.3677 	EXP 	Trial Name: ADAM: autoDraw = False
+174.3677 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: autoDraw = False
+174.3677 	EXP 	Fixation: autoDraw = True
+174.8348 	INFO 	finished routine Fixation ...
+174.8348 	INFO 	starting routine FacenameTrial ...
+174.8351 	INFO 	starting routine timer from 152.720021009
+174.8513 	EXP 	Fixation: autoDraw = False
+174.8513 	EXP 	No Prompt: autoDraw = True
+174.8513 	EXP 	Yes Prompt: autoDraw = True
+174.8513 	EXP 	Trial Name: LILY: autoDraw = True
+174.8513 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: autoDraw = True
+179.3217 	INFO 	finished routine FacenameTrial ...
+179.3219 	INFO 	starting routine Fixation ...
+179.3383 	EXP 	No Prompt: autoDraw = False
+179.3383 	EXP 	Yes Prompt: autoDraw = False
+179.3383 	EXP 	Trial Name: LILY: autoDraw = False
+179.3383 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: autoDraw = False
+179.3383 	EXP 	Fixation: autoDraw = True
+179.8054 	INFO 	finished routine Fixation ...
+179.8054 	INFO 	starting routine FacenameTrial ...
+179.8057 	INFO 	starting routine timer from 157.690621853
+179.8219 	EXP 	Fixation: autoDraw = False
+179.8219 	EXP 	No Prompt: autoDraw = True
+179.8219 	EXP 	Yes Prompt: autoDraw = True
+179.8219 	EXP 	Trial Name: KIRSTY: autoDraw = True
+179.8219 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: autoDraw = True
+184.2926 	INFO 	finished routine FacenameTrial ...
+184.2928 	INFO 	starting routine Fixation ...
+184.3095 	EXP 	No Prompt: autoDraw = False
+184.3095 	EXP 	Yes Prompt: autoDraw = False
+184.3095 	EXP 	Trial Name: KIRSTY: autoDraw = False
+184.3095 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: autoDraw = False
+184.3095 	EXP 	Fixation: autoDraw = True
+184.7759 	INFO 	finished routine Fixation ...
+184.7760 	INFO 	starting routine FacenameTrial ...
+184.7762 	INFO 	starting routine timer from 162.661164999
+184.7917 	EXP 	Fixation: autoDraw = False
+184.7917 	EXP 	No Prompt: autoDraw = True
+184.7917 	EXP 	Yes Prompt: autoDraw = True
+184.7917 	EXP 	Trial Name: TAYLOR: autoDraw = True
+184.7917 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: autoDraw = True
+189.2631 	INFO 	finished routine FacenameTrial ...
+189.2633 	INFO 	starting routine Fixation ...
+189.2795 	EXP 	No Prompt: autoDraw = False
+189.2795 	EXP 	Yes Prompt: autoDraw = False
+189.2795 	EXP 	Trial Name: TAYLOR: autoDraw = False
+189.2795 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: autoDraw = False
+189.2795 	EXP 	Fixation: autoDraw = True
+189.7467 	INFO 	finished routine Fixation ...
+189.7468 	INFO 	starting routine FacenameTrial ...
+189.7470 	INFO 	starting routine timer from 167.631955862
+189.7633 	EXP 	Fixation: autoDraw = False
+189.7633 	EXP 	No Prompt: autoDraw = True
+189.7633 	EXP 	Yes Prompt: autoDraw = True
+189.7633 	EXP 	Trial Name: RONALD: autoDraw = True
+189.7633 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: autoDraw = True
+194.2335 	INFO 	finished routine FacenameTrial ...
+194.2338 	INFO 	starting routine UpdateExaminerWindow ...
+194.2648 	EXP 	Ex1: text = 'Responses Under 200ms = 0'
+194.2648 	EXP 	Ex2: text = 'Non - Reponses = 24'
+194.2648 	EXP 	Ex3: text = 'Total Responses = 0'
+194.2648 	EXP 	Ex3: autoDraw = True
+194.2648 	EXP 	Ex2: autoDraw = True
+194.2648 	EXP 	Ex1: autoDraw = True
+194.2650 	INFO 	finished routine UpdateExaminerWindow ...
+194.2650 	INFO 	starting routine RestBlock ...
+194.2829 	EXP 	No Prompt: autoDraw = False
+194.2829 	EXP 	Yes Prompt: autoDraw = False
+194.2829 	EXP 	Trial Name: RONALD: autoDraw = False
+194.2829 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: autoDraw = False
+194.2829 	EXP 	Rest Block: autoDraw = True
+210.2962 	INFO 	finished routine RestBlock ...
+210.2963 	INFO 	starting routine FacenameTrial ...
+210.2966 	INFO 	starting routine timer from 188.181503057
+210.3124 	EXP 	Rest Block: autoDraw = False
+210.3124 	EXP 	No Prompt: autoDraw = True
+210.3124 	EXP 	Yes Prompt: autoDraw = True
+210.3124 	EXP 	Trial Name: REBECCA: autoDraw = True
+210.3124 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+214.7835 	INFO 	finished routine FacenameTrial ...
+214.7837 	INFO 	starting routine Fixation ...
+214.7997 	EXP 	No Prompt: autoDraw = False
+214.7997 	EXP 	Yes Prompt: autoDraw = False
+214.7997 	EXP 	Trial Name: REBECCA: autoDraw = False
+214.7997 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+214.7997 	EXP 	Fixation: autoDraw = True
+215.2669 	INFO 	finished routine Fixation ...
+215.2670 	INFO 	starting routine FacenameTrial ...
+215.2672 	INFO 	starting routine timer from 193.152142048
+215.2835 	EXP 	Fixation: autoDraw = False
+215.2835 	EXP 	No Prompt: autoDraw = True
+215.2835 	EXP 	Yes Prompt: autoDraw = True
+215.2835 	EXP 	Trial Name: CONNOR: autoDraw = True
+215.2835 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+219.7535 	INFO 	finished routine FacenameTrial ...
+219.7537 	INFO 	starting routine Fixation ...
+219.7702 	EXP 	No Prompt: autoDraw = False
+219.7702 	EXP 	Yes Prompt: autoDraw = False
+219.7702 	EXP 	Trial Name: CONNOR: autoDraw = False
+219.7702 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+219.7702 	EXP 	Fixation: autoDraw = True
+220.2372 	INFO 	finished routine Fixation ...
+220.2372 	INFO 	starting routine FacenameTrial ...
+220.2375 	INFO 	starting routine timer from 198.12244606
+220.2537 	EXP 	Fixation: autoDraw = False
+220.2537 	EXP 	No Prompt: autoDraw = True
+220.2537 	EXP 	Yes Prompt: autoDraw = True
+220.2537 	EXP 	Trial Name: REBECCA: autoDraw = True
+220.2537 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+224.7242 	INFO 	finished routine FacenameTrial ...
+224.7244 	INFO 	starting routine Fixation ...
+224.7408 	EXP 	No Prompt: autoDraw = False
+224.7408 	EXP 	Yes Prompt: autoDraw = False
+224.7408 	EXP 	Trial Name: REBECCA: autoDraw = False
+224.7408 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+224.7408 	EXP 	Fixation: autoDraw = True
+225.2077 	INFO 	finished routine Fixation ...
+225.2078 	INFO 	starting routine FacenameTrial ...
+225.2080 	INFO 	starting routine timer from 203.092971087
+225.2243 	EXP 	Fixation: autoDraw = False
+225.2243 	EXP 	No Prompt: autoDraw = True
+225.2243 	EXP 	Yes Prompt: autoDraw = True
+225.2243 	EXP 	Trial Name: CONNOR: autoDraw = True
+225.2243 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+229.6947 	INFO 	finished routine FacenameTrial ...
+229.6949 	INFO 	starting routine Fixation ...
+229.7112 	EXP 	No Prompt: autoDraw = False
+229.7112 	EXP 	Yes Prompt: autoDraw = False
+229.7112 	EXP 	Trial Name: CONNOR: autoDraw = False
+229.7112 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+229.7112 	EXP 	Fixation: autoDraw = True
+230.1783 	INFO 	finished routine Fixation ...
+230.1784 	INFO 	starting routine FacenameTrial ...
+230.1786 	INFO 	starting routine timer from 208.063576937
+230.1947 	EXP 	Fixation: autoDraw = False
+230.1947 	EXP 	No Prompt: autoDraw = True
+230.1947 	EXP 	Yes Prompt: autoDraw = True
+230.1947 	EXP 	Trial Name: REBECCA: autoDraw = True
+230.1947 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+234.6652 	INFO 	finished routine FacenameTrial ...
+234.6654 	INFO 	starting routine Fixation ...
+234.6819 	EXP 	No Prompt: autoDraw = False
+234.6819 	EXP 	Yes Prompt: autoDraw = False
+234.6819 	EXP 	Trial Name: REBECCA: autoDraw = False
+234.6819 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+234.6819 	EXP 	Fixation: autoDraw = True
+235.1489 	INFO 	finished routine Fixation ...
+235.1490 	INFO 	starting routine FacenameTrial ...
+235.1492 	INFO 	starting routine timer from 213.034182072
+235.1655 	EXP 	Fixation: autoDraw = False
+235.1655 	EXP 	No Prompt: autoDraw = True
+235.1655 	EXP 	Yes Prompt: autoDraw = True
+235.1655 	EXP 	Trial Name: CONNOR: autoDraw = True
+235.1655 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+239.6355 	INFO 	finished routine FacenameTrial ...
+239.6357 	INFO 	starting routine Fixation ...
+239.6526 	EXP 	No Prompt: autoDraw = False
+239.6526 	EXP 	Yes Prompt: autoDraw = False
+239.6526 	EXP 	Trial Name: CONNOR: autoDraw = False
+239.6526 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+239.6526 	EXP 	Fixation: autoDraw = True
+240.1197 	INFO 	finished routine Fixation ...
+240.1198 	INFO 	starting routine FacenameTrial ...
+240.1201 	INFO 	starting routine timer from 218.004992008
+240.1362 	EXP 	Fixation: autoDraw = False
+240.1362 	EXP 	No Prompt: autoDraw = True
+240.1362 	EXP 	Yes Prompt: autoDraw = True
+240.1362 	EXP 	Trial Name: REBECCA: autoDraw = True
+240.1362 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+244.6063 	INFO 	finished routine FacenameTrial ...
+244.6065 	INFO 	starting routine Fixation ...
+244.6229 	EXP 	No Prompt: autoDraw = False
+244.6229 	EXP 	Yes Prompt: autoDraw = False
+244.6229 	EXP 	Trial Name: REBECCA: autoDraw = False
+244.6229 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+244.6229 	EXP 	Fixation: autoDraw = True
+245.0900 	INFO 	finished routine Fixation ...
+245.0901 	INFO 	starting routine FacenameTrial ...
+245.0904 	INFO 	starting routine timer from 222.975288868
+245.1066 	EXP 	Fixation: autoDraw = False
+245.1066 	EXP 	No Prompt: autoDraw = True
+245.1066 	EXP 	Yes Prompt: autoDraw = True
+245.1066 	EXP 	Trial Name: CONNOR: autoDraw = True
+245.1066 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+249.5772 	INFO 	finished routine FacenameTrial ...
+249.5773 	INFO 	starting routine UpdateExaminerWindow ...
+249.6037 	EXP 	Ex1: text = 'Responses Under 200ms = 0'
+249.6037 	EXP 	Ex2: text = 'Non - Reponses = 32'
+249.6037 	EXP 	Ex3: text = 'Total Responses = 0'
+249.6037 	EXP 	Ex3: autoDraw = True
+249.6037 	EXP 	Ex2: autoDraw = True
+249.6037 	EXP 	Ex1: autoDraw = True
+249.6038 	INFO 	finished routine UpdateExaminerWindow ...
+249.6038 	INFO 	starting routine RestBlock ...
+249.6214 	EXP 	No Prompt: autoDraw = False
+249.6214 	EXP 	Yes Prompt: autoDraw = False
+249.6214 	EXP 	Trial Name: CONNOR: autoDraw = False
+249.6214 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+249.6214 	EXP 	Rest Block: autoDraw = True
+265.6396 	INFO 	finished routine RestBlock ...

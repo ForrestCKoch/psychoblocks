@@ -1,0 +1,653 @@
+45.1549 	WARNING 	unknown type:examiner screen
+45.1549 	WARNING 	unknown type:examiner screen height
+45.1550 	WARNING 	unknown type:examiner screen width
+45.1550 	WARNING 	unknown type:participant
+45.1550 	WARNING 	unknown type:participant fullscreen
+45.1551 	WARNING 	unknown type:participant screen height
+45.1551 	WARNING 	unknown type:participant screen width
+45.1551 	WARNING 	unknown type:run file
+45.1552 	WARNING 	unknown type:run mode
+45.1552 	WARNING 	unknown type:serial port
+45.1574 	WARNING 	Monitor specification not found. Creating a temporary one...
+45.1596 	WARNING 	Requested an unavailable screen number - using first available.
+45.7813 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x117a0fad0>, multiSample=False, name='window1', numSamples=2, pos=[-120.0, -75.0], screen=1, size=array([1680, 1050]), stereo=False, units=u'norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+45.7814 	EXP 	window1: recordFrameIntervals = False
+47.4465 	EXP 	window1: recordFrameIntervals = True
+49.1303 	EXP 	window1: recordFrameIntervals = False
+49.1304 	INFO 	Particpant screen has a framerate of 59.99343181040589 hz
+49.1678 	EXP 	Imported data/runs/s1t1.csv as conditions, 17 conditions, 4 params
+49.2512 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.3690 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='KIRSTY', units=u'norm', win=Window(...), wrapWidth=1)
+49.3783 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+49.4038 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.4120 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.4180 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.4353 	EXP 	Created Trial Image: stimuli/CFD-WF-217-085-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-217-085-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-217-085-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.4451 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MATILDA', units=u'norm', win=Window(...), wrapWidth=1)
+49.4531 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='TAYLOR', units=u'norm', win=Window(...), wrapWidth=1)
+49.4675 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.4736 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.4784 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.4972 	EXP 	Created Trial Image: stimuli/CFD-WF-028-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-028-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-028-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.5060 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='JANET', units=u'norm', win=Window(...), wrapWidth=1)
+49.5212 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='SOPHIA', units=u'norm', win=Window(...), wrapWidth=1)
+49.5356 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.5415 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.5464 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.5719 	EXP 	Created Trial Image: stimuli/CFD-WF-238-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-238-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-238-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.5797 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MATILDA', units=u'norm', win=Window(...), wrapWidth=1)
+49.5877 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='JILLIAN', units=u'norm', win=Window(...), wrapWidth=1)
+49.6114 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.6215 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.6264 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.6430 	EXP 	Created Trial Image: stimuli/CFD-WM-010-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-010-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-010-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.6496 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SCOTT', units=u'norm', win=Window(...), wrapWidth=1)
+49.6575 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MITCHELL', units=u'norm', win=Window(...), wrapWidth=1)
+49.6728 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.6788 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.6837 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.7025 	EXP 	Created Trial Image: stimuli/CFD-WF-030-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-030-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-030-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.7089 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LILY', units=u'norm', win=Window(...), wrapWidth=1)
+49.7155 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='SOPHIA', units=u'norm', win=Window(...), wrapWidth=1)
+49.7301 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.7360 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.7409 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.7659 	EXP 	Created Trial Image: stimuli/CFD-WM-209-038-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-209-038-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-209-038-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.7734 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RONALD', units=u'norm', win=Window(...), wrapWidth=1)
+49.7808 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='DENNIS', units=u'norm', win=Window(...), wrapWidth=1)
+49.7950 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.8009 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.8059 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.8282 	EXP 	Created Trial Image: stimuli/CFD-WM-258-125-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-258-125-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-258-125-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.8365 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LACHLAN', units=u'norm', win=Window(...), wrapWidth=1)
+49.8426 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='ADAM', units=u'norm', win=Window(...), wrapWidth=1)
+49.8610 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.8672 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.8720 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.8890 	EXP 	Created Trial Image: stimuli/CFD-WF-007-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-007-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-007-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.8954 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LILY', units=u'norm', win=Window(...), wrapWidth=1)
+49.9023 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='JANET', units=u'norm', win=Window(...), wrapWidth=1)
+49.9166 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.9225 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.9277 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+49.9500 	EXP 	Created Trial Image: stimuli/CFD-WM-019-003-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-019-003-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-019-003-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+49.9573 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RAYMOND', units=u'norm', win=Window(...), wrapWidth=1)
+49.9650 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='RONALD', units=u'norm', win=Window(...), wrapWidth=1)
+49.9869 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+49.9935 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+49.9987 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.0165 	EXP 	Created Trial Image: stimuli/CFD-WF-020-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-020-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-020-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.0229 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='KIRSTY', units=u'norm', win=Window(...), wrapWidth=1)
+50.0368 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MICHELLE', units=u'norm', win=Window(...), wrapWidth=1)
+50.0554 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.0615 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.0668 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.0836 	EXP 	Created Trial Image: stimuli/CFD-WM-024-015-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-024-015-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-024-015-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.0944 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='GEOFFREY', units=u'norm', win=Window(...), wrapWidth=1)
+50.1018 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MAX', units=u'norm', win=Window(...), wrapWidth=1)
+50.1187 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.1250 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.1301 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.1522 	EXP 	Created Trial Image: stimuli/CFD-WM-224-197-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-224-197-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-224-197-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.1590 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SCOTT', units=u'norm', win=Window(...), wrapWidth=1)
+50.1645 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MAX', units=u'norm', win=Window(...), wrapWidth=1)
+50.1788 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.1849 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.1898 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.2067 	EXP 	Created Trial Image: stimuli/CFD-WM-251-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-251-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-251-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.2133 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='ADAM', units=u'norm', win=Window(...), wrapWidth=1)
+50.2213 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='LACHLAN', units=u'norm', win=Window(...), wrapWidth=1)
+50.2357 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.2418 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.2469 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.2647 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.2729 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MITCHELL', units=u'norm', win=Window(...), wrapWidth=1)
+50.2801 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+50.2951 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.3012 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.3066 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.3252 	EXP 	Created Trial Image: stimuli/CFD-WF-242-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-242-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-242-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.3350 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SAMANTHA', units=u'norm', win=Window(...), wrapWidth=1)
+50.3420 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='TAYLOR', units=u'norm', win=Window(...), wrapWidth=1)
+50.3574 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.3642 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.3695 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.3859 	EXP 	Created Trial Image: stimuli/CFD-WM-227-099-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-227-099-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-227-099-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+50.3932 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RAYMOND', units=u'norm', win=Window(...), wrapWidth=1)
+50.4008 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='DENNIS', units=u'norm', win=Window(...), wrapWidth=1)
+50.4164 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+50.4224 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+50.4277 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+50.4278 	INFO 	starting routine RecallTrial ...
+50.4279 	INFO 	starting routine timer from 5.27248692513
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: size = array([746.8125, 525.    ])
+50.4634 	EXP 	No Prompt: autoDraw = True
+50.4634 	EXP 	Yes Prompt: autoDraw = True
+50.4634 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+56.7346 	DATA 	Keypress: escape
+56.7350 	WARNING 	escape button pressed ... aborting experiment
+12.6763 	WARNING 	unknown type:examiner screen
+12.6763 	WARNING 	unknown type:examiner screen height
+12.6764 	WARNING 	unknown type:examiner screen width
+12.6764 	WARNING 	unknown type:participant
+12.6764 	WARNING 	unknown type:participant fullscreen
+12.6765 	WARNING 	unknown type:participant screen height
+12.6765 	WARNING 	unknown type:participant screen width
+12.6765 	WARNING 	unknown type:run file
+12.6765 	WARNING 	unknown type:run mode
+12.6766 	WARNING 	unknown type:serial port
+12.6771 	WARNING 	Monitor specification not found. Creating a temporary one...
+12.6776 	WARNING 	Requested an unavailable screen number - using first available.
+12.6778 	WARNING 	User requested fullscreen with size [1920 1080], but screen is actually [1440, 900]. Using actual size
+13.2211 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x117ae4ad0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=1, size=array([1440,  900]), stereo=False, units=u'norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.2211 	EXP 	window1: recordFrameIntervals = False
+14.8868 	EXP 	window1: recordFrameIntervals = True
+16.5704 	EXP 	window1: recordFrameIntervals = False
+16.5705 	INFO 	Particpant screen has a framerate of 60.00264942423663 hz
+16.5833 	EXP 	Imported data/runs/s1t1.csv as conditions, 17 conditions, 4 params
+16.6125 	EXP 	Created Trial Image: stimuli/CFD-WF-012-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-012-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-012-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+16.6586 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='KIRSTY', units=u'norm', win=Window(...), wrapWidth=1)
+16.6726 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='REBECCA', units=u'norm', win=Window(...), wrapWidth=1)
+16.7034 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+16.7106 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+16.7163 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+16.7297 	EXP 	Created Trial Image: stimuli/CFD-WF-217-085-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-217-085-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-217-085-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+16.7394 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MATILDA', units=u'norm', win=Window(...), wrapWidth=1)
+16.7480 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='TAYLOR', units=u'norm', win=Window(...), wrapWidth=1)
+16.7655 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+16.7707 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+16.7755 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+16.7899 	EXP 	Created Trial Image: stimuli/CFD-WF-028-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-028-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-028-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+16.7988 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='JANET', units=u'norm', win=Window(...), wrapWidth=1)
+16.8071 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='SOPHIA', units=u'norm', win=Window(...), wrapWidth=1)
+16.8248 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+16.8301 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+16.8427 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+16.8572 	EXP 	Created Trial Image: stimuli/CFD-WF-238-023-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-238-023-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-238-023-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+16.8651 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MATILDA', units=u'norm', win=Window(...), wrapWidth=1)
+16.8732 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='JILLIAN', units=u'norm', win=Window(...), wrapWidth=1)
+16.8953 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+16.9066 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+16.9131 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+16.9300 	EXP 	Created Trial Image: stimuli/CFD-WM-010-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-010-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-010-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+16.9382 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SCOTT', units=u'norm', win=Window(...), wrapWidth=1)
+16.9466 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MITCHELL', units=u'norm', win=Window(...), wrapWidth=1)
+16.9711 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+16.9764 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+16.9813 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.0016 	EXP 	Created Trial Image: stimuli/CFD-WF-030-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-030-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-030-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.0086 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LILY', units=u'norm', win=Window(...), wrapWidth=1)
+17.0152 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='SOPHIA', units=u'norm', win=Window(...), wrapWidth=1)
+17.0334 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.0425 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.0503 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.0643 	EXP 	Created Trial Image: stimuli/CFD-WM-209-038-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-209-038-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-209-038-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.0720 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RONALD', units=u'norm', win=Window(...), wrapWidth=1)
+17.0796 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='DENNIS', units=u'norm', win=Window(...), wrapWidth=1)
+17.0969 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.1021 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.1071 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.1196 	EXP 	Created Trial Image: stimuli/CFD-WM-258-125-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-258-125-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-258-125-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.1281 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LACHLAN', units=u'norm', win=Window(...), wrapWidth=1)
+17.1348 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='ADAM', units=u'norm', win=Window(...), wrapWidth=1)
+17.1525 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.1578 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.1626 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.1770 	EXP 	Created Trial Image: stimuli/CFD-WF-007-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-007-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-007-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.1833 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='LILY', units=u'norm', win=Window(...), wrapWidth=1)
+17.1902 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='JANET', units=u'norm', win=Window(...), wrapWidth=1)
+17.2078 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.2131 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.2180 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.2301 	EXP 	Created Trial Image: stimuli/CFD-WM-019-003-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-019-003-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-019-003-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.2381 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RAYMOND', units=u'norm', win=Window(...), wrapWidth=1)
+17.2460 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='RONALD', units=u'norm', win=Window(...), wrapWidth=1)
+17.2637 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.2691 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.2739 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.2897 	EXP 	Created Trial Image: stimuli/CFD-WF-020-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-020-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-020-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.2991 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='KIRSTY', units=u'norm', win=Window(...), wrapWidth=1)
+17.3077 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MICHELLE', units=u'norm', win=Window(...), wrapWidth=1)
+17.3258 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.3310 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.3359 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.3483 	EXP 	Created Trial Image: stimuli/CFD-WM-024-015-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-024-015-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-024-015-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.3615 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='GEOFFREY', units=u'norm', win=Window(...), wrapWidth=1)
+17.3680 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MAX', units=u'norm', win=Window(...), wrapWidth=1)
+17.3855 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.3907 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.3957 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.4104 	EXP 	Created Trial Image: stimuli/CFD-WM-224-197-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-224-197-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-224-197-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.4170 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SCOTT', units=u'norm', win=Window(...), wrapWidth=1)
+17.4226 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='MAX', units=u'norm', win=Window(...), wrapWidth=1)
+17.4399 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.4451 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.4500 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.4633 	EXP 	Created Trial Image: stimuli/CFD-WM-251-002-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-251-002-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-251-002-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.4700 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='ADAM', units=u'norm', win=Window(...), wrapWidth=1)
+17.4783 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='LACHLAN', units=u'norm', win=Window(...), wrapWidth=1)
+17.4960 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.5014 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.5061 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.5194 	EXP 	Created Trial Image: stimuli/CFD-WM-225-127-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-225-127-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-225-127-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.5274 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='MITCHELL', units=u'norm', win=Window(...), wrapWidth=1)
+17.5342 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='CONNOR', units=u'norm', win=Window(...), wrapWidth=1)
+17.5515 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.5568 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.5617 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.5743 	EXP 	Created Trial Image: stimuli/CFD-WF-242-001-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WF-242-001-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WF-242-001-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.5855 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='SAMANTHA', units=u'norm', win=Window(...), wrapWidth=1)
+17.5929 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='TAYLOR', units=u'norm', win=Window(...), wrapWidth=1)
+17.6135 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.6231 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.6279 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.6397 	EXP 	Created Trial Image: stimuli/CFD-WM-227-099-N.jpg = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=u'stimuli/CFD-WM-227-099-N.jpg', interpolate=False, mask=None, maskParams=None, name=u'Trial Image: stimuli/CFD-WM-227-099-N.jpg', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([569., 400.]), texRes=128, units='pix', win=Window(...))
+17.6478 	EXP 	Created Yes Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Yes Prompt', opacity=1.0, ori=0.0, pos=array([-0.5, -0.8]), rgb=array([1., 1., 1.]), text='RAYMOND', units=u'norm', win=Window(...), wrapWidth=1)
+17.6552 	EXP 	Created No Prompt = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='No Prompt', opacity=1.0, ori=0.0, pos=array([ 0.5, -0.8]), rgb=array([1., 1., 1.]), text='DENNIS', units=u'norm', win=Window(...), wrapWidth=1)
+17.6732 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([1., 1., 1.]), text='How confident are you?', units=u'norm', win=Window(...), wrapWidth=1)
+17.6793 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.33, -0.66]), rgb=array([1., 1., 1.]), text='High', units=u'norm', win=Window(...), wrapWidth=1)
+17.6844 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.33, -0.66]), rgb=array([1., 1., 1.]), text='Low', units=u'norm', win=Window(...), wrapWidth=1)
+17.6844 	INFO 	starting routine RecallTrial ...
+17.6846 	INFO 	starting routine timer from 5.00784111023
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: size = array([768.15, 540.  ])
+17.7037 	EXP 	No Prompt: autoDraw = True
+17.7037 	EXP 	Yes Prompt: autoDraw = True
+17.7037 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = True
+26.2213 	DATA 	Response Box: c
+26.2214 	DATA 	ResponseTime: 8.53669500351
+26.2379 	INFO 	finished routine RecallTrial ...
+26.2382 	INFO 	starting routine ConfidenceTrial ...
+26.2384 	INFO 	starting routine timer from 13.5616519451
+26.2545 	EXP 	No Prompt: autoDraw = False
+26.2545 	EXP 	Yes Prompt: autoDraw = False
+26.2545 	EXP 	Trial Image: stimuli/CFD-WF-012-002-N.jpg: autoDraw = False
+26.2545 	EXP 	unnamed TextStim: autoDraw = True
+26.2545 	EXP 	unnamed TextStim: autoDraw = True
+26.2545 	EXP 	unnamed TextStim: autoDraw = True
+26.9211 	DATA 	Response Box: d
+26.9211 	DATA 	ResponseTime: 0.682623147964
+26.9379 	INFO 	finished routine ConfidenceTrial ...
+26.9380 	INFO 	starting routine RecallTrial ...
+26.9382 	INFO 	starting routine timer from 14.2614729404
+26.9546 	EXP 	unnamed TextStim: autoDraw = False
+26.9546 	EXP 	unnamed TextStim: autoDraw = False
+26.9546 	EXP 	unnamed TextStim: autoDraw = False
+26.9546 	EXP 	No Prompt: autoDraw = True
+26.9546 	EXP 	Yes Prompt: autoDraw = True
+26.9546 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: autoDraw = True
+27.3714 	DATA 	Response Box: d
+27.3714 	DATA 	ResponseTime: 0.433135032654
+27.3880 	INFO 	finished routine RecallTrial ...
+27.3883 	INFO 	starting routine ConfidenceTrial ...
+27.3885 	INFO 	starting routine timer from 14.7117619514
+27.4044 	EXP 	No Prompt: autoDraw = False
+27.4044 	EXP 	Yes Prompt: autoDraw = False
+27.4044 	EXP 	Trial Image: stimuli/CFD-WF-217-085-N.jpg: autoDraw = False
+27.4044 	EXP 	unnamed TextStim: autoDraw = True
+27.4044 	EXP 	unnamed TextStim: autoDraw = True
+27.4044 	EXP 	unnamed TextStim: autoDraw = True
+27.7215 	DATA 	Response Box: c
+27.7215 	DATA 	ResponseTime: 0.332918167114
+27.7380 	INFO 	finished routine ConfidenceTrial ...
+27.7381 	INFO 	starting routine RecallTrial ...
+27.7384 	INFO 	starting routine timer from 15.0616240501
+27.7546 	EXP 	unnamed TextStim: autoDraw = False
+27.7546 	EXP 	unnamed TextStim: autoDraw = False
+27.7546 	EXP 	unnamed TextStim: autoDraw = False
+27.7546 	EXP 	No Prompt: autoDraw = True
+27.7546 	EXP 	Yes Prompt: autoDraw = True
+27.7546 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: autoDraw = True
+28.0714 	DATA 	Response Box: c
+28.0714 	DATA 	ResponseTime: 0.332992076874
+28.0882 	INFO 	finished routine RecallTrial ...
+28.0884 	INFO 	starting routine ConfidenceTrial ...
+28.0886 	INFO 	starting routine timer from 15.411878109
+28.1046 	EXP 	No Prompt: autoDraw = False
+28.1046 	EXP 	Yes Prompt: autoDraw = False
+28.1046 	EXP 	Trial Image: stimuli/CFD-WF-028-023-N.jpg: autoDraw = False
+28.1046 	EXP 	unnamed TextStim: autoDraw = True
+28.1046 	EXP 	unnamed TextStim: autoDraw = True
+28.1046 	EXP 	unnamed TextStim: autoDraw = True
+28.3881 	DATA 	Response Box: d
+28.3881 	DATA 	ResponseTime: 0.299412965775
+28.4048 	INFO 	finished routine ConfidenceTrial ...
+28.4049 	INFO 	starting routine RecallTrial ...
+28.4051 	INFO 	starting routine timer from 15.728374958
+28.4214 	EXP 	unnamed TextStim: autoDraw = False
+28.4214 	EXP 	unnamed TextStim: autoDraw = False
+28.4214 	EXP 	unnamed TextStim: autoDraw = False
+28.4214 	EXP 	No Prompt: autoDraw = True
+28.4214 	EXP 	Yes Prompt: autoDraw = True
+28.4214 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: autoDraw = True
+28.6882 	DATA 	Response Box: d
+28.6883 	DATA 	ResponseTime: 0.283065080643
+28.7049 	INFO 	finished routine RecallTrial ...
+28.7051 	INFO 	starting routine ConfidenceTrial ...
+28.7053 	INFO 	starting routine timer from 16.0285480022
+28.7214 	EXP 	No Prompt: autoDraw = False
+28.7214 	EXP 	Yes Prompt: autoDraw = False
+28.7214 	EXP 	Trial Image: stimuli/CFD-WF-238-023-N.jpg: autoDraw = False
+28.7214 	EXP 	unnamed TextStim: autoDraw = True
+28.7214 	EXP 	unnamed TextStim: autoDraw = True
+28.7214 	EXP 	unnamed TextStim: autoDraw = True
+28.9715 	DATA 	Response Box: c
+28.9715 	DATA 	ResponseTime: 0.266134023666
+28.9882 	INFO 	finished routine ConfidenceTrial ...
+28.9883 	INFO 	starting routine RecallTrial ...
+28.9887 	INFO 	starting routine timer from 16.311907053
+29.0046 	EXP 	unnamed TextStim: autoDraw = False
+29.0046 	EXP 	unnamed TextStim: autoDraw = False
+29.0046 	EXP 	unnamed TextStim: autoDraw = False
+29.0046 	EXP 	No Prompt: autoDraw = True
+29.0046 	EXP 	Yes Prompt: autoDraw = True
+29.0046 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: autoDraw = True
+29.3049 	DATA 	Response Box: c
+29.3049 	DATA 	ResponseTime: 0.316175937653
+29.3213 	INFO 	finished routine RecallTrial ...
+29.3215 	INFO 	starting routine ConfidenceTrial ...
+29.3217 	INFO 	starting routine timer from 16.6449830532
+29.3380 	EXP 	No Prompt: autoDraw = False
+29.3380 	EXP 	Yes Prompt: autoDraw = False
+29.3380 	EXP 	Trial Image: stimuli/CFD-WM-010-001-N.jpg: autoDraw = False
+29.3380 	EXP 	unnamed TextStim: autoDraw = True
+29.3380 	EXP 	unnamed TextStim: autoDraw = True
+29.3380 	EXP 	unnamed TextStim: autoDraw = True
+29.6382 	DATA 	Response Box: d
+29.6382 	DATA 	ResponseTime: 0.316448926926
+29.6549 	INFO 	finished routine ConfidenceTrial ...
+29.6550 	INFO 	starting routine RecallTrial ...
+29.6553 	INFO 	starting routine timer from 16.9785001278
+29.6714 	EXP 	unnamed TextStim: autoDraw = False
+29.6714 	EXP 	unnamed TextStim: autoDraw = False
+29.6714 	EXP 	unnamed TextStim: autoDraw = False
+29.6714 	EXP 	No Prompt: autoDraw = True
+29.6714 	EXP 	Yes Prompt: autoDraw = True
+29.6714 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: autoDraw = True
+29.9382 	DATA 	Response Box: d
+29.9382 	DATA 	ResponseTime: 0.282904863358
+29.9550 	INFO 	finished routine RecallTrial ...
+29.9552 	INFO 	starting routine ConfidenceTrial ...
+29.9555 	INFO 	starting routine timer from 17.2787001133
+29.9714 	EXP 	No Prompt: autoDraw = False
+29.9714 	EXP 	Yes Prompt: autoDraw = False
+29.9714 	EXP 	Trial Image: stimuli/CFD-WF-030-002-N.jpg: autoDraw = False
+29.9714 	EXP 	unnamed TextStim: autoDraw = True
+29.9714 	EXP 	unnamed TextStim: autoDraw = True
+29.9714 	EXP 	unnamed TextStim: autoDraw = True
+30.1217 	DATA 	Response Box: c
+30.1217 	DATA 	ResponseTime: 0.166194915771
+30.1383 	INFO 	finished routine ConfidenceTrial ...
+30.1383 	INFO 	starting routine RecallTrial ...
+30.1386 	INFO 	starting routine timer from 17.4618420601
+30.1548 	EXP 	unnamed TextStim: autoDraw = False
+30.1548 	EXP 	unnamed TextStim: autoDraw = False
+30.1548 	EXP 	unnamed TextStim: autoDraw = False
+30.1548 	EXP 	No Prompt: autoDraw = True
+30.1548 	EXP 	Yes Prompt: autoDraw = True
+30.1548 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: autoDraw = True
+30.3717 	DATA 	Response Box: c
+30.3717 	DATA 	ResponseTime: 0.233036994934
+30.3884 	INFO 	finished routine RecallTrial ...
+30.3886 	INFO 	starting routine ConfidenceTrial ...
+30.3888 	INFO 	starting routine timer from 17.7120580673
+30.4048 	EXP 	No Prompt: autoDraw = False
+30.4048 	EXP 	Yes Prompt: autoDraw = False
+30.4048 	EXP 	Trial Image: stimuli/CFD-WM-209-038-N.jpg: autoDraw = False
+30.4048 	EXP 	unnamed TextStim: autoDraw = True
+30.4048 	EXP 	unnamed TextStim: autoDraw = True
+30.4048 	EXP 	unnamed TextStim: autoDraw = True
+30.6050 	DATA 	Response Box: d
+30.6050 	DATA 	ResponseTime: 0.216156959534
+30.6217 	INFO 	finished routine ConfidenceTrial ...
+30.6218 	INFO 	starting routine RecallTrial ...
+30.6220 	INFO 	starting routine timer from 17.9452819824
+30.6382 	EXP 	unnamed TextStim: autoDraw = False
+30.6382 	EXP 	unnamed TextStim: autoDraw = False
+30.6382 	EXP 	unnamed TextStim: autoDraw = False
+30.6382 	EXP 	No Prompt: autoDraw = True
+30.6382 	EXP 	Yes Prompt: autoDraw = True
+30.6382 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: autoDraw = True
+30.8050 	DATA 	Response Box: d
+30.8050 	DATA 	ResponseTime: 0.182938098907
+30.8217 	INFO 	finished routine RecallTrial ...
+30.8219 	INFO 	starting routine ConfidenceTrial ...
+30.8222 	INFO 	starting routine timer from 18.1454370022
+30.8382 	EXP 	No Prompt: autoDraw = False
+30.8382 	EXP 	Yes Prompt: autoDraw = False
+30.8382 	EXP 	Trial Image: stimuli/CFD-WM-258-125-N.jpg: autoDraw = False
+30.8382 	EXP 	unnamed TextStim: autoDraw = True
+30.8382 	EXP 	unnamed TextStim: autoDraw = True
+30.8382 	EXP 	unnamed TextStim: autoDraw = True
+31.0050 	DATA 	Response Box: c
+31.0050 	DATA 	ResponseTime: 0.18279004097
+31.0218 	INFO 	finished routine ConfidenceTrial ...
+31.0218 	INFO 	starting routine RecallTrial ...
+31.0221 	INFO 	starting routine timer from 18.3453400135
+31.0382 	EXP 	unnamed TextStim: autoDraw = False
+31.0382 	EXP 	unnamed TextStim: autoDraw = False
+31.0382 	EXP 	unnamed TextStim: autoDraw = False
+31.0382 	EXP 	No Prompt: autoDraw = True
+31.0382 	EXP 	Yes Prompt: autoDraw = True
+31.0382 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = True
+31.3050 	DATA 	Response Box: c
+31.3051 	DATA 	ResponseTime: 0.282917022705
+31.3218 	INFO 	finished routine RecallTrial ...
+31.3220 	INFO 	starting routine ConfidenceTrial ...
+31.3222 	INFO 	starting routine timer from 18.6454539299
+31.3382 	EXP 	No Prompt: autoDraw = False
+31.3382 	EXP 	Yes Prompt: autoDraw = False
+31.3382 	EXP 	Trial Image: stimuli/CFD-WF-007-001-N.jpg: autoDraw = False
+31.3382 	EXP 	unnamed TextStim: autoDraw = True
+31.3382 	EXP 	unnamed TextStim: autoDraw = True
+31.3382 	EXP 	unnamed TextStim: autoDraw = True
+31.5884 	DATA 	Response Box: d
+31.5885 	DATA 	ResponseTime: 0.266203165054
+31.6051 	INFO 	finished routine ConfidenceTrial ...
+31.6051 	INFO 	starting routine RecallTrial ...
+31.6054 	INFO 	starting routine timer from 18.928632021
+31.6216 	EXP 	unnamed TextStim: autoDraw = False
+31.6216 	EXP 	unnamed TextStim: autoDraw = False
+31.6216 	EXP 	unnamed TextStim: autoDraw = False
+31.6216 	EXP 	No Prompt: autoDraw = True
+31.6216 	EXP 	Yes Prompt: autoDraw = True
+31.6216 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: autoDraw = True
+31.8551 	DATA 	Response Box: d
+31.8552 	DATA 	ResponseTime: 0.249711036682
+31.8718 	INFO 	finished routine RecallTrial ...
+31.8720 	INFO 	starting routine ConfidenceTrial ...
+31.8722 	INFO 	starting routine timer from 19.1954400539
+31.8883 	EXP 	No Prompt: autoDraw = False
+31.8883 	EXP 	Yes Prompt: autoDraw = False
+31.8883 	EXP 	Trial Image: stimuli/CFD-WM-019-003-N.jpg: autoDraw = False
+31.8883 	EXP 	unnamed TextStim: autoDraw = True
+31.8883 	EXP 	unnamed TextStim: autoDraw = True
+31.8883 	EXP 	unnamed TextStim: autoDraw = True
+32.1052 	DATA 	Response Box: c
+32.1052 	DATA 	ResponseTime: 0.232913017273
+32.1219 	INFO 	finished routine ConfidenceTrial ...
+32.1219 	INFO 	starting routine RecallTrial ...
+32.1222 	INFO 	starting routine timer from 19.4454331398
+32.1380 	EXP 	unnamed TextStim: autoDraw = False
+32.1380 	EXP 	unnamed TextStim: autoDraw = False
+32.1380 	EXP 	unnamed TextStim: autoDraw = False
+32.1380 	EXP 	No Prompt: autoDraw = True
+32.1380 	EXP 	Yes Prompt: autoDraw = True
+32.1380 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: autoDraw = True
+32.3220 	DATA 	Response Box: c
+32.3220 	DATA 	ResponseTime: 0.199759960175
+32.3385 	INFO 	finished routine RecallTrial ...
+32.3386 	INFO 	starting routine ConfidenceTrial ...
+32.3389 	INFO 	starting routine timer from 19.6621460915
+32.3551 	EXP 	No Prompt: autoDraw = False
+32.3551 	EXP 	Yes Prompt: autoDraw = False
+32.3551 	EXP 	Trial Image: stimuli/CFD-WF-020-002-N.jpg: autoDraw = False
+32.3551 	EXP 	unnamed TextStim: autoDraw = True
+32.3551 	EXP 	unnamed TextStim: autoDraw = True
+32.3551 	EXP 	unnamed TextStim: autoDraw = True
+32.5886 	DATA 	Response Box: d
+32.5886 	DATA 	ResponseTime: 0.249621868134
+32.6052 	INFO 	finished routine ConfidenceTrial ...
+32.6053 	INFO 	starting routine RecallTrial ...
+32.6055 	INFO 	starting routine timer from 19.9287619591
+32.6217 	EXP 	unnamed TextStim: autoDraw = False
+32.6217 	EXP 	unnamed TextStim: autoDraw = False
+32.6217 	EXP 	unnamed TextStim: autoDraw = False
+32.6217 	EXP 	No Prompt: autoDraw = True
+32.6217 	EXP 	Yes Prompt: autoDraw = True
+32.6217 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: autoDraw = True
+32.8552 	DATA 	Response Box: d
+32.8553 	DATA 	ResponseTime: 0.249696969986
+32.8716 	INFO 	finished routine RecallTrial ...
+32.8718 	INFO 	starting routine ConfidenceTrial ...
+32.8721 	INFO 	starting routine timer from 20.1952941418
+32.8884 	EXP 	No Prompt: autoDraw = False
+32.8884 	EXP 	Yes Prompt: autoDraw = False
+32.8884 	EXP 	Trial Image: stimuli/CFD-WM-024-015-N.jpg: autoDraw = False
+32.8884 	EXP 	unnamed TextStim: autoDraw = True
+32.8884 	EXP 	unnamed TextStim: autoDraw = True
+32.8884 	EXP 	unnamed TextStim: autoDraw = True
+33.1052 	DATA 	Response Box: c
+33.1052 	DATA 	ResponseTime: 0.233131885529
+33.1219 	INFO 	finished routine ConfidenceTrial ...
+33.1220 	INFO 	starting routine RecallTrial ...
+33.1223 	INFO 	starting routine timer from 20.4454889297
+33.1384 	EXP 	unnamed TextStim: autoDraw = False
+33.1384 	EXP 	unnamed TextStim: autoDraw = False
+33.1384 	EXP 	unnamed TextStim: autoDraw = False
+33.1384 	EXP 	No Prompt: autoDraw = True
+33.1384 	EXP 	Yes Prompt: autoDraw = True
+33.1384 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: autoDraw = True
+33.3719 	DATA 	Response Box: c
+33.3719 	DATA 	ResponseTime: 0.249624013901
+33.3886 	INFO 	finished routine RecallTrial ...
+33.3888 	INFO 	starting routine ConfidenceTrial ...
+33.3890 	INFO 	starting routine timer from 20.7122850418
+33.4051 	EXP 	No Prompt: autoDraw = False
+33.4051 	EXP 	Yes Prompt: autoDraw = False
+33.4051 	EXP 	Trial Image: stimuli/CFD-WM-224-197-N.jpg: autoDraw = False
+33.4051 	EXP 	unnamed TextStim: autoDraw = True
+33.4051 	EXP 	unnamed TextStim: autoDraw = True
+33.4051 	EXP 	unnamed TextStim: autoDraw = True
+33.6553 	DATA 	Response Box: d
+33.6553 	DATA 	ResponseTime: 0.266222953796
+33.6719 	INFO 	finished routine ConfidenceTrial ...
+33.6720 	INFO 	starting routine RecallTrial ...
+33.6723 	INFO 	starting routine timer from 20.9954879284
+33.6885 	EXP 	unnamed TextStim: autoDraw = False
+33.6885 	EXP 	unnamed TextStim: autoDraw = False
+33.6885 	EXP 	unnamed TextStim: autoDraw = False
+33.6885 	EXP 	No Prompt: autoDraw = True
+33.6885 	EXP 	Yes Prompt: autoDraw = True
+33.6885 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: autoDraw = True
+33.9220 	DATA 	Response Box: d
+33.9220 	DATA 	ResponseTime: 0.249704122543
+33.9386 	INFO 	finished routine RecallTrial ...
+33.9388 	INFO 	starting routine ConfidenceTrial ...
+33.9390 	INFO 	starting routine timer from 21.2622771263
+33.9552 	EXP 	No Prompt: autoDraw = False
+33.9552 	EXP 	Yes Prompt: autoDraw = False
+33.9552 	EXP 	Trial Image: stimuli/CFD-WM-251-002-N.jpg: autoDraw = False
+33.9552 	EXP 	unnamed TextStim: autoDraw = True
+33.9552 	EXP 	unnamed TextStim: autoDraw = True
+33.9552 	EXP 	unnamed TextStim: autoDraw = True
+34.2554 	DATA 	Response Box: c
+34.2554 	DATA 	ResponseTime: 0.316314935684
+34.2720 	INFO 	finished routine ConfidenceTrial ...
+34.2721 	INFO 	starting routine RecallTrial ...
+34.2723 	INFO 	starting routine timer from 21.5955660343
+34.2886 	EXP 	unnamed TextStim: autoDraw = False
+34.2886 	EXP 	unnamed TextStim: autoDraw = False
+34.2886 	EXP 	unnamed TextStim: autoDraw = False
+34.2886 	EXP 	No Prompt: autoDraw = True
+34.2886 	EXP 	Yes Prompt: autoDraw = True
+34.2886 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = True
+34.5554 	DATA 	Response Box: c
+34.5554 	DATA 	ResponseTime: 0.283040046692
+34.5720 	INFO 	finished routine RecallTrial ...
+34.5722 	INFO 	starting routine ConfidenceTrial ...
+34.5724 	INFO 	starting routine timer from 21.8956780434
+34.5886 	EXP 	No Prompt: autoDraw = False
+34.5886 	EXP 	Yes Prompt: autoDraw = False
+34.5886 	EXP 	Trial Image: stimuli/CFD-WM-225-127-N.jpg: autoDraw = False
+34.5886 	EXP 	unnamed TextStim: autoDraw = True
+34.5886 	EXP 	unnamed TextStim: autoDraw = True
+34.5886 	EXP 	unnamed TextStim: autoDraw = True
+34.8720 	DATA 	Response Box: d
+34.8721 	DATA 	ResponseTime: 0.299582958221
+34.8888 	INFO 	finished routine ConfidenceTrial ...
+34.8888 	INFO 	starting routine RecallTrial ...
+34.8891 	INFO 	starting routine timer from 22.2123270035
+34.9052 	EXP 	unnamed TextStim: autoDraw = False
+34.9052 	EXP 	unnamed TextStim: autoDraw = False
+34.9052 	EXP 	unnamed TextStim: autoDraw = False
+34.9052 	EXP 	No Prompt: autoDraw = True
+34.9052 	EXP 	Yes Prompt: autoDraw = True
+34.9052 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: autoDraw = True
+35.1888 	DATA 	Response Box: c
+35.1888 	DATA 	ResponseTime: 0.29966711998
+35.2054 	INFO 	finished routine RecallTrial ...
+35.2056 	INFO 	starting routine ConfidenceTrial ...
+35.2058 	INFO 	starting routine timer from 22.5290701389
+35.2220 	EXP 	No Prompt: autoDraw = False
+35.2220 	EXP 	Yes Prompt: autoDraw = False
+35.2220 	EXP 	Trial Image: stimuli/CFD-WF-242-001-N.jpg: autoDraw = False
+35.2220 	EXP 	unnamed TextStim: autoDraw = True
+35.2220 	EXP 	unnamed TextStim: autoDraw = True
+35.2220 	EXP 	unnamed TextStim: autoDraw = True
+35.5221 	DATA 	Response Box: c
+35.5222 	DATA 	ResponseTime: 0.316275835037
+35.5388 	INFO 	finished routine ConfidenceTrial ...
+35.5389 	INFO 	starting routine RecallTrial ...
+35.5391 	INFO 	starting routine timer from 22.8623659611
+35.5552 	EXP 	unnamed TextStim: autoDraw = False
+35.5552 	EXP 	unnamed TextStim: autoDraw = False
+35.5552 	EXP 	unnamed TextStim: autoDraw = False
+35.5552 	EXP 	No Prompt: autoDraw = True
+35.5552 	EXP 	Yes Prompt: autoDraw = True
+35.5552 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = True
+35.9222 	DATA 	Response Box: d
+35.9222 	DATA 	ResponseTime: 0.383013010025
+35.9388 	INFO 	finished routine RecallTrial ...
+35.9390 	INFO 	starting routine ConfidenceTrial ...
+35.9392 	INFO 	starting routine timer from 23.2624621391
+35.9553 	EXP 	No Prompt: autoDraw = False
+35.9553 	EXP 	Yes Prompt: autoDraw = False
+35.9553 	EXP 	Trial Image: stimuli/CFD-WM-227-099-N.jpg: autoDraw = False
+35.9553 	EXP 	unnamed TextStim: autoDraw = True
+35.9553 	EXP 	unnamed TextStim: autoDraw = True
+35.9553 	EXP 	unnamed TextStim: autoDraw = True
+36.2556 	DATA 	Response Box: d
+36.2556 	DATA 	ResponseTime: 0.31630897522
+36.2722 	INFO 	finished routine ConfidenceTrial ...
