@@ -157,6 +157,9 @@ class MRISync(AbstractFeature):
                     self.experiment.experimentHandler.addData('syncPulse',timestamp)
                     logging.info('Synced with pulse at '+str(self.experiment.clock.getTime()))
                     pulseSeen = True
+                if 'escape' in event.getKeys(keyList = ['escape']):
+                    logging.warn('escape button pressed ... aborting experiment')
+                    core.quit()
 
 class ResponseBox(AbstractFeature):
     """

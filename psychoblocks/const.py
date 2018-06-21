@@ -9,17 +9,20 @@
 This module contains the magic numbers used throught the facename project
 """
 
-TLL_PULSE   = 84
+#TLL_PULSE   = 84
+TLL_PULSE   = 0x10
 """
 int: The byte code for the TLL pulse sent from the scanner
 """
 
-RIGHT_INDEX   = 'c'
+#RIGHT_INDEX   = 'c'
+RIGHT_INDEX   = 0x14
 """
 int: The byte code for the right index button
 """
 
-RIGHT_MIDDLE  = 'd'
+RIGHT_MIDDLE  = 0x18
+#RIGHT_MIDDLE  = 'd'
 """
 int: The byte code for the right middle button
 """
@@ -69,7 +72,7 @@ DEFAULT_MODE = 'serial'
 str: default mode
 """
 
-DEFAULT_PORT = '/dev/tty.wchusbserial1420'
+DEFAULT_PORT = '/dev/tty.usbserial-142'
 """
 str: default port for serial device
 """
