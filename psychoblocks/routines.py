@@ -16,13 +16,13 @@ class CountdownSequence(AbstractCollection):
     This routine will display the digits 1-5 in decreasing order for 1s each.
     """
     
-    def __init__(self, experiment):
+    def __init__(self, experiment, length=5,time=1.0):
         super(CountdownSequence,self).__init__(None, experiment = experiment)
         featureList = list()
-        for i in range(5,0,-1):
+        for i in range(length,0,-1):
             feature = EscapeCheck(None,experiment = experiment)
             feature = TextFeature(feature, text = str(i), name = 'Countdown '+str(i))
-            feature = TimedLoop(feature, 1.0)
+            feature = TimedLoop(feature, time)
             featureList.append(feature)
         self._feature = IteratingFeature(featureList, experiment)
     

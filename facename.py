@@ -19,6 +19,7 @@ from psychoblocks import const, experiment, routines, features
 TRIAL_DURATION = 4.5
 ISI = 0.5 # InterStimulus Interval
 REST_DURATION = 16
+TR=2.3
 
 if (__name__ == '__main__'):
     # make sure we start out in the right directory
@@ -37,6 +38,7 @@ if (__name__ == '__main__'):
     # no need to sync if this is a practice run
     if app.mode != 'practice' or True:
         app.addRoutine(routines.WaitForTLL(app))
+    app.addRoutine(routines.CountdownSequence(app,length=5, time=TR))
 
 
     # build the trial sequence and add to the app
