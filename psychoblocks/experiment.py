@@ -117,7 +117,7 @@ class Experiment(object):
         #           'examiner fullscreen':const.DEFAULT_FULLSCREEN,
                     'examiner screen height':const.DEFAULT_EXAMINER_SCREEN_HEIGHT,
                     'examiner screen width':const.DEFAULT_EXAMINER_SCREEN_WIDTH,
-                    'examiner screen':'yes'}
+                    'examiner screen':const.DEFAULT_EXAMINER_SCREEN}
 
 
         dlg = gui.DlgFromDict(dictionary = expInfo, title = self.expName)

@@ -87,6 +87,7 @@ DEFAULT_FULLSCREEN = 'no'
 str: default fullscreen status
 """
 
+DEFAULT_EXAMINER_SCREEN = 'yes'
 DEFAULT_SCREEN_WIDTH = '1920'
 DEFAULT_EXAMINER_SCREEN_WIDTH = '1280'
 """
