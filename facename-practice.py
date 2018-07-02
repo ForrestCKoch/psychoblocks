@@ -19,7 +19,7 @@ from psychoblocks import const, experiment, routines, features
 TRIAL_DURATION = 4.5
 ISI = 0.5 # InterStimulus Interval
 REST_DURATION = 16
-TR=2.3
+TR=2.7
 
 const.DEFAULT_EXAMINER_SCREEN = 'no'
 const.DEFAULT_FULLSCREEN = 'yes'
@@ -31,7 +31,7 @@ if (__name__ == '__main__'):
     # make sure we start out in the right directory
     os.chdir(os.path.dirname(sys.argv[0]))
 
-    app = experiment.Experiment('facename')
+    app = experiment.Experiment('facename-practice')
     app.addRoutine(routines.Calibration(app))
     app.addRoutine(routines.FNInstructions(app))
     # only try to update the examiner window if the user has requested one
@@ -44,7 +44,7 @@ if (__name__ == '__main__'):
     # no need to sync if this is a practice run
     if app.mode != 'practice' or True:
         app.addRoutine(routines.WaitForTLL(app))
-    app.addRoutine(routines.CountdownSequence(app,length=5, time=TR))
+    app.addRoutine(routines.CountdownSequence(app,length=8, time=TR/2.0))
 
 
     # build the trial sequence and add to the app
