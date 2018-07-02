@@ -19,7 +19,7 @@ from psychoblocks import const, experiment, routines, features
 
 # change some of the defaults for convenience
 const.DEFAULT_FULLSCREEN = 'yes'
-const.DEFEAULT_EXAMINER_SCREEN = 'no'
+const.DEFAULT_EXAMINER_SCREEN = 'no'
 const.DEFAULT_PORT = '/dev/tty.wchusbserial1420'
 
 if (__name__ == '__main__'):

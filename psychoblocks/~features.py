@@ -232,34 +232,9 @@ class ResponseBox(AbstractFeature):
                 if rt < 0.2:
                     self.experiment.responsesUnder200ms += 1
                 self.experiment.responseTotal += 1
-        else:
-            if 'left' in event.getKeys(keyList = ['left']):
-                self._responseRead = True
-                self.experiment.responseTotal += 1
-                data = 'c'
-                rt = self.experiment.clock.getTime()-self.startTime
-                correct = data == self._correctResponse
-		print(self._correctResponse)
-                self.experiment.experimentHandler.addData('response',data)
-                self.experiment.experimentHandler.addData('response time', str(rt))
-                self.experiment.experimentHandler.addData('correct',correct)
-                logging.data('Keypress: '+data)
-                logging.data('ResponseTime: '+str(rt))
-            elif 'right' in event.getKeys(keyList = ['right']):
-                self._responseRead = True
-                self.experiment.responseTotal += 1
-                data = 'd'
-                rt = self.experiment.clock.getTime()-self.startTime
-                correct = data == self._correctResponse
-		print(self._correctResponse)
-                self.experiment.experimentHandler.addData('response',data)
-                self.experiment.experimentHandler.addData('response time', str(rt))
-                self.experiment.experimentHandler.addData('correct',correct)
-                logging.data('Keypress: '+data)
-                logging.data('ResponseTime: '+str(rt))
-                        
-        # call origin feature
-        super(ResponseBox,self).run()
+                
+            # call origin feature
+            super(ResponseBox,self).run()
 
 class EscapeCheck(AbstractFeature):
     """
